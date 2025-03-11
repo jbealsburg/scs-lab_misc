@@ -90,3 +90,22 @@ dat2 %>%
 ```
 
 Then I go to treatment patch to add in plot numbers
+
+## Staples pivot longer
+
+```{r}
+read.csv("jesse_KGML_Dataset.xlsx - staples_managementDataCreation.csv") -> datStaples
+
+datStaples %>% 
+  pivot_longer(cols = 3:5,
+               names_to = "treatment name") %>% 
+  mutate(experiment = "water quality",
+         site = "staples",.before=year
+         ) %>% 
+  relocate(`treatment name`, .before = managementInformation) -> datStaples2 
+
+write.csv(datStaples2,
+          "staplesPivot_5Feb.csv",
+          row.names = F)
+
+```
