@@ -33,7 +33,7 @@ Patches are files that allow for joining Master datasets with Management dataset
 
 A patch is like a key. It solves the problem of having to copy and paste identical data across reps/blocks which is both labor intensive and prone to error.
 
-![Using patches, we can combine management data with master datasets into a dataset better structured to for analysis across experiments. KGML dataset could be swapped with orei_manure dataset or any other master dataset. ](kgml_patch_infographic.png)
+![Using patches, we can combine management data with master datasets into a dataset better structured to for analysis across experiments. KGML dataset could be swapped with orei_manure dataset or any other master dataset.](kgml_patch_infographic.png)
 
 \newpage
 
