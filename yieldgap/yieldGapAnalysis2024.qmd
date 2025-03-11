@@ -184,7 +184,7 @@ dat3 %>%
 All samples were processed using our [standard protocol of threshing, sieving and aspirating](https://docs.google.com/document/d/1oHFbAqYCipop3GpHFU4xqgxcJX-R6GEAkzti5fYfBlg/edit?tab=t.0). The quality of these samples were about as pure as samples that come directly out of the wintersteiger plot combine we use. They contain stems, empty hulls, spikelets and seeds that are both naked and within a hull. As a result, their weight represents the amount we expect to leave a field, "bin run". These samples would require further cleaning and the amount of pure seed in the sample is likely \~20-30% less of the "bin run" yields predicted.
 
 | Processing step | sample weight (g) | predicted yield (lbs A) | change from reported value (%) |
-|-----------------------|-----------------|-----------------|-----------------|
+|----|----|----|----|
 | standard threshing, sieving, aspirating | 33.8 | 791 | 0 |
 | 1 day storage in lab, humidity gain | 34.1 | 799 | 1 |
 | light sieving to remove obvious stems, spikelets | 32 | 749 | -5 |
