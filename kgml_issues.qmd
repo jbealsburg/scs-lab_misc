@@ -1,0 +1,117 @@
+---
+title: "KGML notebook"
+date: today
+format: pdf
+editor: visual
+include: false
+---
+
+# Conversions
+
+solving for the conversion factor from plot yield to kilograms per hectare
+
+$$ y  = mx $$
+
+where $y$ is grain yield in desired unit, likely kg ha
+
+where $x$ is grain yield in grams per harvest area
+
+where $m$ is the conversion factor
+
+## Fert 
+
+### corn and soy yields
+
+```{r, message=FALSE}
+library(tidyverse)
+library(measurements)
+
+## corn and soy grain plot yields to kg ha
+
+conv_unit(30,"inch","m") * 2 * 3
+# assumes 30 inch row spacing, converting that meter basis. each row experiences 30in row spacing. so 2 rows at 30 inch row spacing for 3 meters experiences 3 meters long and 2*30inch row spacing
+
+# 4.572 square meter area
+
+# corn grain yield assumed reported in grams
+
+conv_unit(10000,"m2","hectare")
+
+1/4.572*10000/1000
+
+
+```
+
+$$
+\begin{aligned}
+\frac{\text{grain yield (g)}}{\text{plot}} \times \frac{\text{plot}}{4.572 \, m^2} \times \frac{10000 \, m^2}{1 \, \text{hectare}} \times \frac{1 \, \text{kg}}{1000 \, \text{g}} = 2.187227 \\
+\text{plot yield (g plot}^{-1}\text{)} \times 2.187 = \text{plot yield (kg ha}^{-1}\text{)} \\
+y = 2.187 \, x 
+\end{aligned}
+$$
+
+### IWG yields
+
+```{r, message=FALSE}
+
+## iwg grain plot yields to kg ha
+
+conv_unit(36*36,"inch2","m2")*2
+
+# 1.672255 square meter area
+
+# iwg  grain yield assumed reported in grams
+
+conv_unit(10000,"m2","hectare")
+
+1/1.672255*10000/1000
+
+
+
+```
+
+$$
+\begin{aligned}
+\frac{\text{iwg weight }g}{\text{sample area}} \times \frac{\text{sample area}}{1.672 \, m^2} \times \frac{10000 m^2}{1 hectare} \times \frac{1 kg}{1000 g} = 5.98\\
+y = 5.98x
+\end{aligned}
+$$
+
+# Issues with data
+
+## ORG (RESOLVED)
+
+```{r, include=TRUE, echo=FALSE}
+
+library(tidyverse)
+
+read.csv("jesse_KGML_Dataset.xlsx - Data.csv") %>% 
+  filter(project=="ORG") %>% 
+  select(crop, location, year, seedyld) %>% 
+  mutate(type = "actual") -> dat_actual
+
+tibble(
+  crop = c("iwg","corn","soybean"),
+  seedyld = c(500,12000,4000),
+  type = c(rep("predicted_Jesse",3))) -> dat_predicted
+  
+dat_actual %>% 
+  ggplot(aes(crop,seedyld)) +
+  geom_point(aes(col=type)) +
+  geom_point(
+    data = dat_predicted,
+    aes(col = type),
+    size=3,
+    position = position_dodge(.5)
+  ) 
+
+```
+
+| Crop       | Jesse            | ChatGPT          | Google           |
+|------------|------------------|------------------|------------------|
+|            | seed yield kg ha | seed yield kg ha | seed yield kg ha |
+| corn       | 12000            | 7000-12000       | 7000             |
+| soybean    | 4000             | 2000-45000       | 4000-11000       |
+| wheatgrass | 500              | 600              | 600              |
+
+: estimated seed yield by crop in kg ha. I used a conversion from bushels acre yields + test weight to kg ha
