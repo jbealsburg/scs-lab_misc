@@ -61,7 +61,116 @@ This is possible, all that is needed is for...
 
 -   all management activities are in the fieldwork log (sometimes management activities were done by stations or were done by lab members but not entered into the log)
 
+# Status
+
+| Experiment  | Transferred to data_management |
+|-------------|--------------------------------|
+| orei_manure | yes                            |
+| ORG         | yes                            |
+| staples     | yes                            |
+| fert        | yes                            |
+| ncas        | yes                            |
+| eddyflux    | yes                            |
+| iree_legume | yes                            |
+
 # Pivot longer
+
+```{r}
+# removing "X" from imported columns that start with a number like 80N_spring
+rename_columns <- function(df) {
+  df %>%
+    rename_with(~ gsub("^X", "", .x), everything())
+}
+```
+
+## FERT
+
+```{r}
+library(tidyverse)
+
+read.csv("jesse_KGML_Dataset.xlsx - fert_managementDataCreation.csv") -> dat_fert
+
+dat_fert %>% 
+  rename_columns() %>% 
+  # glimpse()
+  pivot_longer(cols = 3:7,
+               names_to = "treatment name") %>% 
+  mutate(experiment = "fert",
+         site = "rosemount",.before=year
+         ) %>% 
+  relocate(`treatment name`, .before = managementInformation) -> pivot_fert
+# %>% 
+  # glimpse()
+  
+  # write.csv("fert_managementData.csv",
+  #           row.names = F)
+# this data goes to "Management data tab in jesse_KGML_Dataset
+```
+
+## NCAS
+
+```{r}
+
+read.csv("jesse_KGML_Dataset.xlsx - ncas_managementDataCreation.csv") -> dat_ncas
+
+dat_ncas %>% 
+  rename_columns() %>% 
+  # glimpse()
+  pivot_longer(cols = 3:11,
+               names_to = "treatment name") %>% 
+  mutate(experiment = "ncas",
+         site = "rosemount",.before=year
+         ) %>% 
+  relocate(`treatment name`, .before = managementInformation) -> pivot_ncas
+# %>% 
+#   glimpse()
+  
+```
+
+## Eddyflux
+
+```{r}
+
+read.csv("jesse_KGML_Dataset.xlsx - eddyflux_managementDataCreation.csv") -> dat_eddyflux
+
+dat_eddyflux %>% 
+  pivot_longer(cols = 3,
+               names_to = "treatment name") %>% 
+  mutate(experiment = "eddyflux",
+         site = "rosemount",.before=year
+         ) %>% 
+  relocate(`treatment name`, .before = managementInformation) -> pivot_eddyflux
+# %>% 
+#   glimpse()
+
+```
+
+## IREE-Legume
+
+```{r}
+# jesse_KGML_Dataset.xlsx - IREE-N-Legume_managementDataCreation
+read.csv("jesse_KGML_Dataset.xlsx - IREE-N-Legume_managementDataCreation.csv") -> dat_iree
+
+dat_iree %>% 
+  rename_columns() %>% 
+  # glimpse()
+  pivot_longer(cols = 3:7,
+               names_to = "treatment name") %>% 
+  mutate(experiment = "IREE_legume",
+         site = "multiple",.before=year
+         ) %>% 
+  mutate(value = as.character(value)) %>% 
+  relocate(`treatment name`, .before = managementInformation) -> pivot_iree_legume
+# %>% 
+#   glimpse()
+
+```
+
+## ORG
+
+was done before I was pivoting from management data
+
+## orei_manure
 
 ```{r}
 library(tidyverse)
@@ -77,21 +186,14 @@ dat %>%
   mutate(experiment = "orei_manure",
          site = "rosemount",.before=year
          ) %>% 
-  relocate(`treatment name`, .before = managementInformation) -> dat2 
-
-dat2 %>% 
-  glimpse()
-
-dat2 %>% 
-  write.csv("oreiManure_managementData.csv")
-# this data goes to "Management data tab in jesse_KGML_Dataset
+  relocate(`treatment name`, .before = managementInformation) -> pivot_oreimanure 
 
 
 ```
 
 Then I go to treatment patch to add in plot numbers
 
-## Staples pivot longer
+## Staples
 
 ```{r}
 read.csv("jesse_KGML_Dataset.xlsx - staples_managementDataCreation.csv") -> datStaples
@@ -102,10 +204,27 @@ datStaples %>%
   mutate(experiment = "water quality",
          site = "staples",.before=year
          ) %>% 
-  relocate(`treatment name`, .before = managementInformation) -> datStaples2 
+  relocate(`treatment name`, .before = managementInformation) -> pivot_staples
 
-write.csv(datStaples2,
-          "staplesPivot_5Feb.csv",
-          row.names = F)
+# write.csv(datStaples2,
+#           "staplesPivot_5Feb.csv",
+#           row.names = F)
+
+```
+
+## Pulling together
+
+```{r}
+bind_rows(
+  pivot_eddyflux,
+  pivot_fert, 
+  pivot_iree_legume,
+  pivot_ncas,
+  pivot_oreimanure,
+  pivot_staples
+) %>% 
+  write.csv(
+    "kgml_data_management_13Mar2025.csv"
+  )
 
 ```

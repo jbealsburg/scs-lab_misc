@@ -79,7 +79,11 @@ $$
 
 # Issues with data
 
-## ORG (RESOLVED)
+## ORG 
+
+-   outliers for corn and soybean yields, likely remove from data
+
+-   IWG yields have some values above 2000 kg ha 😕
 
 ```{r, include=TRUE, echo=FALSE}
 
@@ -115,3 +119,26 @@ dat_actual %>%
 | wheatgrass | 500              | 600              | 600              |
 
 : estimated seed yield by crop in kg ha. I used a conversion from bushels acre yields + test weight to kg ha
+
+### Closer look at IWG
+
+```{r, include=TRUE, echo=FALSE}
+dat_actual %>% 
+  filter(crop=="iwg") %>% 
+  ggplot(aes(crop,seedyld)) +
+  geom_point(aes(col=type)) +
+  geom_point(
+    data = subset(dat_predicted, crop=="iwg"),
+    aes(col = type),
+    size=3,
+    position = position_dodge(.5)
+  ) +
+  geom_boxplot(fill=NA, 
+               width=.1) +
+  labs(
+    y="seed yield kg ha"
+  )
+
+```
+
+-   kernza grain yields above 2000 kg ha are suspicious, and are noted as a boxplot to be outliers
