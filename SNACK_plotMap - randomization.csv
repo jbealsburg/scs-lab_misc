@@ -1,0 +1,9 @@
+treatment_name,treatment
+Wheat monoculture,wheat
+Wheat with IWG,wheat+iwg
+Oats monoculture,oat
+Oats with IWG,oat+iwg
+Barley monoculture,barley
+Barley with IWG,barley+iwg
+IWG monoculture(sp),iwg
+IWG monoculture(fa),iwg_fall
