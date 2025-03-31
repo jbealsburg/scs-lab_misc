@@ -1,0 +1,435 @@
+experiment,site,year,treatment,treatment name,information,value
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Crop type,iwg
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Seed harvesting date,8/3/2020
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Straw harvesting date,8/3/2020
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Hay harvesting date,10/19/2020
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Root harvesting date,
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Tillage type,
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Tillage date,
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,N fertilizer type,NO3
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,N fertilizer application date,5/19/2020
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,N fertilizer rate,70
+orei_manure,rosemount,2020,1,fertCommercial_cutFall,Stand age,1
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Crop type,iwg
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Seed harvesting date,7/26/2021
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Straw harvesting date,7/26/2021
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Hay harvesting date,10/22/2021
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Root harvesting date,
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Tillage type,
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Tillage date,
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,N fertilizer type,NO3
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,N fertilizer application date,4/22/2021
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,N fertilizer rate,70
+orei_manure,rosemount,2021,1,fertCommercial_cutFall,Stand age,2
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Crop type,iwg
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Seed harvesting date,7/29/2022
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Straw harvesting date,7/29/2022
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Hay harvesting date,9/1/2022
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Root harvesting date,
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Tillage type,
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Tillage date,
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,N fertilizer type,NO3
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,N fertilizer application date,4/19/2022
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,N fertilizer rate,70
+orei_manure,rosemount,2022,1,fertCommercial_cutFall,Stand age,3
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Crop type,iwg
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Seed harvesting date,8/3/2020
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Straw harvesting date,8/3/2020
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Hay harvesting date,10/19/2020
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Root harvesting date,
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Tillage type,
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Tillage date,
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,N fertilizer type,NO3
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,N fertilizer application date,5/19/2020
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,N fertilizer rate,70
+orei_manure,rosemount,2020,2,fertCommercial_cutNone,Stand age,1
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Crop type,iwg
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Seed harvesting date,7/26/2021
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Straw harvesting date,7/26/2021
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Hay harvesting date,
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Root harvesting date,
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Tillage type,
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Tillage date,
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,N fertilizer type,NO3
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,N fertilizer application date,4/22/2021
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,N fertilizer rate,70
+orei_manure,rosemount,2021,2,fertCommercial_cutNone,Stand age,2
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Crop type,iwg
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Seed harvesting date,7/29/2022
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Straw harvesting date,7/29/2022
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Hay harvesting date,
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Root harvesting date,
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Tillage type,
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Tillage date,
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,N fertilizer type,NO3
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,N fertilizer application date,4/19/2022
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,N fertilizer rate,70
+orei_manure,rosemount,2022,2,fertCommercial_cutNone,Stand age,3
+orei_manure,rosemount,2020,3,fertControl_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2020,3,fertControl_cutFall,Crop type,iwg
+orei_manure,rosemount,2020,3,fertControl_cutFall,Seed harvesting date,8/3/2020
+orei_manure,rosemount,2020,3,fertControl_cutFall,Straw harvesting date,8/3/2020
+orei_manure,rosemount,2020,3,fertControl_cutFall,Hay harvesting date,10/19/2020
+orei_manure,rosemount,2020,3,fertControl_cutFall,Root harvesting date,
+orei_manure,rosemount,2020,3,fertControl_cutFall,Tillage type,
+orei_manure,rosemount,2020,3,fertControl_cutFall,Tillage date,
+orei_manure,rosemount,2020,3,fertControl_cutFall,N fertilizer type,
+orei_manure,rosemount,2020,3,fertControl_cutFall,N fertilizer application date,
+orei_manure,rosemount,2020,3,fertControl_cutFall,N fertilizer rate,0
+orei_manure,rosemount,2020,3,fertControl_cutFall,Stand age,1
+orei_manure,rosemount,2021,3,fertControl_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2021,3,fertControl_cutFall,Crop type,iwg
+orei_manure,rosemount,2021,3,fertControl_cutFall,Seed harvesting date,7/26/2021
+orei_manure,rosemount,2021,3,fertControl_cutFall,Straw harvesting date,7/26/2021
+orei_manure,rosemount,2021,3,fertControl_cutFall,Hay harvesting date,10/22/2021
+orei_manure,rosemount,2021,3,fertControl_cutFall,Root harvesting date,
+orei_manure,rosemount,2021,3,fertControl_cutFall,Tillage type,
+orei_manure,rosemount,2021,3,fertControl_cutFall,Tillage date,
+orei_manure,rosemount,2021,3,fertControl_cutFall,N fertilizer type,
+orei_manure,rosemount,2021,3,fertControl_cutFall,N fertilizer application date,
+orei_manure,rosemount,2021,3,fertControl_cutFall,N fertilizer rate,0
+orei_manure,rosemount,2021,3,fertControl_cutFall,Stand age,2
+orei_manure,rosemount,2022,3,fertControl_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2022,3,fertControl_cutFall,Crop type,iwg
+orei_manure,rosemount,2022,3,fertControl_cutFall,Seed harvesting date,7/29/2022
+orei_manure,rosemount,2022,3,fertControl_cutFall,Straw harvesting date,7/29/2022
+orei_manure,rosemount,2022,3,fertControl_cutFall,Hay harvesting date,9/1/2022
+orei_manure,rosemount,2022,3,fertControl_cutFall,Root harvesting date,
+orei_manure,rosemount,2022,3,fertControl_cutFall,Tillage type,
+orei_manure,rosemount,2022,3,fertControl_cutFall,Tillage date,
+orei_manure,rosemount,2022,3,fertControl_cutFall,N fertilizer type,
+orei_manure,rosemount,2022,3,fertControl_cutFall,N fertilizer application date,
+orei_manure,rosemount,2022,3,fertControl_cutFall,N fertilizer rate,0
+orei_manure,rosemount,2022,3,fertControl_cutFall,Stand age,3
+orei_manure,rosemount,2020,4,fertControl_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2020,4,fertControl_cutNone,Crop type,iwg
+orei_manure,rosemount,2020,4,fertControl_cutNone,Seed harvesting date,8/3/2020
+orei_manure,rosemount,2020,4,fertControl_cutNone,Straw harvesting date,8/3/2020
+orei_manure,rosemount,2020,4,fertControl_cutNone,Hay harvesting date,10/19/2020
+orei_manure,rosemount,2020,4,fertControl_cutNone,Root harvesting date,
+orei_manure,rosemount,2020,4,fertControl_cutNone,Tillage type,
+orei_manure,rosemount,2020,4,fertControl_cutNone,Tillage date,
+orei_manure,rosemount,2020,4,fertControl_cutNone,N fertilizer type,
+orei_manure,rosemount,2020,4,fertControl_cutNone,N fertilizer application date,
+orei_manure,rosemount,2020,4,fertControl_cutNone,N fertilizer rate,0
+orei_manure,rosemount,2020,4,fertControl_cutNone,Stand age,1
+orei_manure,rosemount,2021,4,fertControl_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2021,4,fertControl_cutNone,Crop type,iwg
+orei_manure,rosemount,2021,4,fertControl_cutNone,Seed harvesting date,7/26/2021
+orei_manure,rosemount,2021,4,fertControl_cutNone,Straw harvesting date,7/26/2021
+orei_manure,rosemount,2021,4,fertControl_cutNone,Hay harvesting date,
+orei_manure,rosemount,2021,4,fertControl_cutNone,Root harvesting date,
+orei_manure,rosemount,2021,4,fertControl_cutNone,Tillage type,
+orei_manure,rosemount,2021,4,fertControl_cutNone,Tillage date,
+orei_manure,rosemount,2021,4,fertControl_cutNone,N fertilizer type,
+orei_manure,rosemount,2021,4,fertControl_cutNone,N fertilizer application date,
+orei_manure,rosemount,2021,4,fertControl_cutNone,N fertilizer rate,0
+orei_manure,rosemount,2021,4,fertControl_cutNone,Stand age,2
+orei_manure,rosemount,2022,4,fertControl_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2022,4,fertControl_cutNone,Crop type,iwg
+orei_manure,rosemount,2022,4,fertControl_cutNone,Seed harvesting date,7/29/2022
+orei_manure,rosemount,2022,4,fertControl_cutNone,Straw harvesting date,7/29/2022
+orei_manure,rosemount,2022,4,fertControl_cutNone,Hay harvesting date,
+orei_manure,rosemount,2022,4,fertControl_cutNone,Root harvesting date,
+orei_manure,rosemount,2022,4,fertControl_cutNone,Tillage type,
+orei_manure,rosemount,2022,4,fertControl_cutNone,Tillage date,
+orei_manure,rosemount,2022,4,fertControl_cutNone,N fertilizer type,
+orei_manure,rosemount,2022,4,fertControl_cutNone,N fertilizer application date,
+orei_manure,rosemount,2022,4,fertControl_cutNone,N fertilizer rate,0
+orei_manure,rosemount,2022,4,fertControl_cutNone,Stand age,3
+orei_manure,rosemount,2020,5,fertManure_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2020,5,fertManure_cutFall,Crop type,iwg
+orei_manure,rosemount,2020,5,fertManure_cutFall,Seed harvesting date,8/3/2020
+orei_manure,rosemount,2020,5,fertManure_cutFall,Straw harvesting date,8/3/2020
+orei_manure,rosemount,2020,5,fertManure_cutFall,Hay harvesting date,10/19/2020
+orei_manure,rosemount,2020,5,fertManure_cutFall,Root harvesting date,
+orei_manure,rosemount,2020,5,fertManure_cutFall,Tillage type,
+orei_manure,rosemount,2020,5,fertManure_cutFall,Tillage date,
+orei_manure,rosemount,2020,5,fertManure_cutFall,N fertilizer type,manure
+orei_manure,rosemount,2020,5,fertManure_cutFall,N fertilizer application date,5/22/2020
+orei_manure,rosemount,2020,5,fertManure_cutFall,N fertilizer rate,88
+orei_manure,rosemount,2020,5,fertManure_cutFall,Stand age,1
+orei_manure,rosemount,2021,5,fertManure_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2021,5,fertManure_cutFall,Crop type,iwg
+orei_manure,rosemount,2021,5,fertManure_cutFall,Seed harvesting date,7/26/2021
+orei_manure,rosemount,2021,5,fertManure_cutFall,Straw harvesting date,7/26/2021
+orei_manure,rosemount,2021,5,fertManure_cutFall,Hay harvesting date,10/22/2021
+orei_manure,rosemount,2021,5,fertManure_cutFall,Root harvesting date,
+orei_manure,rosemount,2021,5,fertManure_cutFall,Tillage type,
+orei_manure,rosemount,2021,5,fertManure_cutFall,Tillage date,
+orei_manure,rosemount,2021,5,fertManure_cutFall,N fertilizer type,manure
+orei_manure,rosemount,2021,5,fertManure_cutFall,N fertilizer application date,4/6/2021
+orei_manure,rosemount,2021,5,fertManure_cutFall,N fertilizer rate,88
+orei_manure,rosemount,2021,5,fertManure_cutFall,Stand age,2
+orei_manure,rosemount,2022,5,fertManure_cutFall,Planting date,2019-fall
+orei_manure,rosemount,2022,5,fertManure_cutFall,Crop type,iwg
+orei_manure,rosemount,2022,5,fertManure_cutFall,Seed harvesting date,7/29/2022
+orei_manure,rosemount,2022,5,fertManure_cutFall,Straw harvesting date,7/29/2022
+orei_manure,rosemount,2022,5,fertManure_cutFall,Hay harvesting date,9/1/2022
+orei_manure,rosemount,2022,5,fertManure_cutFall,Root harvesting date,
+orei_manure,rosemount,2022,5,fertManure_cutFall,Tillage type,
+orei_manure,rosemount,2022,5,fertManure_cutFall,Tillage date,
+orei_manure,rosemount,2022,5,fertManure_cutFall,N fertilizer type,manure
+orei_manure,rosemount,2022,5,fertManure_cutFall,N fertilizer application date,4/19/2022
+orei_manure,rosemount,2022,5,fertManure_cutFall,N fertilizer rate,88
+orei_manure,rosemount,2022,5,fertManure_cutFall,Stand age,3
+orei_manure,rosemount,2020,6,fertManure_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2020,6,fertManure_cutNone,Crop type,iwg
+orei_manure,rosemount,2020,6,fertManure_cutNone,Seed harvesting date,8/3/2020
+orei_manure,rosemount,2020,6,fertManure_cutNone,Straw harvesting date,8/3/2020
+orei_manure,rosemount,2020,6,fertManure_cutNone,Hay harvesting date,10/19/2020
+orei_manure,rosemount,2020,6,fertManure_cutNone,Root harvesting date,
+orei_manure,rosemount,2020,6,fertManure_cutNone,Tillage type,
+orei_manure,rosemount,2020,6,fertManure_cutNone,Tillage date,
+orei_manure,rosemount,2020,6,fertManure_cutNone,N fertilizer type,manure
+orei_manure,rosemount,2020,6,fertManure_cutNone,N fertilizer application date,5/22/2020
+orei_manure,rosemount,2020,6,fertManure_cutNone,N fertilizer rate,88
+orei_manure,rosemount,2020,6,fertManure_cutNone,Stand age,1
+orei_manure,rosemount,2021,6,fertManure_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2021,6,fertManure_cutNone,Crop type,iwg
+orei_manure,rosemount,2021,6,fertManure_cutNone,Seed harvesting date,7/26/2021
+orei_manure,rosemount,2021,6,fertManure_cutNone,Straw harvesting date,7/26/2021
+orei_manure,rosemount,2021,6,fertManure_cutNone,Hay harvesting date,
+orei_manure,rosemount,2021,6,fertManure_cutNone,Root harvesting date,
+orei_manure,rosemount,2021,6,fertManure_cutNone,Tillage type,
+orei_manure,rosemount,2021,6,fertManure_cutNone,Tillage date,
+orei_manure,rosemount,2021,6,fertManure_cutNone,N fertilizer type,manure
+orei_manure,rosemount,2021,6,fertManure_cutNone,N fertilizer application date,4/6/2021
+orei_manure,rosemount,2021,6,fertManure_cutNone,N fertilizer rate,88
+orei_manure,rosemount,2021,6,fertManure_cutNone,Stand age,2
+orei_manure,rosemount,2022,6,fertManure_cutNone,Planting date,2019-fall
+orei_manure,rosemount,2022,6,fertManure_cutNone,Crop type,iwg
+orei_manure,rosemount,2022,6,fertManure_cutNone,Seed harvesting date,7/29/2022
+orei_manure,rosemount,2022,6,fertManure_cutNone,Straw harvesting date,7/29/2022
+orei_manure,rosemount,2022,6,fertManure_cutNone,Hay harvesting date,
+orei_manure,rosemount,2022,6,fertManure_cutNone,Root harvesting date,
+orei_manure,rosemount,2022,6,fertManure_cutNone,Tillage type,
+orei_manure,rosemount,2022,6,fertManure_cutNone,Tillage date,
+orei_manure,rosemount,2022,6,fertManure_cutNone,N fertilizer type,manure
+orei_manure,rosemount,2022,6,fertManure_cutNone,N fertilizer application date,4/19/2022
+orei_manure,rosemount,2022,6,fertManure_cutNone,N fertilizer rate,88
+orei_manure,rosemount,2022,6,fertManure_cutNone,Stand age,3
+ORG,st paul,2018,2,IWG/manured,Crop type,iwg
+ORG,rosemount,2018,2,IWG/manured,Crop type,iwg
+ORG,lamberton,2018,2,IWG/manured,Crop type,iwg
+ORG,st paul,2019,2,IWG/manured,Crop type,iwg
+ORG,rosemount,2019,2,IWG/manured,Crop type,iwg
+ORG,lamberton,2019,2,IWG/manured,Crop type,iwg
+ORG,st paul,2019,2,IWG/manured,Hay harvesting date,
+ORG,rosemount,2019,2,IWG/manured,Hay harvesting date,
+ORG,lamberton,2019,2,IWG/manured,Hay harvesting date,
+ORG,st paul,2018,2,IWG/manured,Hay harvesting date,
+ORG,rosemount,2018,2,IWG/manured,Hay harvesting date,
+ORG,lamberton,2018,2,IWG/manured,Hay harvesting date,
+ORG,st paul,2018,2,IWG/manured,N fertilizer application date,
+ORG,rosemount,2018,2,IWG/manured,N fertilizer application date,
+ORG,lamberton,2018,2,IWG/manured,N fertilizer application date,
+ORG,st paul,2019,2,IWG/manured,N fertilizer application date,2019-05-15
+ORG,rosemount,2019,2,IWG/manured,N fertilizer application date,2019-05-03
+ORG,lamberton,2019,2,IWG/manured,N fertilizer application date,2019-05-06
+ORG,st paul,2018,2,IWG/manured,N fertilizer rate,
+ORG,rosemount,2018,2,IWG/manured,N fertilizer rate,
+ORG,lamberton,2018,2,IWG/manured,N fertilizer rate,
+ORG,st paul,2019,2,IWG/manured,N fertilizer rate,50
+ORG,rosemount,2019,2,IWG/manured,N fertilizer rate,50
+ORG,lamberton,2019,2,IWG/manured,N fertilizer rate,50
+ORG,st paul,2018,2,IWG/manured,N fertilizer type,
+ORG,rosemount,2018,2,IWG/manured,N fertilizer type,
+ORG,lamberton,2018,2,IWG/manured,N fertilizer type,
+ORG,st paul,2019,2,IWG/manured,N fertilizer type,NO3
+ORG,rosemount,2019,2,IWG/manured,N fertilizer type,NO3
+ORG,lamberton,2019,2,IWG/manured,N fertilizer type,NO3
+ORG,st paul,2018,2,IWG/manured,Planting date,2017-fall
+ORG,rosemount,2018,2,IWG/manured,Planting date,2017-fall
+ORG,lamberton,2018,2,IWG/manured,Planting date,2017-fall
+ORG,st paul,2019,2,IWG/manured,Planting date,2017-fall
+ORG,rosemount,2019,2,IWG/manured,Planting date,2017-fall
+ORG,lamberton,2019,2,IWG/manured,Planting date,2017-fall
+ORG,st paul,2019,2,IWG/manured,Root harvesting date,
+ORG,rosemount,2019,2,IWG/manured,Root harvesting date,
+ORG,lamberton,2019,2,IWG/manured,Root harvesting date,
+ORG,st paul,2018,2,IWG/manured,Root harvesting date,
+ORG,rosemount,2018,2,IWG/manured,Root harvesting date,
+ORG,lamberton,2018,2,IWG/manured,Root harvesting date,
+ORG,lamberton,2018,2,IWG/manured,Seed harvesting date,2018-08-17
+ORG,rosemount,2018,2,IWG/manured,Seed harvesting date,
+ORG,st paul,2019,2,IWG/manured,Seed harvesting date,
+ORG,rosemount,2019,2,IWG/manured,Seed harvesting date,
+ORG,lamberton,2019,2,IWG/manured,Seed harvesting date,
+ORG,st paul,2018,2,IWG/manured,Seed harvesting date,2018-08-03
+ORG,st paul,2019,2,IWG/manured,Stand age,2
+ORG,st paul,2018,2,IWG/manured,Stand age,1
+ORG,rosemount,2019,2,IWG/manured,Stand age,2
+ORG,lamberton,2019,2,IWG/manured,Stand age,2
+ORG,rosemount,2018,2,IWG/manured,Stand age,1
+ORG,lamberton,2018,2,IWG/manured,Stand age,1
+ORG,st paul,2019,2,IWG/manured,Straw harvesting date,
+ORG,rosemount,2019,2,IWG/manured,Straw harvesting date,
+ORG,lamberton,2019,2,IWG/manured,Straw harvesting date,
+ORG,st paul,2018,2,IWG/manured,Straw harvesting date,
+ORG,rosemount,2018,2,IWG/manured,Straw harvesting date,
+ORG,lamberton,2018,2,IWG/manured,Straw harvesting date,
+ORG,st paul,2019,2,IWG/manured,Tillage date,
+ORG,rosemount,2019,2,IWG/manured,Tillage date,
+ORG,lamberton,2019,2,IWG/manured,Tillage date,
+ORG,st paul,2018,2,IWG/manured,Tillage date,
+ORG,rosemount,2018,2,IWG/manured,Tillage date,
+ORG,lamberton,2018,2,IWG/manured,Tillage date,
+ORG,st paul,2019,2,IWG/manured,Tillage type,
+ORG,rosemount,2019,2,IWG/manured,Tillage type,
+ORG,lamberton,2019,2,IWG/manured,Tillage type,
+ORG,st paul,2018,2,IWG/manured,Tillage type,
+ORG,rosemount,2018,2,IWG/manured,Tillage type,
+ORG,lamberton,2018,2,IWG/manured,Tillage type,
+ORG,st paul,2018,6,SB-C-SB,Crop type,soybean
+ORG,rosemount,2018,6,SB-C-SB,Crop type,soybean
+ORG,lamberton,2018,6,SB-C-SB,Crop type,soybean
+ORG,st paul,2019,6,SB-C-SB,Crop type,corn
+ORG,rosemount,2019,6,SB-C-SB,Crop type,corn
+ORG,lamberton,2019,6,SB-C-SB,Crop type,corn
+ORG,st paul,2019,6,SB-C-SB,Hay harvesting date,
+ORG,rosemount,2019,6,SB-C-SB,Hay harvesting date,
+ORG,lamberton,2019,6,SB-C-SB,Hay harvesting date,
+ORG,st paul,2018,6,SB-C-SB,Hay harvesting date,
+ORG,rosemount,2018,6,SB-C-SB,Hay harvesting date,
+ORG,lamberton,2018,6,SB-C-SB,Hay harvesting date,
+ORG,st paul,2018,6,SB-C-SB,N fertilizer application date,
+ORG,rosemount,2018,6,SB-C-SB,N fertilizer application date,
+ORG,lamberton,2018,6,SB-C-SB,N fertilizer application date,
+ORG,st paul,2019,6,SB-C-SB,N fertilizer application date,2019-05-15
+ORG,rosemount,2019,6,SB-C-SB,N fertilizer application date,2019-05-03
+ORG,lamberton,2019,6,SB-C-SB,N fertilizer application date,2019-05-06
+ORG,st paul,2018,6,SB-C-SB,N fertilizer rate,
+ORG,rosemount,2018,6,SB-C-SB,N fertilizer rate,
+ORG,lamberton,2018,6,SB-C-SB,N fertilizer rate,
+ORG,st paul,2019,6,SB-C-SB,N fertilizer rate,150
+ORG,rosemount,2019,6,SB-C-SB,N fertilizer rate,150
+ORG,lamberton,2019,6,SB-C-SB,N fertilizer rate,150
+ORG,st paul,2018,6,SB-C-SB,N fertilizer type,
+ORG,rosemount,2018,6,SB-C-SB,N fertilizer type,
+ORG,lamberton,2018,6,SB-C-SB,N fertilizer type,
+ORG,st paul,2019,6,SB-C-SB,N fertilizer type,NO3
+ORG,rosemount,2019,6,SB-C-SB,N fertilizer type,NO3
+ORG,lamberton,2019,6,SB-C-SB,N fertilizer type,NO3
+ORG,st paul,2018,6,SB-C-SB,Planting date,
+ORG,rosemount,2018,6,SB-C-SB,Planting date,
+ORG,lamberton,2018,6,SB-C-SB,Planting date,2018-06-05
+ORG,st paul,2019,6,SB-C-SB,Planting date,2019-05-17
+ORG,rosemount,2019,6,SB-C-SB,Planting date,
+ORG,lamberton,2019,6,SB-C-SB,Planting date,
+ORG,st paul,2019,6,SB-C-SB,Root harvesting date,
+ORG,rosemount,2019,6,SB-C-SB,Root harvesting date,
+ORG,lamberton,2019,6,SB-C-SB,Root harvesting date,
+ORG,st paul,2018,6,SB-C-SB,Root harvesting date,
+ORG,rosemount,2018,6,SB-C-SB,Root harvesting date,
+ORG,lamberton,2018,6,SB-C-SB,Root harvesting date,
+ORG,lamberton,2018,6,SB-C-SB,Seed harvesting date,2018-09-27
+ORG,st paul,2019,6,SB-C-SB,Seed harvesting date,
+ORG,rosemount,2019,6,SB-C-SB,Seed harvesting date,
+ORG,lamberton,2019,6,SB-C-SB,Seed harvesting date,
+ORG,rosemount,2018,6,SB-C-SB,Seed harvesting date,2018-09-24
+ORG,st paul,2018,6,SB-C-SB,Seed harvesting date,2018-09-17
+ORG,rosemount,2019,6,SB-C-SB,Stand age,1
+ORG,lamberton,2019,6,SB-C-SB,Stand age,1
+ORG,st paul,2019,6,SB-C-SB,Stand age,1
+ORG,rosemount,2018,6,SB-C-SB,Stand age,1
+ORG,lamberton,2018,6,SB-C-SB,Stand age,1
+ORG,st paul,2018,6,SB-C-SB,Stand age,1
+ORG,st paul,2019,6,SB-C-SB,Straw harvesting date,
+ORG,rosemount,2019,6,SB-C-SB,Straw harvesting date,
+ORG,lamberton,2019,6,SB-C-SB,Straw harvesting date,
+ORG,st paul,2018,6,SB-C-SB,Straw harvesting date,
+ORG,rosemount,2018,6,SB-C-SB,Straw harvesting date,
+ORG,lamberton,2018,6,SB-C-SB,Straw harvesting date,
+ORG,st paul,2019,6,SB-C-SB,Tillage date,2019-06-06
+ORG,rosemount,2019,6,SB-C-SB,Tillage date,
+ORG,lamberton,2019,6,SB-C-SB,Tillage date,2019-05-07
+ORG,st paul,2018,6,SB-C-SB,Tillage date,
+ORG,rosemount,2018,6,SB-C-SB,Tillage date,
+ORG,lamberton,2018,6,SB-C-SB,Tillage date,
+ORG,st paul,2019,6,SB-C-SB,Tillage date,2019-05-13
+ORG,st paul,2019,6,SB-C-SB,Tillage type,rototill
+ORG,rosemount,2019,6,SB-C-SB,Tillage type,rototill
+ORG,lamberton,2019,6,SB-C-SB,Tillage type,rototill
+ORG,st paul,2018,6,SB-C-SB,Tillage type,
+ORG,rosemount,2018,6,SB-C-SB,Tillage type,
+ORG,lamberton,2018,6,SB-C-SB,Tillage type,
+ORG,st paul,2018,1,Soy-CC-Corn,Crop type,soybean
+ORG,rosemount,2018,1,Soy-CC-Corn,Crop type,soybean
+ORG,lamberton,2018,1,Soy-CC-Corn,Crop type,soybean
+ORG,st paul,2019,1,Soy-CC-Corn,Crop type,corn
+ORG,rosemount,2019,1,Soy-CC-Corn,Crop type,corn
+ORG,lamberton,2019,1,Soy-CC-Corn,Crop type,corn
+ORG,st paul,2019,1,Soy-CC-Corn,Hay harvesting date,
+ORG,rosemount,2019,1,Soy-CC-Corn,Hay harvesting date,
+ORG,lamberton,2019,1,Soy-CC-Corn,Hay harvesting date,
+ORG,st paul,2018,1,Soy-CC-Corn,Hay harvesting date,
+ORG,rosemount,2018,1,Soy-CC-Corn,Hay harvesting date,
+ORG,lamberton,2018,1,Soy-CC-Corn,Hay harvesting date,
+ORG,st paul,2018,1,Soy-CC-Corn,N fertilizer application date,
+ORG,rosemount,2018,1,Soy-CC-Corn,N fertilizer application date,
+ORG,lamberton,2018,1,Soy-CC-Corn,N fertilizer application date,
+ORG,st paul,2019,1,Soy-CC-Corn,N fertilizer application date,2019-05-15
+ORG,rosemount,2019,1,Soy-CC-Corn,N fertilizer application date,2019-05-03
+ORG,lamberton,2019,1,Soy-CC-Corn,N fertilizer application date,2019-05-06
+ORG,st paul,2018,1,Soy-CC-Corn,N fertilizer rate,
+ORG,st paul,2019,1,Soy-CC-Corn,N fertilizer rate,150
+ORG,rosemount,2018,1,Soy-CC-Corn,N fertilizer rate,
+ORG,lamberton,2018,1,Soy-CC-Corn,N fertilizer rate,
+ORG,rosemount,2019,1,Soy-CC-Corn,N fertilizer rate,150
+ORG,lamberton,2019,1,Soy-CC-Corn,N fertilizer rate,150
+ORG,st paul,2019,1,Soy-CC-Corn,N fertilizer type,NO3
+ORG,st paul,2018,1,Soy-CC-Corn,N fertilizer type,
+ORG,rosemount,2018,1,Soy-CC-Corn,N fertilizer type,
+ORG,lamberton,2018,1,Soy-CC-Corn,N fertilizer type,
+ORG,rosemount,2019,1,Soy-CC-Corn,N fertilizer type,NO3
+ORG,lamberton,2019,1,Soy-CC-Corn,N fertilizer type,NO3
+ORG,rosemount,2018,1,Soy-CC-Corn,Planting date,
+ORG,lamberton,2018,1,Soy-CC-Corn,Planting date,2018-06-05
+ORG,st paul,2018,1,Soy-CC-Corn,Planting date,
+ORG,rosemount,2019,1,Soy-CC-Corn,Planting date,
+ORG,lamberton,2019,1,Soy-CC-Corn,Planting date,
+ORG,st paul,2019,1,Soy-CC-Corn,Planting date,2019-05-17
+ORG,st paul,2019,1,Soy-CC-Corn,Root harvesting date,
+ORG,rosemount,2019,1,Soy-CC-Corn,Root harvesting date,
+ORG,lamberton,2019,1,Soy-CC-Corn,Root harvesting date,
+ORG,st paul,2018,1,Soy-CC-Corn,Root harvesting date,
+ORG,rosemount,2018,1,Soy-CC-Corn,Root harvesting date,
+ORG,lamberton,2018,1,Soy-CC-Corn,Root harvesting date,
+ORG,st paul,2019,1,Soy-CC-Corn,Seed harvesting date,
+ORG,rosemount,2019,1,Soy-CC-Corn,Seed harvesting date,
+ORG,lamberton,2019,1,Soy-CC-Corn,Seed harvesting date,
+ORG,lamberton,2018,1,Soy-CC-Corn,Seed harvesting date,2018-09-27
+ORG,rosemount,2018,1,Soy-CC-Corn,Seed harvesting date,2018-09-24
+ORG,st paul,2018,1,Soy-CC-Corn,Seed harvesting date,2018-09-17
+ORG,rosemount,2019,1,Soy-CC-Corn,Stand age,1
+ORG,lamberton,2019,1,Soy-CC-Corn,Stand age,1
+ORG,rosemount,2018,1,Soy-CC-Corn,Stand age,1
+ORG,lamberton,2018,1,Soy-CC-Corn,Stand age,1
+ORG,st paul,2019,1,Soy-CC-Corn,Stand age,1
+ORG,st paul,2018,1,Soy-CC-Corn,Stand age,1
+ORG,st paul,2019,1,Soy-CC-Corn,Straw harvesting date,
+ORG,rosemount,2019,1,Soy-CC-Corn,Straw harvesting date,
+ORG,lamberton,2019,1,Soy-CC-Corn,Straw harvesting date,
+ORG,st paul,2018,1,Soy-CC-Corn,Straw harvesting date,
+ORG,rosemount,2018,1,Soy-CC-Corn,Straw harvesting date,
+ORG,lamberton,2018,1,Soy-CC-Corn,Straw harvesting date,
+ORG,st paul,2019,1,Soy-CC-Corn,Tillage date,2019-06-06
+ORG,rosemount,2019,1,Soy-CC-Corn,Tillage date,
+ORG,lamberton,2019,1,Soy-CC-Corn,Tillage date,2019-05-07
+ORG,st paul,2018,1,Soy-CC-Corn,Tillage date,
+ORG,rosemount,2018,1,Soy-CC-Corn,Tillage date,2018-05-07
+ORG,lamberton,2018,1,Soy-CC-Corn,Tillage date,
+ORG,st paul,2019,1,Soy-CC-Corn,Tillage date,2019-05-13
+ORG,st paul,2019,1,Soy-CC-Corn,Tillage type,rototill
+ORG,rosemount,2019,1,Soy-CC-Corn,Tillage type,rototill
+ORG,lamberton,2019,1,Soy-CC-Corn,Tillage type,rototill
+ORG,st paul,2018,1,Soy-CC-Corn,Tillage type,
+ORG,rosemount,2018,1,Soy-CC-Corn,Tillage type,
+ORG,lamberton,2018,1,Soy-CC-Corn,Tillage type,

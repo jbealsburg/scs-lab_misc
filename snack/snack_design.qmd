@@ -1,0 +1,51 @@
+---
+title: "SNACK"
+subtitle: "design"
+author: "Jesse Bealsburg"
+date: "`r Sys.Date()`"
+format: pdf
+editor: visual
+execute:
+  # echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# 
+
+```{r}
+library(tidyverse)
+library(agricolae)
+
+read.csv("SNACK_plotMap - randomization.csv") -> dat
+
+design.rcbd(
+  trt=dat$treatment,
+  r=4,
+  seed=314,
+  first = FALSE
+) %>% 
+  .$book %>% 
+  mutate(site = "st paul") -> dat_stpaul
+
+
+design.rcbd(
+  trt=dat$treatment,
+  r=4,
+  seed=062224,
+  first = FALSE
+) %>% 
+  .$book %>% 
+  mutate(site="rosemount")-> dat_rosemount
+
+dat_stpaul %>% 
+  bind_rows(dat_rosemount) %>% 
+  relocate(site, .before = plots) %>% 
+  write.csv(
+    "snack_rando_output_20Mar2025.csv",
+    row.names = F
+  )
+
+```

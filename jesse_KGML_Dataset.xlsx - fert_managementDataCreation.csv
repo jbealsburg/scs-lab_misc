@@ -1,0 +1,49 @@
+year,managementInformation,0N_spring,80N_spring,160N_spring,BAU1,BAU2
+2021,Planting date,2021-09-02,2021-09-02,2021-09-02,,
+2021,Crop type,iwg,iwg,iwg,,
+2021,Seed harvesting date,,,,,
+2021,Straw harvesting date,,,,,
+2021,Hay harvesting date,,,,,
+2021,Root harvesting date,,,,,
+2021,Tillage type,field cultivator & disc,field cultivator & disc,,field cultivator & disc,field cultivator & disc
+2021,Tillage date,2021-09-01,2021-09-01,,2021-09-01,2021-09-01
+2021,N fertilizer type,,,,,
+2021,N fertilizer application date,,,,,
+2021,N fertilizer rate,,,,,
+2021,Stand age,0,0,0,,
+2022,Planting date,2021-09-02,2021-09-02,2021-09-02,2022-05-10,2022-06-02
+2022,Crop type,iwg,iwg,iwg,corn,soy
+2022,Seed harvesting date,2022-08-01,2022-08-01,2022-08-01,,
+2022,Straw harvesting date,,,,,
+2022,Hay harvesting date,,,,,
+2022,Root harvesting date,,,,,
+2022,Tillage type,,,,,
+2022,Tillage date,,,,,
+2022,N fertilizer type,,urea,,urea,urea
+2022,N fertilizer application date,,2022-04-29,2022-04-29,2022-04-29,
+2022,N fertilizer rate,0,80,160,180,
+2022,Stand age,1,1,1,,
+2023,Planting date,2021-09-02,2021-09-02,2021-09-02,2023-05-24,2023-05-16
+2023,Crop type,iwg,iwg,iwg,soy,corn
+2023,Seed harvesting date,2023-07-28,2023-07-28,2023-07-28,2023-10-11,2023-10-19
+2023,Straw harvesting date,,,,,
+2023,Hay harvesting date,,,,,
+2023,Root harvesting date,,,,,
+2023,Tillage type,,,,,
+2023,Tillage date,,,,,
+2023,N fertilizer type,,,,,
+2023,N fertilizer application date,2023-04-18,2023-04-18,2023-04-18,,2023-04-18
+2023,N fertilizer rate,0,80,160,,180
+2023,Stand age,2,2,2,,
+2024,Planting date,2021-09-02,2021-09-02,2021-09-02,2024-05-17,
+2024,Crop type,iwg,iwg,iwg,corn,soy
+2024,Seed harvesting date,2024-08-02,2024-08-02,2024-08-02,na crop failure,2024-10-3
+2024,Straw harvesting date,,,,,
+2024,Hay harvesting date,,,,,
+2024,Root harvesting date,,,,,
+2024,Tillage type,,,,,
+2024,Tillage date,,,,,
+2024,N fertilizer type,,,,,
+2024,N fertilizer application date,2024-04-29,2024-04-29,2024-04-29,2024-04-29,2024-04-29
+2024,N fertilizer rate,0,80,160,180,
+2024,Stand age,3,3,3,,

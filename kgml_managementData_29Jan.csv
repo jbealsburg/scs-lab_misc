@@ -1,0 +1,219 @@
+experiment,treatment ,treatment name,year,site,information,value
+ORG,1,Soy-CC-Corn,2018,st paul,Crop type,soybean
+ORG,1,Soy-CC-Corn,2018,rosemount,Crop type,soybean
+ORG,1,Soy-CC-Corn,2018,lamberton,Crop type,soybean
+ORG,6,SB-C-SB,2018,st paul,Crop type,soybean
+ORG,6,SB-C-SB,2018,rosemount,Crop type,soybean
+ORG,6,SB-C-SB,2018,lamberton,Crop type,soybean
+ORG,2,IWG/manured,2018,st paul,Crop type,iwg
+ORG,2,IWG/manured,2018,rosemount,Crop type,iwg
+ORG,2,IWG/manured,2018,lamberton,Crop type,iwg
+ORG,1,Soy-CC-Corn,2019,st paul,Crop type,corn
+ORG,1,Soy-CC-Corn,2019,rosemount,Crop type,corn
+ORG,1,Soy-CC-Corn,2019,lamberton,Crop type,corn
+ORG,6,SB-C-SB,2019,st paul,Crop type,corn
+ORG,6,SB-C-SB,2019,rosemount,Crop type,corn
+ORG,6,SB-C-SB,2019,lamberton,Crop type,corn
+ORG,2,IWG/manured,2019,st paul,Crop type,iwg
+ORG,2,IWG/manured,2019,rosemount,Crop type,iwg
+ORG,2,IWG/manured,2019,lamberton,Crop type,iwg
+ORG,1,Soy-CC-Corn,2019,st paul,Hay harvesting date,na
+ORG,1,Soy-CC-Corn,2019,rosemount,Hay harvesting date,na
+ORG,1,Soy-CC-Corn,2019,lamberton,Hay harvesting date,na
+ORG,1,Soy-CC-Corn,2018,st paul,Hay harvesting date,na
+ORG,1,Soy-CC-Corn,2018,rosemount,Hay harvesting date,na
+ORG,1,Soy-CC-Corn,2018,lamberton,Hay harvesting date,na
+ORG,6,SB-C-SB,2019,st paul,Hay harvesting date,na
+ORG,6,SB-C-SB,2019,rosemount,Hay harvesting date,na
+ORG,6,SB-C-SB,2019,lamberton,Hay harvesting date,na
+ORG,6,SB-C-SB,2018,st paul,Hay harvesting date,na
+ORG,6,SB-C-SB,2018,rosemount,Hay harvesting date,na
+ORG,6,SB-C-SB,2018,lamberton,Hay harvesting date,na
+ORG,2,IWG/manured,2019,st paul,Hay harvesting date,na
+ORG,2,IWG/manured,2019,rosemount,Hay harvesting date,na
+ORG,2,IWG/manured,2019,lamberton,Hay harvesting date,na
+ORG,2,IWG/manured,2018,st paul,Hay harvesting date,na
+ORG,2,IWG/manured,2018,rosemount,Hay harvesting date,na
+ORG,2,IWG/manured,2018,lamberton,Hay harvesting date,na
+ORG,1,Soy-CC-Corn,2018,st paul,N fertilizer application date,na
+ORG,1,Soy-CC-Corn,2018,rosemount,N fertilizer application date,na
+ORG,1,Soy-CC-Corn,2018,lamberton,N fertilizer application date,na
+ORG,6,SB-C-SB,2018,st paul,N fertilizer application date,na
+ORG,6,SB-C-SB,2018,rosemount,N fertilizer application date,na
+ORG,6,SB-C-SB,2018,lamberton,N fertilizer application date,na
+ORG,2,IWG/manured,2018,st paul,N fertilizer application date,na
+ORG,2,IWG/manured,2018,rosemount,N fertilizer application date,na
+ORG,2,IWG/manured,2018,lamberton,N fertilizer application date,na
+ORG,1,Soy-CC-Corn,2019,st paul,N fertilizer application date,2019-05-15
+ORG,1,Soy-CC-Corn,2019,rosemount,N fertilizer application date,2019-05-03
+ORG,1,Soy-CC-Corn,2019,lamberton,N fertilizer application date,2019-05-06
+ORG,2,IWG/manured,2019,st paul,N fertilizer application date,2019-05-15
+ORG,2,IWG/manured,2019,rosemount,N fertilizer application date,2019-05-03
+ORG,2,IWG/manured,2019,lamberton,N fertilizer application date,2019-05-06
+ORG,6,SB-C-SB,2019,st paul,N fertilizer application date,2019-05-15
+ORG,6,SB-C-SB,2019,rosemount,N fertilizer application date,2019-05-03
+ORG,6,SB-C-SB,2019,lamberton,N fertilizer application date,2019-05-06
+ORG,1,Soy-CC-Corn,2018,st paul,N fertilizer rate,na
+ORG,1,Soy-CC-Corn,2019,st paul,N fertilizer rate,150
+ORG,1,Soy-CC-Corn,2018,rosemount,N fertilizer rate,na
+ORG,1,Soy-CC-Corn,2018,lamberton,N fertilizer rate,na
+ORG,6,SB-C-SB,2018,st paul,N fertilizer rate,na
+ORG,6,SB-C-SB,2018,rosemount,N fertilizer rate,na
+ORG,6,SB-C-SB,2018,lamberton,N fertilizer rate,na
+ORG,2,IWG/manured,2018,st paul,N fertilizer rate,na
+ORG,2,IWG/manured,2018,rosemount,N fertilizer rate,na
+ORG,2,IWG/manured,2018,lamberton,N fertilizer rate,na
+ORG,1,Soy-CC-Corn,2019,rosemount,N fertilizer rate,150
+ORG,1,Soy-CC-Corn,2019,lamberton,N fertilizer rate,150
+ORG,2,IWG/manured,2019,st paul,N fertilizer rate,50
+ORG,2,IWG/manured,2019,rosemount,N fertilizer rate,50
+ORG,2,IWG/manured,2019,lamberton,N fertilizer rate,50
+ORG,6,SB-C-SB,2019,st paul,N fertilizer rate,150
+ORG,6,SB-C-SB,2019,rosemount,N fertilizer rate,150
+ORG,6,SB-C-SB,2019,lamberton,N fertilizer rate,150
+ORG,1,Soy-CC-Corn,2019,st paul,N fertilizer type,NaNO3
+ORG,1,Soy-CC-Corn,2018,st paul,N fertilizer type,na
+ORG,1,Soy-CC-Corn,2018,rosemount,N fertilizer type,na
+ORG,1,Soy-CC-Corn,2018,lamberton,N fertilizer type,na
+ORG,6,SB-C-SB,2018,st paul,N fertilizer type,na
+ORG,6,SB-C-SB,2018,rosemount,N fertilizer type,na
+ORG,6,SB-C-SB,2018,lamberton,N fertilizer type,na
+ORG,2,IWG/manured,2018,st paul,N fertilizer type,na
+ORG,2,IWG/manured,2018,rosemount,N fertilizer type,na
+ORG,2,IWG/manured,2018,lamberton,N fertilizer type,na
+ORG,1,Soy-CC-Corn,2019,rosemount,N fertilizer type,NaNO3
+ORG,1,Soy-CC-Corn,2019,lamberton,N fertilizer type,NaNO3
+ORG,2,IWG/manured,2019,st paul,N fertilizer type,NaNO3
+ORG,2,IWG/manured,2019,rosemount,N fertilizer type,NaNO3
+ORG,2,IWG/manured,2019,lamberton,N fertilizer type,NaNO3
+ORG,6,SB-C-SB,2019,st paul,N fertilizer type,NaNO3
+ORG,6,SB-C-SB,2019,rosemount,N fertilizer type,NaNO3
+ORG,6,SB-C-SB,2019,lamberton,N fertilizer type,NaNO3
+ORG,2,IWG/manured,2018,st paul,Planting date,2017-fall
+ORG,2,IWG/manured,2018,rosemount,Planting date,2017-fall
+ORG,2,IWG/manured,2018,lamberton,Planting date,2017-fall
+ORG,2,IWG/manured,2019,st paul,Planting date,2017-fall
+ORG,2,IWG/manured,2019,rosemount,Planting date,2017-fall
+ORG,2,IWG/manured,2019,lamberton,Planting date,2017-fall
+ORG,6,SB-C-SB,2018,st paul,Planting date,na
+ORG,6,SB-C-SB,2018,rosemount,Planting date,na
+ORG,6,SB-C-SB,2018,lamberton,Planting date,2018-06-05
+ORG,6,SB-C-SB,2019,st paul,Planting date,2019-05-17
+ORG,6,SB-C-SB,2019,rosemount,Planting date,
+ORG,6,SB-C-SB,2019,lamberton,Planting date,
+ORG,1,Soy-CC-Corn,2018,rosemount,Planting date,na
+ORG,1,Soy-CC-Corn,2018,lamberton,Planting date,2018-06-05
+ORG,1,Soy-CC-Corn,2018,st paul,Planting date,na
+ORG,1,Soy-CC-Corn,2019,rosemount,Planting date,
+ORG,1,Soy-CC-Corn,2019,lamberton,Planting date,
+ORG,1,Soy-CC-Corn,2019,st paul,Planting date,2019-05-17
+ORG,1,Soy-CC-Corn,2019,st paul,Root harvesting date,
+ORG,1,Soy-CC-Corn,2019,rosemount,Root harvesting date,
+ORG,1,Soy-CC-Corn,2019,lamberton,Root harvesting date,
+ORG,1,Soy-CC-Corn,2018,st paul,Root harvesting date,
+ORG,1,Soy-CC-Corn,2018,rosemount,Root harvesting date,
+ORG,1,Soy-CC-Corn,2018,lamberton,Root harvesting date,
+ORG,6,SB-C-SB,2019,st paul,Root harvesting date,
+ORG,6,SB-C-SB,2019,rosemount,Root harvesting date,
+ORG,6,SB-C-SB,2019,lamberton,Root harvesting date,
+ORG,6,SB-C-SB,2018,st paul,Root harvesting date,
+ORG,6,SB-C-SB,2018,rosemount,Root harvesting date,
+ORG,6,SB-C-SB,2018,lamberton,Root harvesting date,
+ORG,2,IWG/manured,2019,st paul,Root harvesting date,
+ORG,2,IWG/manured,2019,rosemount,Root harvesting date,
+ORG,2,IWG/manured,2019,lamberton,Root harvesting date,
+ORG,2,IWG/manured,2018,st paul,Root harvesting date,
+ORG,2,IWG/manured,2018,rosemount,Root harvesting date,
+ORG,2,IWG/manured,2018,lamberton,Root harvesting date,
+ORG,1,Soy-CC-Corn,2019,st paul,Seed harvesting date,
+ORG,1,Soy-CC-Corn,2019,rosemount,Seed harvesting date,
+ORG,1,Soy-CC-Corn,2019,lamberton,Seed harvesting date,
+ORG,1,Soy-CC-Corn,2018,lamberton,Seed harvesting date,2018-09-27
+ORG,6,SB-C-SB,2018,lamberton,Seed harvesting date,2018-09-27
+ORG,2,IWG/manured,2018,lamberton,Seed harvesting date,2018-08-17
+ORG,6,SB-C-SB,2019,st paul,Seed harvesting date,
+ORG,6,SB-C-SB,2019,rosemount,Seed harvesting date,
+ORG,6,SB-C-SB,2019,lamberton,Seed harvesting date,
+ORG,1,Soy-CC-Corn,2018,rosemount,Seed harvesting date,2018-09-24
+ORG,6,SB-C-SB,2018,rosemount,Seed harvesting date,2018-09-24
+ORG,2,IWG/manured,2018,rosemount,Seed harvesting date,na
+ORG,2,IWG/manured,2019,st paul,Seed harvesting date,
+ORG,2,IWG/manured,2019,rosemount,Seed harvesting date,
+ORG,2,IWG/manured,2019,lamberton,Seed harvesting date,
+ORG,1,Soy-CC-Corn,2018,st paul,Seed harvesting date,2018-09-17
+ORG,6,SB-C-SB,2018,st paul,Seed harvesting date,2018-09-17
+ORG,2,IWG/manured,2018,st paul,Seed harvesting date,2018-08-03
+ORG,2,IWG/manured,2019,st paul,Stand age,2
+ORG,2,IWG/manured,2018,st paul,Stand age,1
+ORG,2,IWG/manured,2019,rosemount,Stand age,2
+ORG,2,IWG/manured,2019,lamberton,Stand age,2
+ORG,2,IWG/manured,2018,rosemount,Stand age,1
+ORG,2,IWG/manured,2018,lamberton,Stand age,1
+ORG,6,SB-C-SB,2019,rosemount,Stand age,1
+ORG,6,SB-C-SB,2019,lamberton,Stand age,1
+ORG,6,SB-C-SB,2019,st paul,Stand age,1
+ORG,6,SB-C-SB,2018,rosemount,Stand age,1
+ORG,6,SB-C-SB,2018,lamberton,Stand age,1
+ORG,6,SB-C-SB,2018,st paul,Stand age,1
+ORG,1,Soy-CC-Corn,2019,rosemount,Stand age,1
+ORG,1,Soy-CC-Corn,2019,lamberton,Stand age,1
+ORG,1,Soy-CC-Corn,2018,rosemount,Stand age,1
+ORG,1,Soy-CC-Corn,2018,lamberton,Stand age,1
+ORG,1,Soy-CC-Corn,2019,st paul,Stand age,1
+ORG,1,Soy-CC-Corn,2018,st paul,Stand age,1
+ORG,1,Soy-CC-Corn,2019,st paul,Straw harvesting date,
+ORG,1,Soy-CC-Corn,2019,rosemount,Straw harvesting date,
+ORG,1,Soy-CC-Corn,2019,lamberton,Straw harvesting date,
+ORG,1,Soy-CC-Corn,2018,st paul,Straw harvesting date,
+ORG,1,Soy-CC-Corn,2018,rosemount,Straw harvesting date,
+ORG,1,Soy-CC-Corn,2018,lamberton,Straw harvesting date,
+ORG,6,SB-C-SB,2019,st paul,Straw harvesting date,
+ORG,6,SB-C-SB,2019,rosemount,Straw harvesting date,
+ORG,6,SB-C-SB,2019,lamberton,Straw harvesting date,
+ORG,6,SB-C-SB,2018,st paul,Straw harvesting date,
+ORG,6,SB-C-SB,2018,rosemount,Straw harvesting date,
+ORG,6,SB-C-SB,2018,lamberton,Straw harvesting date,
+ORG,2,IWG/manured,2019,st paul,Straw harvesting date,
+ORG,2,IWG/manured,2019,rosemount,Straw harvesting date,
+ORG,2,IWG/manured,2019,lamberton,Straw harvesting date,
+ORG,2,IWG/manured,2018,st paul,Straw harvesting date,
+ORG,2,IWG/manured,2018,rosemount,Straw harvesting date,
+ORG,2,IWG/manured,2018,lamberton,Straw harvesting date,
+ORG,2,IWG/manured,2019,st paul,Tillage date,na
+ORG,2,IWG/manured,2019,rosemount,Tillage date,na
+ORG,2,IWG/manured,2019,lamberton,Tillage date,na
+ORG,2,IWG/manured,2018,st paul,Tillage date,na
+ORG,2,IWG/manured,2018,rosemount,Tillage date,na
+ORG,2,IWG/manured,2018,lamberton,Tillage date,na
+ORG,6,SB-C-SB,2019,st paul,Tillage date,2019-06-06
+ORG,6,SB-C-SB,2019,rosemount,Tillage date,na
+ORG,6,SB-C-SB,2019,lamberton,Tillage date,2019-05-07
+ORG,6,SB-C-SB,2018,st paul,Tillage date,
+ORG,6,SB-C-SB,2018,rosemount,Tillage date,
+ORG,6,SB-C-SB,2018,lamberton,Tillage date,
+ORG,6,SB-C-SB,2019,st paul,Tillage date,2019-05-13
+ORG,1,Soy-CC-Corn,2019,st paul,Tillage date,2019-06-06
+ORG,1,Soy-CC-Corn,2019,rosemount,Tillage date,na
+ORG,1,Soy-CC-Corn,2019,lamberton,Tillage date,2019-05-07
+ORG,1,Soy-CC-Corn,2018,st paul,Tillage date,
+ORG,1,Soy-CC-Corn,2018,rosemount,Tillage date,2018-05-07
+ORG,1,Soy-CC-Corn,2018,lamberton,Tillage date,
+ORG,1,Soy-CC-Corn,2019,st paul,Tillage date,2019-05-13
+ORG,2,IWG/manured,2019,st paul,Tillage type,na
+ORG,2,IWG/manured,2019,rosemount,Tillage type,na
+ORG,2,IWG/manured,2019,lamberton,Tillage type,na
+ORG,2,IWG/manured,2018,st paul,Tillage type,na
+ORG,2,IWG/manured,2018,rosemount,Tillage type,na
+ORG,2,IWG/manured,2018,lamberton,Tillage type,na
+ORG,6,SB-C-SB,2019,st paul,Tillage type,rototill
+ORG,6,SB-C-SB,2019,rosemount,Tillage type,rototill
+ORG,6,SB-C-SB,2019,lamberton,Tillage type,rototill
+ORG,6,SB-C-SB,2018,st paul,Tillage type,
+ORG,6,SB-C-SB,2018,rosemount,Tillage type,
+ORG,6,SB-C-SB,2018,lamberton,Tillage type,
+ORG,1,Soy-CC-Corn,2019,st paul,Tillage type,rototill
+ORG,1,Soy-CC-Corn,2019,rosemount,Tillage type,rototill
+ORG,1,Soy-CC-Corn,2019,lamberton,Tillage type,rototill
+ORG,1,Soy-CC-Corn,2018,st paul,Tillage type,
+ORG,1,Soy-CC-Corn,2018,rosemount,Tillage type,
+ORG,1,Soy-CC-Corn,2018,lamberton,Tillage type,

@@ -1,0 +1,181 @@
+experiment,site,year,treatment,plot,treatment name
+ORG,Lamberton,2019,1,106,
+ORG,Lamberton,2019,1,203,
+ORG,Lamberton,2019,1,301,
+ORG,Lamberton,2019,1,405,
+ORG,Ros R54-55,2019,2,102,
+ORG,Lamberton,2018,2,102,
+ORG,Lamberton,2018,6,105,
+ORG,Lamberton,2019,2,102,
+ORG,St. Paul,2019,2,105,
+ORG,Lamberton,2020,1,106,
+ORG,Lamberton,2018,1,106,
+ORG,Lamberton,2018,1,203,
+ORG,Lamberton,2020,1,203,
+ORG,Lamberton,2020,1,301,
+ORG,Lamberton,2020,1,405,
+ORG,Lamberton,2018,2,204,
+ORG,Lamberton,2018,6,205,
+ORG,Lamberton,2018,1,301,
+ORG,Lamberton,2018,2,303,
+ORG,Ros R54-55,2019,2,204,
+ORG,Lamberton,2019,2,204,
+ORG,Lamberton,2018,6,304,
+ORG,Ros R54-55,2019,1,106,
+ORG,Ros R54-55,2019,1,203,
+ORG,Ros R54-55,2019,1,301,
+ORG,Ros R54-55,2019,1,405,
+ORG,Lamberton,2018,2,402,
+ORG,Ros R54-55,2020,1,106,
+ORG,Ros R54-55,2020,1,203,
+ORG,Ros R54-55,2019,2,303,
+ORG,Ros R54-55,2020,1,301,
+ORG,Ros R54-55,2020,1,405,
+ORG,Lamberton,2018,6,404,
+ORG,Lamberton,2019,2,303,
+ORG,Lamberton,2018,1,405,
+ORG,Ros R54-55,2018,2,102,
+ORG,St. Paul,2019,2,203,
+ORG,St. Paul,2019,2,305,
+ORG,Ros R54-55,2018,6,105,
+ORG,Ros R54-55,2018,1,106,
+ORG,Ros R54-55,2019,2,402,
+ORG,Lamberton,2019,2,402,
+ORG,Ros R54-55,2018,1,203,
+ORG,St. Paul,2019,1,102,
+ORG,St. Paul,2019,2,404,
+ORG,Ros R54-55,2018,2,204,
+ORG,St. Paul,2019,1,205,
+ORG,St. Paul,2019,1,306,
+ORG,St. Paul,2019,1,406,
+ORG,St. Paul,2020,1,102,
+ORG,St. Paul,2020,1,205,
+ORG,Ros R54-55,2018,6,205,
+ORG,St. Paul,2020,1,306,
+ORG,St. Paul,2020,1,406,
+ORG,Lamberton,2019,6,105,
+ORG,Ros R54-55,2018,1,301,
+ORG,Lamberton,2019,6,205,
+ORG,Lamberton,2019,6,304,
+ORG,Ros R54-55,2020,2,102,
+ORG,Lamberton,2020,2,102,
+ORG,St. Paul,2020,2,105,
+ORG,Ros R54-55,2018,2,303,
+ORG,Ros R54-55,2018,6,304,
+ORG,Ros R54-55,2018,2,402,
+ORG,Lamberton,2019,6,404,
+ORG,Lamberton,2020,6,105,
+ORG,Ros R54-55,2018,6,404,
+ORG,Lamberton,2020,6,205,
+ORG,Lamberton,2020,6,304,
+ORG,Ros R54-55,2018,1,405,
+ORG,Lamberton,2020,6,404,
+ORG,Ros R54-55,2019,6,105,
+ORG,St. Paul,2018,1,102,
+ORG,Ros R54-55,2019,6,205,
+ORG,St. Paul,2020,2,203,
+ORG,St. Paul,2018,2,105,
+ORG,Ros R54-55,2020,2,204,
+ORG,Lamberton,2020,2,204,
+ORG,Ros R54-55,2019,6,304,
+ORG,Ros R54-55,2019,6,404,
+ORG,St. Paul,2018,6,106,
+ORG,St. Paul,2018,6,202,
+ORG,St. Paul,2018,2,203,
+ORG,Ros R54-55,2020,6,105,
+ORG,Ros R54-55,2020,2,303,
+ORG,St. Paul,2018,1,205,
+ORG,Ros R54-55,2020,6,205,
+ORG,Ros R54-55,2020,6,304,
+ORG,Lamberton,2020,2,303,
+ORG,St. Paul,2018,6,304,
+ORG,St. Paul,2020,2,305,
+ORG,St. Paul,2018,2,305,
+ORG,Ros R54-55,2020,6,404,
+ORG,St. Paul,2019,6,106,
+ORG,St. Paul,2019,6,202,
+ORG,St. Paul,2018,1,306,
+ORG,Ros R54-55,2020,2,402,
+ORG,Lamberton,2020,2,402,
+ORG,St. Paul,2018,6,403,
+ORG,St. Paul,2019,6,304,
+ORG,St. Paul,2019,6,403,
+ORG,St. Paul,2020,2,404,
+ORG,St. Paul,2018,2,404,
+ORG,St. Paul,2020,6,106,
+ORG,St. Paul,2020,6,202,
+ORG,St. Paul,2020,6,304,
+ORG,St. Paul,2018,1,406,
+ORG,St. Paul,2020,6,403,
+orei_manure,rosemount,2020,1,111,fertCommercial_cutFall
+orei_manure,rosemount,2021,1,111,fertCommercial_cutFall
+orei_manure,rosemount,2022,1,111,fertCommercial_cutFall
+orei_manure,rosemount,2020,1,212,fertCommercial_cutFall
+orei_manure,rosemount,2021,1,212,fertCommercial_cutFall
+orei_manure,rosemount,2022,1,212,fertCommercial_cutFall
+orei_manure,rosemount,2020,1,314,fertCommercial_cutFall
+orei_manure,rosemount,2021,1,314,fertCommercial_cutFall
+orei_manure,rosemount,2022,1,314,fertCommercial_cutFall
+orei_manure,rosemount,2020,1,413,fertCommercial_cutFall
+orei_manure,rosemount,2021,1,413,fertCommercial_cutFall
+orei_manure,rosemount,2022,1,413,fertCommercial_cutFall
+orei_manure,rosemount,2020,2,101,fertCommercial_cutNone
+orei_manure,rosemount,2021,2,101,fertCommercial_cutNone
+orei_manure,rosemount,2022,2,101,fertCommercial_cutNone
+orei_manure,rosemount,2020,2,202,fertCommercial_cutNone
+orei_manure,rosemount,2021,2,202,fertCommercial_cutNone
+orei_manure,rosemount,2022,2,202,fertCommercial_cutNone
+orei_manure,rosemount,2020,2,304,fertCommercial_cutNone
+orei_manure,rosemount,2021,2,304,fertCommercial_cutNone
+orei_manure,rosemount,2022,2,304,fertCommercial_cutNone
+orei_manure,rosemount,2020,2,403,fertCommercial_cutNone
+orei_manure,rosemount,2021,2,403,fertCommercial_cutNone
+orei_manure,rosemount,2022,2,403,fertCommercial_cutNone
+orei_manure,rosemount,2020,3,112,fertControl_cutFall
+orei_manure,rosemount,2021,3,112,fertControl_cutFall
+orei_manure,rosemount,2022,3,112,fertControl_cutFall
+orei_manure,rosemount,2020,3,214,fertControl_cutFall
+orei_manure,rosemount,2021,3,214,fertControl_cutFall
+orei_manure,rosemount,2022,3,214,fertControl_cutFall
+orei_manure,rosemount,2020,3,312,fertControl_cutFall
+orei_manure,rosemount,2021,3,312,fertControl_cutFall
+orei_manure,rosemount,2022,3,312,fertControl_cutFall
+orei_manure,rosemount,2020,3,414,fertControl_cutFall
+orei_manure,rosemount,2021,3,414,fertControl_cutFall
+orei_manure,rosemount,2022,3,414,fertControl_cutFall
+orei_manure,rosemount,2020,5,114,fertManure_cutFall
+orei_manure,rosemount,2021,5,114,fertManure_cutFall
+orei_manure,rosemount,2022,5,114,fertManure_cutFall
+orei_manure,rosemount,2020,5,211,fertManure_cutFall
+orei_manure,rosemount,2021,5,211,fertManure_cutFall
+orei_manure,rosemount,2022,5,211,fertManure_cutFall
+orei_manure,rosemount,2020,5,311,fertManure_cutFall
+orei_manure,rosemount,2021,5,311,fertManure_cutFall
+orei_manure,rosemount,2022,5,311,fertManure_cutFall
+orei_manure,rosemount,2020,5,412,fertManure_cutFall
+orei_manure,rosemount,2021,5,412,fertManure_cutFall
+orei_manure,rosemount,2022,5,412,fertManure_cutFall
+orei_manure,rosemount,2020,6,104,fertManure_cutNone
+orei_manure,rosemount,2021,6,104,fertManure_cutNone
+orei_manure,rosemount,2022,6,104,fertManure_cutNone
+orei_manure,rosemount,2020,6,201,fertManure_cutNone
+orei_manure,rosemount,2021,6,201,fertManure_cutNone
+orei_manure,rosemount,2022,6,201,fertManure_cutNone
+orei_manure,rosemount,2020,6,301,fertManure_cutNone
+orei_manure,rosemount,2021,6,301,fertManure_cutNone
+orei_manure,rosemount,2022,6,301,fertManure_cutNone
+orei_manure,rosemount,2020,6,402,fertManure_cutNone
+orei_manure,rosemount,2021,6,402,fertManure_cutNone
+orei_manure,rosemount,2022,6,402,fertManure_cutNone
+orei_manure,rosemount,2020,4,102,fertControl_cutNone
+orei_manure,rosemount,2020,4,204,fertControl_cutNone
+orei_manure,rosemount,2020,4,302,fertControl_cutNone
+orei_manure,rosemount,2020,4,404,fertControl_cutNone
+orei_manure,rosemount,2021,4,102,fertControl_cutNone
+orei_manure,rosemount,2021,4,204,fertControl_cutNone
+orei_manure,rosemount,2021,4,302,fertControl_cutNone
+orei_manure,rosemount,2021,4,404,fertControl_cutNone
+orei_manure,rosemount,2022,4,102,fertControl_cutNone
+orei_manure,rosemount,2022,4,204,fertControl_cutNone
+orei_manure,rosemount,2022,4,302,fertControl_cutNone
+orei_manure,rosemount,2022,4,404,fertControl_cutNone
