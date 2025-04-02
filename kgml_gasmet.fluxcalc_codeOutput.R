@@ -1,56 +1,11 @@
----
-title: "gasmet"
-author: "Jake Kundert"
-date: "2024-04-03"
-output:
-  pdf_document: default
-  html_document: default
-  word_document: default
-editor_options: 
-  chunk_output_type: console
----
-
-# Jesse's modifications
-I want coefs.sum 
-need time and date data for processing
-co2.e.kghyr per day
-need to make this code work for multiple experiments, or run each of 5 experiments seperately
-
-need to clean up the data a bit, like experiment name
-
-# Jesse's suggestions
-Definitions of coding terms
-co2 vs co2.c
-
-
-
-## Gasmet Data Analysis
-
-Gasmet output provide a gas concentration value at each time step measured. This script takes that typical gasmet data, cleans it, makes conversions, and calculates a flux value from each sampling curve. If necessary for your analysis, there is also code to integrate a series of flux values to calculate a total emissions value.
-
-An example input .csv file can be found at [here](https://drive.google.com/file/d/1PmpDITdvQJbax_B5IcIs7NFxWSo0-qm-/view?usp=drive_link).
-
-This code assumes:
-
-1.  Each batch of data being analyzed comes from the same year. If multiple years are included in the data set, changes will need to be made to account for groupings.
-2.  The date column should be in the year-month-date format in the .csv file.
-
-```{r}
+## -----------------------------------------------------------------------------
 #Load packages ----
 library(tidyverse)
 library(plyr)
 library(stringr)
-```
 
-## Load Packages and Prep Data
 
-This script assumes the following columns should be included in the gasmet data:
-
-site, date, plot, time, co2, n2o, ch4, celltemp
-
-A new column, 'datetime', is created by merging date and time. And 'code' is created to allow for a unique ID for each plot/date measurement.
-
-```{r}
+## -----------------------------------------------------------------------------
 # dat.gasmet<-read.csv("Data/Gasmet/Raw Data/gasmet_2020_eddyflux.csv", na = "NA")
 
 read.csv(
@@ -68,13 +23,9 @@ dat.gasmet %>%
         code = paste(experiment, plot, date, site, sep = "_")
                            ) -> dat.add
 
-```
 
-## Calculating Running Time
 
-We now need to use the datetime column to create a new column with the running time of each sample (ie., code). To do this, we create the ind column which creates a sequence of numbers for each code. The row with '1' is the first sample. We will use that 1 as a flag to calculate the running total, adding each difference between the current row's datetime and the previous row's datetime.
-
-```{r}
+## -----------------------------------------------------------------------------
 dat.time <- dat.add %>%
   arrange(datetime) %>%
   group_by(code) %>%
@@ -88,23 +39,9 @@ dat.time <- dat.add %>%
          n = n())
 
 #it appears that the for-loop difftime is having trouble differentiating minutes from seconds. so when there is a longer break in time during a measurement period on the order of minutes, it is attributing that change in minutes to be seconds. e.g., 10:15:45 to 10:20:48 is recorded as a value of 5, not 303. The new method shown with column 'delta.t' does not have this issue for some reason. Either way, we may want to find a way to 
-```
 
-## QA/QC
 
-Review the data. Things to consider are:
-
--   How many unique dates are there and does this match with how many you expected?
-
--   Was each plot sampled each day?
-
--   How many measurements are there for each code (plot-date-site)?
-
--   Are there gaps in the data?
-
--   Review indicators of issues like: CO2 range, cell temp range, running time range
-
-```{r}
+## -----------------------------------------------------------------------------
 #create a df with codes that have a gap in sampling of >60sec
 hi.dt<- dat.time %>%
   filter(change.t > 60) 
@@ -134,17 +71,9 @@ qc <- data.frame(ind.ct = length(which(dat.time$ind == 1)),
                max.n = max(dat.time$n),
                min.n = min(dat.time$n))
 qc
-```
 
-## Removing Data
 
-Based on the results of the QA/QC step, there may be data that should be removed. A couple options:
-
--   If there are gaps in the data, all data points prior to that gap can be removed to create the dat.nogap dataframe. This usually occurs when the external battery dies or the computer shuts down and there is a delay to start sampling again.
-
--   If there are specific problematic codes, they can be removed to create the dat.remove dataframe. You may also choose to go back to the original raw data and remove those rows at the source, then re-run data.
-
-```{r}
+## -----------------------------------------------------------------------------
 #cut off all datapoints prior to gap
 dat.nogap <- dat.time %>%
   group_by(code) %>%
@@ -156,13 +85,9 @@ dat.nogap <- dat.time %>%
 
 #dat.remove <- dat.time %>%
  # filter(code != '8_2023-10-13_v08')
-```
 
-## Rename Dataframe
 
-Whatever dataframe you want to take to the next step, re-calculate run.t now that any gaps and erroneous data have been removed and rename it 'dat.filt'. Then, filter out codes with 6 or fewer data points, which is required by the loess function that will be applied in the next step.
-
-```{r}
+## -----------------------------------------------------------------------------
 dat.filt <- dat.nogap %>% #dataframe with cleaned data
   arrange(datetime) %>%
   group_by(code) %>%
@@ -185,15 +110,9 @@ dat.filt.out <- dat.filt %>%
 
 dat.filt.in <- dat.filt %>%
   filter(n > 6)
-```
 
-## Creating Column to Organize and Group Data
 
-Now to winnow down the data to just the points that we want for calculating fluxes. The goal is to get start our flux measurements \~1 minute after the chamber was placed on the soil. This process removes data points that are collecting while the machine is returning to ambient conditions between plots, the first few points once the chamber is placed which can be poor quality while the chamber is stabilizing on the soil, and creates a cut-off at the end of sampling to avoid plateauing in the data.
-
-We will use a loess function to predict gas concentrations at a higher resolution that our 20s data points. Then find the point when the gas concentration is lowest and use that as our assumed point when the chamber was placed on the soil.
-
-```{r}
+## -----------------------------------------------------------------------------
 #create a df with a column of desired resolution to predict using loess function. Number of seconds and intervals.
 predict.res <- data.frame(run.t = seq(0, 600, 0.1))
 
@@ -222,17 +141,9 @@ dat.clean <- nest %>%
 
 cut.off<- nest %>%
   select(code, co2, pred.run.t)
-```
 
-## Plots of Pre- and Post- Cleaned Data
 
-Plot 1: Uncleaned data.
-
-Plot 2: Cleaned data. Instead of using run.t on the x axis, this plot uses the new 'count' column which allows the plots to all start at the same point.
-
-Plot 3: Tests to see what would be good cut off points at the beginning and end of the data to avoid poor data quality while chamber stabilizes and avoids plateauing at end.
-
-```{r}
+## -----------------------------------------------------------------------------
 #plot of pre-cleaned data
 dat.filt %>%
   ggplot(aes(run.t, co2_ppm, color = as.factor(plot))) +
@@ -266,36 +177,17 @@ dat.clean %>%
   geom_point() +
   geom_line() +
   facet_wrap(~plot)
-```
 
-\newpage
-## Selecting data to calculate fluxes on
 
-Based on the plots from the previous chunk, determine a range of data to pass on to do flux calculations. Use 'count' to remove data at the beginning (during dead band period) and at end (potential for plateauing of data). Then calculate the number of data point each code has under that 'count' filter. Finally, filter out any codes that do not have enough data to calculate an accurate flux.
-
-```{r}
+## -----------------------------------------------------------------------------
 dat.slim <- dat.clean %>%
   filter(count > 3 & count < 10) %>% 
   dplyr::mutate(n = n()) %>%
   filter(n > 3) %>%
   ungroup()
-```
 
-## Refining and Converting
 
-Create a function to convert co2 concentrations (ppm CO2) to ug C/cm3.
-
-Based on Rod Venterea's [spreadsheet](https://docs.google.com/spreadsheets/d/1zM0fjWLqj03hWOq9TJ0P3G9fx9nfYXIoSlKhcal_E3U/edit#gid=1025569290mydat$co2.c), which can be cited as:
-
-Venterea RT. Simplified method for quantifying theoretical underestimation of chamber-based trace gas fluxes. *J Environ Qual*. 2010; **39**: 126–135.
-
-The equation is = (element mass/ambient pressure) \* (1/1000000) \* (1/0.082057) \* (1/273.15 + chamber temp) \* 1000
-
-Then create a new dataframe, which selects a subset of columns, creates a unique ID column 'code', and uses the created function to convert to co2.c using co2 and cell temp columns.
-
-Then, save this intermediate data in a relevant folder on your computer.
-
-```{r}
+## -----------------------------------------------------------------------------
 co2.convert <- function(co2, temp) {
   co2*(12/1)*(1/1000000)*(1/0.082057)*(1/(273.15 + temp)) * 1000
 }
@@ -303,13 +195,9 @@ co2.convert <- function(co2, temp) {
 mydat<- dat.slim %>%
   dplyr::select(code, date, plot, experiment, site, datetime, co2_ppm, run.t, temp_celsius, count) %>%
   dplyr::mutate(co2.c = co2.convert(co2_ppm, temp_celsius))
-```
 
-## Calculating Slopes
 
-Create a list of regressions for every 'code' (i.e., plot/date/field combination). Then create a dataframe ("coefs") that includes the intercepts and slopes of each model. Then, separate "code" column, so plot, date, and site are in separate columns. Rename columns. Store this data in a relevant folder.
-
-```{r}
+## -----------------------------------------------------------------------------
 regressions <- dlply(mydat, .(code), lm, formula = co2.c ~ run.t)
 
 coefs <- cbind(ldply(regressions, coef), #extracts the code variables of each model, and the 5th coefficient, which is slope
@@ -321,15 +209,9 @@ str_split_fixed(coefs$code,"_", n=4)[,3] -> coefs$date
 str_split_fixed(coefs$code,"_", n=4)[,4] -> coefs$site
 
 colnames(coefs)<-c("code","intercept","slope", "intercept_se","slope_se","experiment", "plot","date","site")
-```
 
-## OPTIONAL: Remove low-quality slopes based on standard error
 
-In order to remove poor quality data, the slope standard error could be a criteria for removal. Typically, poor data comes from an erratic high/low concentration measurement that falls beyond the assumed linear increase in concentration inside the chamber.
-
-Set the 'limit.pt' based on the number of standard errors above the mean that will determine 'outliers'.
-
-```{r}
+## -----------------------------------------------------------------------------
 hist(coefs$slope_se)
 boxplot(coefs$slope_se)
 
@@ -364,13 +246,9 @@ mydat.clean %>%
   geom_point() +
   geom_line() +
   facet_wrap(~plot)
-```
 
-## OPTIONAL: Determine Significance of Slope
 
-You may choose to force to zero the slopes that are not significantly different from zero. To do that, run an anova on all regressions and extract the codes for the slopes with p-values greater than 0.05. Then, make those slopes zero. Store this data in a relevant folder.
-
-```{r, eval = FALSE}
+## ----eval = FALSE-------------------------------------------------------------
 #Rows with 1 degree of freedom will be the slopes. This way we don't also get the residuals.
 #pvals<-ldply(regressions, anova)
 #pvals2<-subset(pvals, Df=="1")
@@ -381,23 +259,13 @@ You may choose to force to zero the slopes that are not significantly different 
 #Find the slopes in the coefs.sum dataframe using these codes from pvals3 (which are not significant) and replace those slopes with 0. Column 3 is the slope, column 5 is the slope standard error. 
 #coefs.sum[which(coefs.sum$code %in% pvals3$code),c(3,5)]<-0     
 #head(coefs.sum)
-```
 
-## If not forcing to zero, rename dataframe.
 
-```{r}
+## -----------------------------------------------------------------------------
 coefs.sum <- coefs.clean
-```
 
-## Convert Slopes to Fluxes
 
-Create a dataframe with the dimensions of the chamber used. These dimensions are based on calculations done by Bergquist, Jungers, and Gutknecht on the chamber they designed.
-
-Convert slope value to CO2 equivalents. Then use chamber height to remove 3rd dimension–leaving a value of rate of CO2 respiration per unit area (ug/cm2/s). Two conversions are made to relevant units, including g/m2/day and kg/ha/yr.
-
-Export final flux values to a relevant folder.
-
-```{r}
+## -----------------------------------------------------------------------------
 chamberdims<-data.frame(matrix(ncol=5))
 colnames(chamberdims)<-c("clength", "cwidth","carea","cvol","cheight")
 chamberdims$clength<-50.165 #cm
@@ -431,13 +299,9 @@ coefs.sum <- coefs.sum %>%
 
 #review the distribution of the final flux values
 hist(coefs.sum$co2.e.gmd)
-```
 
-## Review Removed Data
 
-Compare counts of the number of plots sampled per day and number of dates for each plot in both raw data (pre) and final data (post). Be sure there aren't any dates or plots that have disproportionately high data removal.
-
-```{r}
+## -----------------------------------------------------------------------------
 pre.date <- dat.time %>%
   select(plot, date) %>%
   unique() %>%
@@ -468,15 +332,9 @@ post.plot <- coefs.sum %>%
 
 left_join(pre.plot, post.plot, by = 'plot', suffix = c('.pre', ',post'))
 
-```
 
-## Saving Intermediary Data
 
-In a relevant folder, save the following dataframes as .csv files for future reference.
-
-# Jesse saving CO2 data
-
-```{r}
+## -----------------------------------------------------------------------------
 
 coefs.sum %>% 
   select(experiment, site, plot, date, co2.e.kghyr) %>% 
@@ -490,19 +348,9 @@ coefs.sum %>%
   ggplot(aes(co2.e.kghyr)) +
   geom_histogram()
 
-```
 
-# N2O
 
-Converting n2o concentrations (ppm n2o) to ug N/cm3.
-
-The equation is = (element mass/ambient pressure) \* (1/1000000) \* (1/0.082057) \* (1/273.15 + chamber temp) \* 1000
-
-Then create a new dataframe, which selects a subset of columns, creates a unique ID column 'code', and uses the created function to convert to n2o.c using n2o and cell temp columns.
-
-Then, save this intermediate data in a relevant folder on your computer.
-
-```{r}
+## -----------------------------------------------------------------------------
 # I take the CO2 equation and just changed it to N20. That is where the 28 is coming from. 273 is kelvin. 
 n2o.convert <- function(n2o, temp) {
   n2o*(28/1)*(1/1000000)*(1/0.082057)*(1/(273.15 + temp)) * 1000
@@ -512,13 +360,9 @@ n2o.convert <- function(n2o, temp) {
 mydat<- dat.slim %>%
   dplyr::select(code, date, plot, experiment, site, datetime, co2_ppm, n2o_ppm, run.t, temp_celsius, count) %>%
   dplyr::mutate(co2.c = co2.convert(co2_ppm, temp_celsius)) %>%   dplyr::mutate(n2o.c = n2o.convert(n2o_ppm, temp_celsius))
-```
 
-## Calculating Slopes
 
-Create a list of regressions for every 'code' (i.e., plot/date/field combination). Then create a dataframe ("coefs") that includes the intercepts and slopes of each model. Then, separate "code" column, so plot, date, and site are in separate columns. Rename columns. Store this data in a relevant folder.
-
-```{r}
+## -----------------------------------------------------------------------------
 regressions_n2o <- dlply(mydat, .(code), lm, formula = n2o.c ~ run.t)
 
 coefs_n2o <- cbind(ldply(regressions_n2o, coef), #extracts the code variables of each model, and the 5th coefficient, which is slope
@@ -530,15 +374,9 @@ str_split_fixed(coefs_n2o$code,"_", n=4)[,3] -> coefs_n2o$date
 str_split_fixed(coefs_n2o$code,"_", n=4)[,4] -> coefs_n2o$site
 
 colnames(coefs_n2o)<-c("code","intercept","slope", "intercept_se","slope_se","experiment", "plot","date","site")
-```
 
-## OPTIONAL: Remove low-quality slopes based on standard error
 
-In order to remove poor quality data, the slope standard error could be a criteria for removal. Typically, poor data comes from an erratic high/low concentration measurement that falls beyond the assumed linear increase in concentration inside the chamber.
-
-Set the 'limit.pt' based on the number of standard errors above the mean that will determine 'outliers'.
-
-```{r}
+## -----------------------------------------------------------------------------
 hist(coefs_n2o$slope_se)
 boxplot(coefs_n2o$slope_se)
 
@@ -561,13 +399,9 @@ length(unique(mydat$code)) #this number...
 length(unique(coefs.out$code)) #minus this number...
 length(unique(mydat.clean$code)) #should equal this number
 
-```
 
-## OPTIONAL: Determine Significance of Slope
 
-You may choose to force to zero the slopes that are not significantly different from zero. To do that, run an anova on all regressions and extract the codes for the slopes with p-values greater than 0.05. Then, make those slopes zero. Store this data in a relevant folder.
-
-```{r, eval = FALSE}
+## ----eval = FALSE-------------------------------------------------------------
 #Rows with 1 degree of freedom will be the slopes. This way we don't also get the residuals.
 #pvals<-ldply(regressions, anova)
 #pvals2<-subset(pvals, Df=="1")
@@ -578,23 +412,13 @@ You may choose to force to zero the slopes that are not significantly different 
 #Find the slopes in the coefs.sum dataframe using these codes from pvals3 (which are not significant) and replace those slopes with 0. Column 3 is the slope, column 5 is the slope standard error. 
 #coefs.sum[which(coefs.sum$code %in% pvals3$code),c(3,5)]<-0     
 #head(coefs.sum)
-```
 
-## If not forcing to zero, rename dataframe.
 
-```{r}
+## -----------------------------------------------------------------------------
 coefs_n2o.clean.sum <- coefs_n2o.clean
-```
 
-## Convert Slopes to Fluxes
 
-Create a dataframe with the dimensions of the chamber used. These dimensions are based on calculations done by Bergquist, Jungers, and Gutknecht on the chamber they designed.
-
-Convert slope value to N2O equivalents. Then use chamber height to remove 3rd dimension–leaving a value of rate of N2O respiration per unit area (ug/cm2/s). Two conversions are made to relevant units, including g/m2/day and kg/ha/yr.
-
-Export final flux values to a relevant folder.
-
-```{r}
+## -----------------------------------------------------------------------------
 chamberdims<-data.frame(matrix(ncol=5))
 colnames(chamberdims)<-c("clength", "cwidth","carea","cvol","cheight")
 chamberdims$clength<-50.165 #cm
@@ -633,13 +457,9 @@ coefs_n2o.sum <- coefs_n2o.clean.sum %>%
 hist(coefs_n2o.sum$n2o.e)
 
 
-```
 
-## Review Removed Data
 
-Compare counts of the number of plots sampled per day and number of dates for each plot in both raw data (pre) and final data (post). Be sure there aren't any dates or plots that have disproportionately high data removal.
-
-```{r}
+## -----------------------------------------------------------------------------
 pre.date <- dat.time %>%
   select(plot, date) %>%
   unique() %>%
@@ -670,15 +490,9 @@ post.plot <- coefs.sum %>%
 
 left_join(pre.plot, post.plot, by = 'plot', suffix = c('.pre', ',post'))
 
-```
 
-## Saving Intermediary Data
 
-In a relevant folder, save the following dataframes as .csv files for future reference.
-
-# Jesse saving N2O data
-
-```{r}
+## -----------------------------------------------------------------------------
 
 coefs_n2o.sum %>% 
   select(experiment, site, plot, date, n2o.e.kghyr) %>% 
@@ -697,5 +511,4 @@ coefs.sum %>%
   ggplot(aes(co2.e.kghyr)) +
   geom_histogram()
 
-```
 
