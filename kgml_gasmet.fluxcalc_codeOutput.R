@@ -57,7 +57,7 @@ dat.time %>%
 
 unique(dat.time$ind) #check if any NA's exist in the ind column. 
 unique(dat.time$change.t) #check the values of the time change between each sequential datetime row. This should be 20 or 21 sec, but there are often other values. 
-hist(dat.time$n) #view a histogram of the number of sample points per code
+# hist(dat.time$n) #view a histogram of the number of sample points per code
 
 #review key metrics from the dataset
 qc <- data.frame(ind.ct = length(which(dat.time$ind == 1)), 
@@ -345,7 +345,7 @@ coefs.sum %>%
 coefs.sum %>% 
   # filter(co2.e.kghyr>-10000 &
            # co2.e.kghyr<100000) %>% 
-  ggplot(aes(co2.e.kghyr)) +
+  ggplot(aes(co2.e.gmd)) +
   geom_histogram()
 
 
@@ -510,5 +510,167 @@ coefs.sum %>%
            # co2.e.kghyr<100000) %>% 
   ggplot(aes(co2.e.kghyr)) +
   geom_histogram()
+
+
+
+## -----------------------------------------------------------------------------
+# I take the CO2 equation and just changed it to ch4. That is where the 28 is coming from. 273 is kelvin. 
+ch4.convert <- function(ch4, temp) {
+  ch4*(12/1)*(1/1000000)*(1/0.082057)*(1/(273.15 + temp)) * 1000
+}
+
+dat.slim %>% 
+  glimpse()
+
+mydat<- dat.slim %>%
+  dplyr::select(code, date, plot, experiment, site, datetime, co2_ppm, n2o_ppm, ch4_ppm, run.t, temp_celsius, count) %>%
+  dplyr::mutate(co2.c = co2.convert(co2_ppm, temp_celsius)) %>%   dplyr::mutate(n2o.c = n2o.convert(n2o_ppm, temp_celsius)) %>%   dplyr::mutate(ch4.c = ch4.convert(ch4_ppm, temp_celsius))
+  
+
+
+## -----------------------------------------------------------------------------
+regressions_ch4 <- dlply(mydat, .(code), lm, formula = ch4.c ~ run.t)
+
+coefs_ch4 <- cbind(ldply(regressions_ch4, coef), #extracts the code variables of each model, and the 5th coefficient, which is slope
+               ldply(regressions, function(x){coef(summary(x))[,2]})[,2:3]) #extracts the standard error of the slope coefficient
+
+str_split_fixed(coefs_ch4$code,"_", n=3)[,1] -> coefs_ch4$experiment
+str_split_fixed(coefs_ch4$code,"_", n=3)[,2] -> coefs_ch4$plot
+str_split_fixed(coefs_ch4$code,"_", n=4)[,3] -> coefs_ch4$date
+str_split_fixed(coefs_ch4$code,"_", n=4)[,4] -> coefs_ch4$site
+
+colnames(coefs_ch4)<-c("code","intercept","slope", "intercept_se","slope_se","experiment", "plot","date","site")
+
+
+## -----------------------------------------------------------------------------
+boxplot(coefs_ch4$slope_se)
+
+limit.pt<- mean(coefs_ch4$slope_se) + (sd(coefs_ch4$slope_se) * 2) #change the final number based on perference for determining outlier
+
+#filter out data that does not meet the above limit.pt criteria
+coefs_ch4.clean <- coefs_ch4 %>%
+  filter(slope_se < limit.pt)
+
+#record which slopes did not meet criteria 
+coefs_ch4.out <- coefs_ch4 %>%
+  filter(slope_se > limit.pt)
+
+#create a reference dataframe that exludes data from the codes just determined to meet criteria for removal based on slope se
+mydat.clean<- mydat %>%
+  filter(!code %in% coefs_ch4.out$code)
+
+#check the correct amount of codes were removed 
+length(unique(mydat$code)) #this number...
+length(unique(coefs_ch4.out$code)) #minus this number...
+length(unique(mydat.clean$code)) #should equal this number
+
+
+
+## ----eval = FALSE-------------------------------------------------------------
+#Rows with 1 degree of freedom will be the slopes. This way we don't also get the residuals.
+#pvals<-ldply(regressions, anova)
+#pvals2<-subset(pvals, Df=="1")
+
+# Create a table with codes (i.e. plots) where slope WAS NOT significant. 
+#pvals3<-subset(pvals2, pvals2[,6]>0.05)
+
+#Find the slopes in the coefs.sum dataframe using these codes from pvals3 (which are not significant) and replace those slopes with 0. Column 3 is the slope, column 5 is the slope standard error. 
+#coefs.sum[which(coefs.sum$code %in% pvals3$code),c(3,5)]<-0     
+#head(coefs.sum)
+
+
+## -----------------------------------------------------------------------------
+coefs_ch4.clean.sum <- coefs_ch4.clean
+
+
+## -----------------------------------------------------------------------------
+chamberdims<-data.frame(matrix(ncol=5))
+colnames(chamberdims)<-c("clength", "cwidth","carea","cvol","cheight")
+chamberdims$clength<-50.165 #cm
+chamberdims$cwidth<-13.97
+chamberdims$carea<-chamberdims$clength*chamberdims$cwidth
+chamberdims$cvol<-6250 #cm3. Known by filling chamber with water. 
+chamberdims$cheight<-chamberdims$cvol/chamberdims$carea
+
+#converting ch4.c to ch4 equivalents. 
+ch4.to.e <- function(x) {
+  x * (16/12)
+}
+
+# ch4 weight = 16
+# c = 12
+
+#converts ug/cm2/s to g/m2/day. 1 g = 1,000,000 ug. 10,000 cm2 = 1 m2. 86,400 sec = 1 day. 
+area.to.gmd <- function(x) {
+  x * (1/1000000) * (10000/1) * (86400/1)
+}
+
+#converts ug/cm2/s to kg/ha/year. 1 kg = 1,000,000,000 ug. 100,000,000 cm2 = 1 Ha. 31,536,000 sec = 1 year. 
+area.to.kghyr <- function(x) {
+  x * (1/1e9) * (1e8/1) * (3.1536e7/1) 
+}
+
+coefs_ch4.sum <- coefs_ch4.clean.sum %>%
+  dplyr::mutate(ch4.e = n.to.e(slope),
+         ch4.e.area = ch4.e * chamberdims$cheight,
+         ch4.e.gmd = area.to.gmd(ch4.e.area),
+         ch4.e.kghyr = area.to.kghyr(ch4.e.area),
+         ch4.e = n.to.e(slope),
+         day = as.numeric(strftime(date, format="%j")))
+
+#review the distribution of the final flux values
+hist(coefs_ch4.sum$ch4.e)
+
+
+
+
+## -----------------------------------------------------------------------------
+pre.date <- dat.time %>%
+  select(plot, date) %>%
+  unique() %>%
+  group_by(date) %>%
+  tally() %>%
+  mutate(date = as.character(date))
+    
+post.date <- coefs.sum %>%
+  select(plot, date) %>%
+  unique() %>%
+  group_by(date) %>%
+  tally()
+
+left_join(pre.date, post.date, by = 'date', suffix = c('.pre', '.post'))
+
+pre.plot <- dat.time %>%
+  select(plot, date) %>%
+  unique() %>%
+  group_by(plot) %>%
+  tally() %>%
+  mutate(plot = as.character(plot))
+
+post.plot <- coefs.sum %>%
+  select(plot, date) %>%
+  unique() %>%
+  group_by(plot) %>%
+  tally()
+
+left_join(pre.plot, post.plot, by = 'plot', suffix = c('.pre', ',post'))
+
+
+
+## -----------------------------------------------------------------------------
+
+# coefs_ch4.sum %>% 
+#   select(experiment, site, plot, date, ch4.e.gmd) %>% 
+#   write.csv("kgml_ch4_v1.csv",
+#             row.names = F)
+# 
+# coefs_n2o.sum %>% 
+#   select(experiment, site, plot, date, n2o.e.kghyr) %>% 
+#   write.csv("kgml_n2o_v1.csv",
+#             row.names = F)
+# 
+# coefs.sum %>% 
+#   select(experiment, site, plot, date, co2.e.kghyr) %>% 
+#   write.csv("kgml_CO2_v1.csv")
 
 

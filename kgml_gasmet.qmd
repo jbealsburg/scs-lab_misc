@@ -1,7 +1,7 @@
 ---
 title: "KGML gasmet data processing"
-subtitle: "CO2 and N2O"
-author: "Jesse Bealsburg"
+subtitle: "$CO_2$ $N_2O$ and $CH_4$"
+author: "Jesse Bealsburg & Katherine Bohn"
 date: today
 format: pdf
 editor: visual
@@ -15,34 +15,44 @@ editor_options:
 
 # Key points
 
--   Converted ppm of CO2 to kg C ha yr and N2O to kg N ha yr
+-   $CO_2$ $N_2O$ and $CH_4$ converted from $\mathrm{ppm}$ to $\{\mathrm{elemental\ weight}\} \times  \{\mathrm{unit\ of\ area}\} \times \ \{\mathrm{duration}\}$  like $\mathrm{g} \cdot \mathrm{m}^2 \cdot \mathrm{day}^{-1}$
 
-    -   fitting lines, extracting slope
+-   Most $CO_2$ fluxes are positive = good.
 
--   Most CO2 fluxes are positive, which is what it should be.
+    -   105 of the 2836 predict positive $CO_2$ emissions
 
-    -   105 of the 2836 predict positive CO2 emissions
+-   $N_2O$ and $CH_4$ fluxes are small and normally distributed around zero = concerning
 
--   \~50% of N2O fluxes are positive.
+-   Kathryn independtly processed gasmet data. This data was brought in for comparison and the distribution of $N_2O$ and $CO_2$ remained = further investigation and discussion required
 
-Yufeng wants N2O data converted from the ppm unit to an amount of N released over an area and amount of time. Here I convert N2O ppm to kg N ha over a year by modifying the script used by Jake Kundert to convert CO2 to kg C ha yr.
+    -   Is there a calibration issue for $N_2O$ and $CH_4$?
 
-I am importing the rmarkdown file authored by Jake Kundert that I modified, exporting it as a R script and running that rscript to populate my environment, then removing most of the objects in the environment except the ones I am keeping
+    -   Do we expect most N2O and CH4 data to be useless?
 
 ```{r, include=FALSE}
+# I am importing the rmarkdown file authored by Jake Kundert that I modified, exporting it as a R script and running that rscript to populate my environment, then removing most of the objects in the environment except the ones I am keeping
+
 knitr::purl("kgml_gasmet.fluxcalc.Rmd", output = "kgml_gasmet.fluxcalc_codeOutput.R")
 source("kgml_gasmet.fluxcalc_codeOutput.R")
+
 ```
 
 ```{r}
+# this is Jesse's outputs
+coefs_ch4.sum %>% 
+  # glimpse()
+  select(experiment, site, plot, date, ch4.e.gmd) -> ch4_dat
+
 coefs_n2o.sum %>% 
-  select(experiment, site, plot, date, n2o.e.kghyr) -> n2o_dat
+  # glimpse()
+  select(experiment, site, plot, date, n2o.e.gmd) -> n2o_dat
 
 coefs.sum %>% 
-  select(experiment, site, plot, date, co2.e.kghyr) -> co2_dat
+  select(experiment, site, plot, date, co2.e.gmd) -> co2_dat
 
 # Define objects to keep
-keep <- c("coefs_n2o.sum", "n2o_dat", 
+keep <- c("coefs_ch4.sum","ch4_dat",
+          "coefs_n2o.sum", "n2o_dat", 
           "coefs.sum", "co2_dat")
 
 # Remove everything except those
@@ -50,14 +60,13 @@ rm(list = setdiff(ls(), keep))
 
 ```
 
-This data has already undergone some QAQC. I will simply join and export here. In general, CO2 data is a good indicator of the quality of the N2O data. If the standard error was abnormally high for CO2, that same sample likely has unreliable N2O data.
-
 ```{r}
 
-# joining data for export and cleaning up naming
+# joining data for export to kgml google sheet and cleaning up naming
 
 n2o_dat %>% 
   left_join(co2_dat) %>% 
+  left_join(ch4_dat) %>% 
   mutate(experiment=tolower(experiment)) %>% 
   mutate(experiment = fct_recode(experiment,
                                  "eddyflux" = "eddyfux",
@@ -66,18 +75,20 @@ n2o_dat %>%
   filter(!grepl("w", plot)) %>% 
   filter(grepl("^\\d+$", plot)) -> dat1
   
-# dat1 %>% 
+# dat1 %>%
 #   write.csv("kgml_data_daily_postProcess_1Apr2025.csv",
 #             row.names = F)
 ```
 
 # Visualization
 
+## Jesse
+
 ```{r}
 ## CO2
 
 dat1 %>% 
-  ggplot(aes(co2.e.kghyr)) +
+  ggplot(aes(co2.e.gmd)) +
   stat_bin()
 
 # dat1 %>% 
@@ -90,7 +101,7 @@ dat1 %>%
 
 ## N2O
 dat1 %>% 
-  ggplot(aes(n2o.e.kghyr)) +
+  ggplot(aes(n2o.e.gmd)) +
   stat_bin()
 
 
@@ -103,7 +114,7 @@ dat1 %>%
 # 42-51% of each experiment has negative vs positive flux
 
 dat1 %>% 
-  filter(n2o.e.kghyr<0) %>%
+  filter(n2o.e.gmd<0) %>%
   group_by(date) %>%
   tally() %>% 
   arrange(desc(n)) %>% 
@@ -123,6 +134,89 @@ dat1 %>%
   #   "negative fluxes predicted" = "negSlopeTally",
   #   "percent of fluxes that are negative" = "negFluxPercent"
   # ) %>% 
-  print()
+  print(n=10)
+
+
+# CH4
+
+dat1 %>% 
+  ggplot(aes(ch4.e.gmd)) +
+  stat_bin()
+
+dat1 %>% 
+  filter(ch4.e.gmd<0) %>%
+  group_by(date) %>%
+  tally() %>% 
+  arrange(desc(n)) %>% 
+  dplyr::rename(negSlopeTally = n) -> dat_negSlope
+
+dat1 %>% 
+  group_by(experiment,date) %>%
+  tally() %>% 
+  arrange(desc(n)) %>% 
+  dplyr::rename(totalSlopeTally = n) %>% 
+  left_join(dat_negSlope) %>% 
+  mutate(negFluxPercent = negSlopeTally/totalSlopeTally*100) %>% 
+  arrange(desc(negFluxPercent)) %>% 
+  # dplyr::rename(
+  #   "total fluxes predicted (n)" = "totalSlopeTally",
+  #   "negative fluxes predicted" = "negSlopeTally",
+  #   "percent of fluxes that are negative" = "negFluxPercent"
+  # ) %>% 
+  print(n=10)
+
+```
+
+## Kathryn's 
+
+I'd expect her process to be more robust than mine. Just ATAT and Eddyflux
+
+```{r}
+read.csv("atat_GHG_coefs_2022thru2023 - atat_GHG_coefs_2022thru2023.csv") %>% 
+  mutate(experiment="atat") %>% 
+  select(
+    experiment,site,plot,date,
+    slope_CO2_ugcm3,
+    slope_N2O_ugcm3,
+    slope_CH4_ugcm3,
+    co2.e.gmhr,
+    n2o.e.gmhr,
+    ch4.e.gmhr
+  )-> dat_kat_atat
+
+read.csv("eddyflux_GHG_coefs_2024.csv") %>% 
+    select(
+    experiment,site,plot,date,
+    slope_CO2_ugcm3,
+    slope_N2O_ugcm3,
+    slope_CH4_ugcm3,
+    co2.e.gmhr,
+    n2o.e.gmhr,
+    ch4.e.gmhr
+  ) -> dat_kat_eddyflux
+
+# dat_kat_atat %>% 
+#   bind_rows(dat_kat_eddyflux) %>% 
+#   write.csv(
+#     "kgml_KathrynPhillips_atatEddyflux_4Apr2025.csv",
+#     row.names = F
+#             )
+
+
+dat_kat_eddyflux %>% 
+  ggplot(aes(co2.e.gmhr)) + 
+  stat_bin()
+
+dat_kat_eddyflux %>% 
+  ggplot(aes(n2o.e.gmhr)) + 
+  stat_bin()
+
+dat_kat_eddyflux %>% 
+  ggplot(aes(ch4.e.gmhr)) + 
+  stat_bin()
+
+dat_kat_eddyflux %>% 
+  ggplot(aes(ch4.e.gmhr)) + 
+  stat_bin()
 
 ```
