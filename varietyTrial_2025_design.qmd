@@ -1,0 +1,139 @@
+---
+title: "Variety trial Roseau 2025"
+subtitle: "plot assignments"
+author: "Jesse Bealsburg"
+date: "2025-08-27"
+format: pdf
+editor: visual
+execute:
+  # echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Treatments
+
+we are seeding at 15 lbs A (regardless of germ tests)
+
+```{r}
+# specs
+# plot are 6x17ft in plot map but Donn wants me to weigh out for 5x15 ft
+
+# 15 lbs
+# 5*15 = 75 sq ft
+# 15*454
+# 
+# 6810/43560*75
+# 12 grams per plot
+# assuming high germ
+# 
+# 15/43560*454*5*15
+
+```
+
+we are doing 12 grams of seed per packet except for borders which will be 15 grams per packet
+
+there will be 12 entries
+
+-   MN entries
+
+    1.  1902
+
+    2.  2204
+
+    3.  1603
+
+    4.  clearwater
+
+    5.  1903
+
+    6.  2203
+
+-   TLI entries
+
+    1.  1102
+
+    2.  801
+
+    3.  1201
+
+    4.  701
+
+    5.  1101
+
+    6.  1001
+
+now we design
+
+```{r}
+library(agricolae)
+
+roseau_2025_entries <- c(
+    "1902",
+    "2204",
+    "1603",
+    "clearwater",
+    "1903",
+    "2203",
+    "1102",
+    "801",
+    "1201",
+    "701",
+    "1101",
+    "1001")
+
+design.rcbd(
+  trt = roseau_2025_entries,
+  r=4,
+  serie = 2,
+  seed = 314,
+  kinds = "Super-Duper",
+  first = FALSE
+) -> book
+
+book$book -> plotplan
+
+```
+
+```{r}
+library(tidyverse)
+# plotplan %>% 
+#   summary() %>% 
+#   print(n=100)
+#   distinct()
+#   glimpse()
+
+# everything looks good
+```
+
+now into a plot plan people can read
+
+```{r}
+# View(plotplan)
+
+# copy and paste to google sheets
+# plotplan %>% 
+#   write.table(
+#     file = "",         # empty string prints to console
+#     sep = "\t",        # tab-delimited for Google Sheets
+#     row.names = FALSE, 
+#     col.names = TRUE,
+#     quote = FALSE
+#   )
+
+
+```
+
+```{r}
+library(kableExtra)
+
+plotplan %>% 
+  select(-block) %>%
+  kable(format = "latex", booktabs = TRUE, longtable = TRUE,
+        caption = "Plot assignments") %>%
+  kable_styling(latex_options = c("repeat_header", "hold_position"))
+  
+
+```
