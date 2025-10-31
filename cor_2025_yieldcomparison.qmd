@@ -1,0 +1,167 @@
+---
+title: "Short corn 2025"
+subtitle: "yield comparison"
+author: "Jesse Bealsburg"
+date: "`r Sys.Date()`"
+format: pdf
+editor: visual
+execute:
+  echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+read.csv("Cor Datasheet - rosemount combine 2025.csv") -> dat
+
+```
+
+Date = 2025-10-31
+
+Site = Rosemount, R22 and R34 Field
+
+Methods = Harvested 43 ft of 2 rows at 30" row spacing in 6 adjacent corn rows. Moisture and test weight were estimated two ways...
+
+1.  using the HarvestMaster system on combine and
+
+2.  using a Perten 5200 on a subsample immediately afterwards
+
+# Does rosemount combine accurately determine moisture and test weight compared to benchtop equipment?
+
+Data
+
+Testweight = good. with 0.5 lbs per bushel.
+
+Moisture = ok, within 1.5 - 2 moisture %
+
+Discussion
+
+The corn was bagged and driven back (1hr) in bed of truck during a light drizzle which could possibly have slightly increased moisture. When brought back to campus, they were put in dryer for 30 min, then analyzed.
+
+```{r}
+dat %>% 
+  mutate(moisture = moisture....,
+         testweight = test.weight..lb.bu.) %>% 
+  mutate(method = fct_recode(method, 
+                             "Perten 5200" = "by hand",
+                             "HarvestMaster on combine" = "combine")) -> dat1 
+
+
+```
+
+## moisture
+
+```{r}
+
+dat1 %>% 
+  ggplot(aes(method, moisture)) + 
+  stat_summary() +
+  labs(y="moisture (%)",
+       x="
+       ")
+
+
+```
+
+## test weight
+
+```{r}
+dat1 %>% 
+  ggplot(aes(method, testweight)) +
+  stat_summary() +
+  labs(y="test weight (lb / bu)",
+       x="")
+```
+
+## data
+
+### raw
+
+```{r}
+
+dat1 %>% 
+  select(site, position, method, moisture, testweight) %>% 
+  arrange(site,position, method) %>% 
+  knitr::kable()
+```
+
+### summarized
+
+```{r}
+dat1 %>% 
+  select(site, position, method, moisture, testweight) %>% 
+  arrange(site,position, method) %>% 
+  group_by(site, method) %>% 
+  summarise(moisture_mean = mean(moisture),
+            testweight_mean = mean(testweight)) %>% 
+  select(-testweight_mean) %>% 
+  pivot_wider(
+    names_from = method, 
+    values_from = moisture_mean) %>% 
+  mutate(
+      difference = `Perten 5200` - `HarvestMaster on combine`,
+    ` %difference` = (`Perten 5200` - `HarvestMaster on combine`) / `Perten 5200`*100 ) %>% 
+  knitr::kable(
+    caption = "moisture"
+  )
+```
+
+```{r}
+dat1 %>% 
+  select(site, position, method, moisture, testweight) %>% 
+  arrange(site,position, method) %>% 
+  group_by(site, method) %>% 
+  summarise(moisture_mean = mean(moisture),
+            testweight_mean = mean(testweight)) %>% 
+  select(-moisture_mean) %>% 
+  pivot_wider(
+    names_from = method, 
+    values_from = testweight_mean) %>% 
+  mutate(
+    difference = `Perten 5200` - `HarvestMaster on combine`,
+    ` %difference` = (`Perten 5200` - `HarvestMaster on combine`) / `Perten 5200`*100 ) %>% 
+  knitr::kable(
+    caption = "test weight"
+  )
+```
+
+### more in depth figures
+
+#### moisture
+
+```{r}
+dat1 %>% 
+  ggplot(aes(method, moisture)) + 
+  stat_summary(geom="point") +
+  labs(y="moisture (%)",
+       x="
+       ") + 
+  # theme(axis.text.x = element_text(angle = 90)) +
+  facet_wrap(~site*position) +
+  coord_flip()
+```
+
+-   Trend is consistent across site\*position
+
+#### test weight
+
+```{r}
+dat1 %>% 
+  ggplot(aes(method, testweight)) + 
+  stat_summary(geom="point") +
+  labs(y="test weight (lb / bu)",
+       x="
+       ") + 
+  # theme(axis.text.x = element_text(angle = 90)) +
+  facet_wrap(~site*position) +
+  coord_flip()
+```
+
+-   Trend is consistent across site\*position except R34 middle
+
+# photos
+
+![Short corn strip (2 rows at 43 feet long) harvested with wintersteiger quantum on 31Oct2025](Cor_31Oct2025.JPEG)
