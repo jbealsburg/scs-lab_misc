@@ -257,17 +257,17 @@ dat1 %>%
 
 ```{r}
 
-read.csv("C:/Users/jpuka/Downloads/Cor Datasheet - data_2024+2025.csv") -> trt_list
+read.csv("Cor Datasheet - data_2024+2025.csv") -> trt_list
 
 trt_list %>% 
   filter(date=="10/21/2025") %>% 
   # mutate(location = "st paul") %>% 
-  select(site, name, plot) -> trt_list_sp
+  select(site, name, plot, type) -> trt_list_sp
 
 trt_list %>% 
   filter(date=="10/22/2025") %>% 
   # mutate(location = "rosemount") %>% 
-  select(site, name, plot) %>% 
+  select(site, name, plot, type) %>% 
   mutate(plot = str_sub(site, -3L)) %>% 
   mutate(plot = str_to_lower(plot)) %>% 
   select(-site) %>%
@@ -303,7 +303,8 @@ trt_dat_sp %>%
 dat_name %>% 
   mutate(name = fct_reorder(name, yield..bu.acre.)) %>% 
   ggplot(aes(name, yield..bu.acre.,
-             col=site)) +
+             col=site,
+             shape = type)) +
   geom_jitter(width = .1) +
   stat_summary(geom = "point", 
                fun = mean,
@@ -326,7 +327,8 @@ dat_name %>%
 dat_name %>% 
   mutate(name = fct_reorder(name, moisture)) %>% 
   ggplot(aes(name, moisture,
-             col=site)) +
+             col=site,
+             shape = type)) +
   geom_jitter(width = .1) +
   stat_summary(geom = "point", 
                fun = mean,
@@ -343,7 +345,8 @@ dat_name %>%
 dat_name %>% 
   mutate(name = fct_reorder(name, testweight)) %>% 
   ggplot(aes(name, testweight,
-             col=site)) +
+             col=site,
+             shape = type)) +
   geom_jitter(width = .1) +
   stat_summary(geom = "point", 
                fun = mean,
