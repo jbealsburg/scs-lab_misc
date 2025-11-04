@@ -1,9 +1,12 @@
 ---
 title: "Short corn 2025"
-subtitle: "yield comparison"
+subtitle: "harvest data"
 author: "Jesse Bealsburg"
 date: "`r Sys.Date()`"
-format: pdf
+format: 
+  pdf:
+    toc: true
+    number-sections: true
 editor: visual
 execute:
   echo: false
@@ -15,9 +18,11 @@ editor_options:
 
 ```{r}
 library(tidyverse)
-read.csv("Cor Datasheet - rosemount combine 2025.csv") -> dat
+read.csv("Cor Datasheet - combine vs hand 2025.csv") -> dat
 
 ```
+
+# Rosemount
 
 Date = 2025-10-31
 
@@ -29,7 +34,7 @@ Methods = Harvested 43 ft of 2 rows at 30" row spacing in 6 adjacent corn rows. 
 
 2.  using a Perten 5200 on a subsample immediately afterwards
 
-# Does rosemount combine accurately determine moisture and test weight compared to benchtop equipment?
+Does rosemount combine accurately determine moisture and test weight compared to benchtop equipment?
 
 Data
 
@@ -41,15 +46,16 @@ Discussion
 
 The corn was bagged and driven back (1hr) in bed of truck during a light drizzle which could possibly have slightly increased moisture. When brought back to campus, they were put in dryer for 30 min, then analyzed.
 
-```{r}
+```{r defining dat1}
 dat %>% 
   mutate(moisture = moisture....,
          testweight = test.weight..lb.bu.) %>% 
   mutate(method = fct_recode(method, 
                              "Perten 5200" = "by hand",
-                             "HarvestMaster on combine" = "combine")) -> dat1 
+                             "HarvestMaster on combine" = "combine")) %>% 
+  mutate(location = if_else(date=="2025-10-31", "rosemount", "st paul")) -> dat1 
 
-
+ 
 ```
 
 ## moisture
@@ -57,12 +63,18 @@ dat %>%
 ```{r}
 
 dat1 %>% 
-  ggplot(aes(method, moisture)) + 
-  stat_summary() +
+  filter(date=="2025-10-31") %>%
+  ggplot(aes(method, moisture,
+             group = site,
+             linetype = site)) + 
+  # stat_summary() +
+  geom_jitter(width = .1) +
+  stat_summary(
+    fun = mean, 
+    geom = "line"  ) +
   labs(y="moisture (%)",
        x="
        ")
-
 
 ```
 
@@ -70,8 +82,9 @@ dat1 %>%
 
 ```{r}
 dat1 %>% 
+  filter(date=="2025-10-31") %>%
   ggplot(aes(method, testweight)) +
-  stat_summary() +
+  geom_jitter(width = .1) +
   labs(y="test weight (lb / bu)",
        x="")
 ```
@@ -83,6 +96,7 @@ dat1 %>%
 ```{r}
 
 dat1 %>% 
+  filter(date=="2025-10-31") %>%
   select(site, position, method, moisture, testweight) %>% 
   arrange(site,position, method) %>% 
   knitr::kable()
@@ -92,6 +106,7 @@ dat1 %>%
 
 ```{r}
 dat1 %>% 
+  filter(date=="2025-10-31") %>%
   select(site, position, method, moisture, testweight) %>% 
   arrange(site,position, method) %>% 
   group_by(site, method) %>% 
@@ -111,6 +126,7 @@ dat1 %>%
 
 ```{r}
 dat1 %>% 
+  filter(date=="2025-10-31") %>%
   select(site, position, method, moisture, testweight) %>% 
   arrange(site,position, method) %>% 
   group_by(site, method) %>% 
@@ -134,6 +150,7 @@ dat1 %>%
 
 ```{r}
 dat1 %>% 
+  filter(date=="2025-10-31") %>%
   ggplot(aes(method, moisture)) + 
   stat_summary(geom="point") +
   labs(y="moisture (%)",
@@ -150,6 +167,7 @@ dat1 %>%
 
 ```{r}
 dat1 %>% 
+  filter(date=="2025-10-31") %>%
   ggplot(aes(method, testweight)) + 
   stat_summary(geom="point") +
   labs(y="test weight (lb / bu)",
@@ -162,6 +180,79 @@ dat1 %>%
 
 -   Trend is consistent across site\*position except R34 middle
 
+# St paul
+
+Date = 2025-11-3
+
+Site = St Paul, C5
+
+Methods = Harvested \~75ft of 2 rows at 30" row spacing. Moisture and test weight were estimated two ways...
+
+1.  using the HarvestMaster system on combine and
+
+2.  using a Perten 5200 on a subsample immediately afterwards
+
+## moisture
+
+```{r}
+
+dat1 %>% 
+  filter(date=="2025-11-3") %>%
+  ggplot(aes(method, moisture)) + 
+  geom_jitter(width = .1) +
+  labs(y="moisture (%)",
+       x="
+       ")
+
+```
+
+## test weight
+
+```{r}
+dat1 %>% 
+  filter(date=="2025-11-3") %>%
+  ggplot(aes(method, testweight)) +
+  geom_jitter(width = .1) +
+  labs(y="test weight (lb / bu)",
+       x="")
+```
+
+# Both sites side-by-side
+
+## Yield
+
+```{r}
+
+dat1 %>% 
+  ggplot(aes(location, yield..bu.acre.)) + 
+  geom_jitter(width = .1)
+
+```
+
+## Moisture
+
+```{r}
+
+dat1 %>% 
+  ggplot(aes(location, moisture)) + 
+  geom_jitter(width = .1)
+
+```
+
+## Test weight
+
+```{r}
+
+
+dat1 %>% 
+  ggplot(aes(location, testweight)) + 
+  geom_jitter(width = .1)
+
+
+```
+
 # photos
 
 ![Short corn strip (2 rows at 43 feet long) harvested with wintersteiger quantum on 31Oct2025](Cor_31Oct2025.JPEG)
+
+![Short corn strip (2 rows at 75 ft) harvested with Kincaid combine on 3Nov2025](Cor_3Nov2025.JPEG)
