@@ -253,7 +253,7 @@ dat1 %>%
 
 ```
 
-# Variety performance
+# Variety performance (combine data only)
 
 ```{r}
 
@@ -297,7 +297,7 @@ trt_dat_sp %>%
 
 ```
 
-## Yield (combine data only)
+## Yield
 
 ```{r}
 dat_name %>% 
@@ -317,6 +317,8 @@ dat_name %>%
 -   Just shows combine harvest, which is new in 2025. Hand harvest estimates not included
 
 -   PR106-20ssc in rosemount was following alfalfa, may explain larger yield
+
+-   Need to add on 2 meters of row for each st paul strip and get precise lengths
 
 ## Moisture
 
