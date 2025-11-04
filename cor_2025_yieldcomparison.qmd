@@ -217,9 +217,11 @@ dat1 %>%
        x="")
 ```
 
-# Both sites side-by-side
+-   harvestmaster on Thor's combine measured much less variability in test weight than the benchtop equipment
 
-## Yield
+# Both sites
+
+## Yield (combine data only)
 
 ```{r}
 
@@ -234,7 +236,8 @@ dat1 %>%
 ```{r}
 
 dat1 %>% 
-  ggplot(aes(location, moisture)) + 
+  ggplot(aes(location, moisture,
+             col = method)) + 
   geom_jitter(width = .1)
 
 ```
@@ -243,15 +246,113 @@ dat1 %>%
 
 ```{r}
 
+dat1 %>% 
+  ggplot(aes(location, testweight,
+             col = method)) + 
+  geom_jitter(width = .1)
+
+```
+
+# Variety performance
+
+```{r}
+
+read.csv("C:/Users/jpuka/Downloads/Cor Datasheet - data_2024+2025.csv") -> trt_list
+
+trt_list %>% 
+  filter(date=="10/21/2025") %>% 
+  # mutate(location = "st paul") %>% 
+  select(site, name, plot) -> trt_list_sp
+
+trt_list %>% 
+  filter(date=="10/22/2025") %>% 
+  # mutate(location = "rosemount") %>% 
+  select(site, name, plot) %>% 
+  mutate(plot = str_sub(site, -3L)) %>% 
+  mutate(plot = str_to_lower(plot)) %>% 
+  select(-site) %>%
+  mutate(site = "rosemount") %>% 
+  slice(1,5)-> trt_list_rsmt
+
 
 dat1 %>% 
-  ggplot(aes(location, testweight)) + 
-  geom_jitter(width = .1)
+  mutate(plot = site, 
+         site = location) %>% 
+  select(site, plot, yield..bu.acre., moisture, testweight) %>% 
+  drop_na(yield..bu.acre.) %>% 
+  left_join(trt_list_sp) %>% 
+  filter(site == "st paul") -> trt_dat_sp
+
+dat1 %>% 
+  mutate(plot = site, 
+         site = location) %>% 
+  select(site, plot, yield..bu.acre., moisture, testweight) %>% 
+  drop_na(yield..bu.acre.) %>% 
+  left_join(trt_list_rsmt) %>% 
+  filter(site == "rosemount") -> trt_dat_rsmt
+
+trt_dat_sp %>% 
+  bind_rows(trt_dat_rsmt) -> dat_name
 
 
 ```
 
-# photos
+## Yield (combine data only)
+
+```{r}
+dat_name %>% 
+  mutate(name = fct_reorder(name, yield..bu.acre.)) %>% 
+  ggplot(aes(name, yield..bu.acre.,
+             col=site)) +
+  geom_jitter(width = .1) +
+  stat_summary(geom = "point", 
+               fun = mean,
+               col = 1,
+               size = 4,
+               shape = 4) +
+  coord_flip() +
+  labs(caption = "X indicates mean")
+```
+
+-   Just shows combine harvest, which is new in 2025. Hand harvest estimates not included
+
+-   PR106-20ssc in rosemount was following alfalfa, may explain larger yield
+
+## Moisture
+
+```{r}
+dat_name %>% 
+  mutate(name = fct_reorder(name, moisture)) %>% 
+  ggplot(aes(name, moisture,
+             col=site)) +
+  geom_jitter(width = .1) +
+  stat_summary(geom = "point", 
+               fun = mean,
+               col = 1,
+               size = 4,
+               shape = 4) +
+  coord_flip() +
+  labs(caption = "X indicates mean")
+```
+
+## Test weight
+
+```{r}
+dat_name %>% 
+  mutate(name = fct_reorder(name, testweight)) %>% 
+  ggplot(aes(name, testweight,
+             col=site)) +
+  geom_jitter(width = .1) +
+  stat_summary(geom = "point", 
+               fun = mean,
+               col = 1,
+               size = 4,
+               shape = 4) +
+  coord_flip() +
+  labs(caption = "X indicates mean")
+```
+
+# Photos
 
 ![Short corn strip (2 rows at 43 feet long) harvested with wintersteiger quantum on 31Oct2025](Cor_31Oct2025.JPEG)
 
