@@ -13,7 +13,16 @@ editor_options:
   chunk_output_type: console
 ---
 
-# 
+# Conversions
+
+```{r}
+# lbs A to g per plot
+
+library(measurements)
+
+conv_multiunit(1,"lbs / acre", "g / ft2")
+
+```
 
 ```{r}
 library(tidyverse)

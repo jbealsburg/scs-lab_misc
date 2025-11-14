@@ -1,0 +1,60 @@
+---
+title: "Data pull request for muhammad"
+subtitle: ""
+author: "Jesse Bealsburg"
+date: today
+format: pdf
+editor: visual
+execute:
+  # echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# download data
+
+```{r}
+library(tidyverse)
+library(readxl)
+
+readxl::read_excel("kernzaKGML_Dataset_062025.xlsx", 
+                   sheet = "data_daily_preProcess") -> data_daily_preProcess
+
+readxl::read_excel("kernzaKGML_Dataset_062025.xlsx", 
+                   sheet = "patch_treatmentToPlot") -> patch_treatmentToPlot
+
+readxl::read_excel("kernzaKGML_Dataset_062025.xlsx", 
+                   sheet = "data_management") -> data_management
+
+```
+
+# doing what I said in email
+
+I adjusted the year data in "patch_treatmentToPlot" by hand in excel vs writing code; splitting out 2021-2025. Probably better to do in R but I was rushing to get this done.
+
+```{r}
+data_daily_preProcess %>% 
+  mutate(year = as.character(year),
+         plot = as.character(plot)) -> data_daily_preProcess
+
+patch_treatmentToPlot %>% 
+  mutate(year = as.character(year),
+         plot = as.character(plot)) -> patch_treatmentToPlot
+
+data_management %>% 
+  filter(information=="N fertilizer rate") %>% 
+  mutate(year = as.character(year)) -> data_management
+
+patch_treatmentToPlot %>% 
+  left_join(data_management) %>% 
+  left_join(data_daily_preProcess) -> dat
+
+# View(dat)
+
+write.csv(dat,
+          "kgml_dataforM_10Sep2025.csv", 
+          row.names = F)
+
+```

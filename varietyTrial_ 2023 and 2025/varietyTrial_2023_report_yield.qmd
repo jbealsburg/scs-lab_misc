@@ -1,0 +1,43 @@
+---
+title: "Variety trial 2023"
+subtitle: "yield analysis"
+author: "Jesse Bealsburg"
+date: "`r Sys.Date()`"
+format: pdf
+editor: visual
+execute:
+  # echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# objective
+
+determine higher performing lines from 2024 data
+
+```{r}
+library(tidyverse)
+read.csv("MASTER Variety Trial 2023 Plant - yield.csv") -> dat
+
+
+dat %>% 
+  filter(site!="Waseca") %>% 
+  mutate(
+    variety=factor(variety),
+    variety=fct_reorder(variety,combined_dry_grain_no_bag,
+                        .na_rm = TRUE)
+  ) %>% 
+  ggplot(
+    aes(variety,
+        combined_dry_grain_no_bag,
+        # shape = site,
+        col = program)) +
+      stat_summary()
+  
+```
+
+-   Top variety is 1903 from UMN
+
+-   top variety is either 701 or 801

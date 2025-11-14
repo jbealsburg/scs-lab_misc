@@ -15,7 +15,7 @@ editor_options:
 
 # Key points
 
--   $CO_2$ $N_2O$ and $CH_4$ converted from $\mathrm{ppm}$ to $\{\mathrm{elemental\ weight}\} \times  \{\mathrm{unit\ of\ area}\} \times \ \{\mathrm{duration}\}$  like $\mathrm{g} \cdot \mathrm{m}^2 \cdot \mathrm{day}^{-1}$
+-   $CO_2$ $N_2O$ and $CH_4$ converted from $\mathrm{ppm}$ to $\{\mathrm{elemental\ weight}\} \times  \{\mathrm{unit\ of\ area}\} \times \ \{\mathrm{duration}\}$ like $\mathrm{g} \cdot \mathrm{m}^2 \cdot \mathrm{day}^{-1}$
 
 -   Most $CO_2$ fluxes are positive = good.
 
@@ -167,7 +167,7 @@ dat1 %>%
 
 ```
 
-## Kathryn's 
+## Kathryn's
 
 I'd expect her process to be more robust than mine. Just ATAT and Eddyflux
 

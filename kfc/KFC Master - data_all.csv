@@ -1,0 +1,97 @@
+plot,block,trtIWG,entry,activity,date,sample area,wet_forage_kgha,moisture_percent,yield_drymatter_kgha,lodging_score,iwg_count_1,iwg_count_2
+101,1,MN Clearwater,8,harvest,2025-06-30,"24""x36"" quadrat",16912,71.7,4790,8,,
+102,1,TLI 703,6,harvest,2025-06-30,"24""x36"" quadrat",10732,68.9,3339,8,,
+103,1,TLI C5,1,harvest,2025-06-30,"24""x36"" quadrat",28336,87.5,3543,6,,
+104,1,TLI C4,12,harvest,2025-06-30,"24""x36"" quadrat",32258,69.9,9700,7,,
+105,1,TLI 701,7,harvest,2025-06-30,"24""x36"" quadrat",30654,71.5,8730,2,,
+106,1,TLI C3,5,harvest,2025-06-30,"24""x36"" quadrat",40422,78.5,8690,5,,
+107,1,TLI 801,11,harvest,2025-06-30,"24""x36"" quadrat",24366,71.7,6892,5,,
+108,1,Ohae,4,harvest,2025-06-30,"24""x36"" quadrat",29378,71.0,8518,3,,
+109,1,TLI 3471,3,harvest,2025-06-30,"24""x36"" quadrat",14382,70.2,4286,3,,
+110,1,TLI 704,10,harvest,2025-06-30,"24""x36"" quadrat",7490,67.4,2443,4,,
+111,1,Rush,9,harvest,2025-06-30,"24""x36"" quadrat",32536,74.0,8455,4,,
+112,1,Manifest,2,harvest,2025-06-30,"24""x36"" quadrat",31126,74.2,8042,5,,
+201,2,Manifest,2,harvest,2025-06-30,"24""x36"" quadrat",11702,71.9,3283,9,,
+202,2,TLI C4,12,harvest,2025-06-30,"24""x36"" quadrat",11925,70.5,3514,7,,
+203,2,MN Clearwater,8,harvest,2025-06-30,"24""x36"" quadrat",12748,70.1,3818,4,,
+204,2,Rush,9,harvest,2025-06-30,"24""x36"" quadrat",32826,68.6,10323,5,,
+205,2,TLI 703,6,harvest,2025-06-30,"24""x36"" quadrat",22202,88.8,2488,3,,
+206,2,Ohae,4,harvest,2025-06-30,"24""x36"" quadrat",28885,72.3,8003,2,,
+207,2,TLI C5,1,harvest,2025-06-30,"24""x36"" quadrat",20661,69.5,6295,3,,
+208,2,TLI 3471,3,harvest,2025-06-30,"24""x36"" quadrat",20383,74.5,5204,8,,
+209,2,TLI 704,10,harvest,2025-06-30,"24""x36"" quadrat",27062,71.6,7684,7,,
+210,2,TLI 701,7,harvest,2025-06-30,"24""x36"" quadrat",33144,68.6,10409,8,,
+211,2,TLI C3,5,harvest,2025-06-30,"24""x36"" quadrat",36411,70.0,10925,3,,
+212,2,TLI 801,11,harvest,2025-06-30,"24""x36"" quadrat",25778,72.6,7061,7,,
+301,3,TLI 801,11,harvest,2025-06-30,"24""x36"" quadrat",8498,69.4,2599,7,,
+302,3,TLI 701,7,harvest,2025-06-30,"24""x36"" quadrat",15134,67.2,4957,6,,
+303,3,Rush,9,harvest,2025-06-30,"24""x36"" quadrat",9374,66.2,3166,8,,
+304,3,MN Clearwater,8,harvest,2025-06-30,"24""x36"" quadrat",10001,70.7,2926,6,,
+305,3,TLI 704,10,harvest,2025-06-30,"24""x36"" quadrat",24630,70.7,7205,3,,
+306,3,TLI 703,6,harvest,2025-06-30,"24""x36"" quadrat",31341,70.9,9108,2,,
+307,3,TLI 3471,3,harvest,2025-06-30,"24""x36"" quadrat",28942,71.6,8231,5,,
+308,3,Manifest,2,harvest,2025-06-30,"24""x36"" quadrat",32889,71.8,9273,7,,
+309,3,TLI C3,5,harvest,2025-06-30,"24""x36"" quadrat",29997,73.1,8080,8,,
+310,3,Ohae,4,harvest,2025-06-30,"24""x36"" quadrat",40535,71.7,11462,9,,
+311,3,TLI C5,1,harvest,2025-06-30,"24""x36"" quadrat",30126,74.9,7563,7,,
+312,3,TLI C4,12,harvest,2025-06-30,"24""x36"" quadrat",31653,75.0,7910,9,,
+401,4,TLI 701,7,harvest,2025-06-30,"24""x36"" quadrat",7885,64.3,2817,5,,
+402,4,TLI 703,6,harvest,2025-06-30,"24""x36"" quadrat",10267,70.8,2996,1,,
+403,4,TLI 704,10,harvest,2025-06-30,"24""x36"" quadrat",14779,73.8,3873,1,,
+404,4,TLI C5,1,harvest,2025-06-30,"24""x36"" quadrat",16908,70.9,4917,5,,
+405,4,TLI 3471,3,harvest,2025-06-30,"24""x36"" quadrat",24927,70.4,7371,4,,
+406,4,TLI C3,5,harvest,2025-06-30,"24""x36"" quadrat",30160,74.4,7725,3,,
+407,4,TLI 801,11,harvest,2025-06-30,"24""x36"" quadrat",45684,85.2,6760,4,,
+408,4,Rush,9,harvest,2025-06-30,"24""x36"" quadrat",34802,67.0,11498,7,,
+409,4,TLI C4,12,harvest,2025-06-30,"24""x36"" quadrat",26842,54.7,12165,7,,
+410,4,Manifest,2,harvest,2025-06-30,"24""x36"" quadrat",34620,70.0,10378,8,,
+411,4,Ohae,4,harvest,2025-06-30,"24""x36"" quadrat",37749,68.7,11804,9,,
+412,4,MN Clearwater,8,harvest,2025-06-30,"24""x36"" quadrat",29387,69.7,8895,7,,
+101,1,MN Clearwater,8,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,13,9
+102,1,TLI 703,6,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,8,10
+103,1,TLI C5,1,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,16,15
+104,1,TLI C4,12,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,12,17
+105,1,TLI 701,7,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,9,12
+106,1,TLI C3,5,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,11,17
+107,1,TLI 801,11,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,12,18
+108,1,Ohae,4,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,18,22
+109,1,TLI 3471,3,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,14,11
+110,1,TLI 704,10,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,9,12
+111,1,Rush,9,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,24,26
+112,1,Manifest,2,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,17,21
+201,2,Manifest,2,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,13,16
+202,2,TLI C4,12,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,8,11
+203,2,MN Clearwater,8,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,9,9
+204,2,Rush,9,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,37,23
+205,2,TLI 703,6,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,8,12
+206,2,Ohae,4,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,20,7
+207,2,TLI C5,1,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,12,15
+208,2,TLI 3471,3,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,10,5
+209,2,TLI 704,10,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,11,10
+210,2,TLI 701,7,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,22,13
+211,2,TLI C3,5,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,20,5
+212,2,TLI 801,11,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,7,11
+301,3,TLI 801,11,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,7,20
+302,3,TLI 701,7,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,14,15
+303,3,Rush,9,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,13,22
+304,3,MN Clearwater,8,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,14,9
+305,3,TLI 704,10,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,5,11
+306,3,TLI 703,6,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,7,5
+307,3,TLI 3471,3,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,9,9
+308,3,Manifest,2,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,6,12
+309,3,TLI C3,5,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,12,14
+310,3,Ohae,4,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,19,25
+311,3,TLI C5,1,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,5,11
+312,3,TLI C4,12,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,14,13
+401,4,TLI 701,7,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,11,24
+402,4,TLI 703,6,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,8,13
+403,4,TLI 704,10,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,12,13
+404,4,TLI C5,1,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,14,10
+405,4,TLI 3471,3,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,11,9
+406,4,TLI C3,5,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,8,5
+407,4,TLI 801,11,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,11,16
+408,4,Rush,9,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,11,7
+409,4,TLI C4,12,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,21,11
+410,4,Manifest,2,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,9,12
+411,4,Ohae,4,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,5,9
+412,4,MN Clearwater,8,plant counts,9/26/2024,2 rows of 0.5 meter,,,,,15,17
