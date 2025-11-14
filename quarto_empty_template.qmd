@@ -1,9 +1,13 @@
 ---
-title: "KGML gasmet data processing"
-subtitle: "N2O and Co2"
+title: "Trial name"
+subtitle: "rolling report"
 author: "Jesse Bealsburg"
 date: today
-format: pdf
+format: 
+  pdf:
+    toc: true
+    number-sections: true
+    lof: true
 editor: visual
 execute:
   echo: false
