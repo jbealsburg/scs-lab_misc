@@ -1,0 +1,454 @@
+---
+title: "NxS"
+subtitle: "summary report for MN site"
+author: "Jesse Bealsburg"
+date: today
+format: 
+  pdf:
+    toc: true
+    number-sections: true
+    # lof: true
+editor: visual
+execute:
+  echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Trial specs
+
+## fieldwork activities
+
+|  |  |
+|:------:|----------------------------------------------------------------|
+| **4/14** | Planted swath of experiment to MN Rothsay Spring Wheat.  Truax planter and 5725? wheat tractor with gps.  Seeded \~1.5 inches deep. |
+| **4/15** | baseline soil samples collected by block. Starting plots on southernmost tire track. 4 pushes 0-6" for 0-6inch , 2 pushes for 6-24", by block. |
+| **4/15** | Fertilized appropriate plots with pre weighed baggies of anvil treated urea and ammonium sulfate. |
+| **4/30** | cultivated the northern and southern edge, potentially shrinking the harvest length of the northern and southern ranges/blocks |
+| **5/19** | applied fertilizer at prescribed rates. Also flagged out field |
+| **5/23** | ndvi measurements: 0.02 variance of ndvi in same plot. So plot 101 at 6877 could be remeasured at 7077 or 6677. Walked middle of the 8 ft plot, 15 ft length. Biomass sampling: 1 meter of row collected in middle of the plot at the base, placed in bag. Some plots done by kahlid were 3 rows at 1 meter instead of 1 row at 1 meter, we will figure out which plots by using weight of bags, then we will need to account for this at grain harvest as well. |
+| **5/23** | sprayed 27 fl oz of wolverine on wheat (second application due to first one not being successful. Hoping for control of some grasses |
+| **6/24** | Soil sampled every plot.  4 pokes 0-6 inches.  2 pokes 6-24. |
+| **7/24** | staging check |
+| **7/28** | started combining alleys.  1/4 completed, but settings mostly dialed in |
+| **7/30** | combine harvest- |
+| **8/6** | soil samples. 3 push 0-6", 1 push 6-24". |
+
+## plot map
+
+![NxS plot map. Plots were originally intended to be 30 ft long but the tractor + drill was not maneuverable enough to finish the 30 ft pass on the north and south side before needing to turn to avoid the hops. on most northern](NxS_plotmap.png)
+
+\newpage
+
+# Biomass
+
+plant tissue analysis data still being processed
+
+```{r}
+library(tidyverse)
+read.csv("NxS plot map and master - data_biomassyieldprotein.csv") -> dat
+
+dat %>% 
+  mutate(date = as.POSIXct(date)) -> dat
+
+
+```
+
+## NDVI
+
+```{r}
+#| label: fig-ndvi
+#| fig-cap: "NDVI across two sampling dates. X indicates mean within sampling date. Treatments are ordered where 150N-20S is highest mean NDVI across both dates and 50N-10S is lowest mean NDVI when averaged across both dates."
+
+dat %>% 
+  select(date, plots, block, treatment, ndvi) %>% 
+  drop_na(ndvi) %>% 
+  mutate(treatment = fct_reorder(treatment,ndvi,
+                                 .fun = mean)) %>% 
+  ggplot(aes(treatment,ndvi)) +
+  geom_point() +
+  stat_summary(
+    geom = "point",
+    fun = mean,
+    col = 3,
+    size = 4,
+    shape = 4,
+    stroke = 2
+  ) +
+  coord_flip() +
+  facet_wrap(~date, 
+             scales = "free") +
+  labs(x="")
+```
+
+\newpage
+
+## Aboveground dry matter yield at feekes 3 (May 23)
+
+```{r}
+#| label: fig-biomass
+#| fig-cap: "Forage dry matter yield on May 23"
+
+dat %>% 
+  # glimpse()
+  select(date, plots, block, treatment, forage_drymatteryield_kgha) %>% 
+  drop_na(forage_drymatteryield_kgha) %>% 
+  mutate(treatment = fct_reorder(treatment,forage_drymatteryield_kgha,
+                                 .fun = mean)) %>% 
+  ggplot(aes(treatment,forage_drymatteryield_kgha)) +
+  geom_point() +
+  stat_summary(
+    geom = "point",
+    fun = mean,
+    col = 3,
+    size = 4,
+    shape = 4,
+    stroke = 2
+  ) +
+  coord_flip() +
+  labs(x="")
+```
+
+\newpage
+
+# Grain (methods comparison)
+
+Combine uses a harvest master system for plot yields, moisture and test weight
+
+This was compared against a Perten 5200 moisture and test weight analyzer along with weighing the entire plot weight (bagged in the cab) on a scale after storing in a dryer for a couple days
+
+## kg ha
+
+```{r}
+#| label: fig-yieldkgha
+#| fig-cap: "Grain yield in kilograms per hectare between the combine weight system vs the entire sample being brought back to lab and weighed. Note when weighed by hand the sample was dryer so this explains lower weights. Outlier removed."
+dat %>% 
+  filter(grain_kgha_byhand<7000) %>% 
+  select(date, plots, block, treatment,
+         grain_kgha_harvestMaster,
+         grain_kgha_byhand) %>% 
+  drop_na(grain_kgha_harvestMaster, grain_kgha_byhand) %>% 
+  pivot_longer(
+    cols = c(grain_kgha_harvestMaster, grain_kgha_byhand),
+    names_to = "method",
+    values_to = "yield"
+  ) %>% 
+  mutate(method = recode(method,
+                         grain_kgha_harvestMaster = "Combine",
+                         grain_kgha_byhand = "By Hand")) %>% 
+  mutate(treatment = fct_reorder(treatment, yield, .fun = mean)) %>% 
+  ggplot(aes(x = treatment, y = yield, color = method, shape = method)) +
+  geom_point(position = position_dodge(width = 0.5), size = 3, alpha = 0.3) +
+  stat_summary(
+    aes(color = method, shape = method),
+    geom = "point",
+    fun = mean,
+    position = position_dodge(width = 0.5),
+    size = 5,
+    stroke = 1.5
+  ) +
+  coord_flip() +
+  labs(x = "",
+       y = "Yield (kg/ha)",
+       color = "Method",
+       shape = "Method")
+```
+
+-   lower N treatments tended to yield higher. Lodging?
+
+\newpage
+
+## lodging
+
+```{r}
+#| label: fig-yieldkghalodging
+#| fig-cap: "Grain yield estimation from combine with lodging scores where 1 = no lodging and 9 = flat on the ground."
+
+dat %>%
+  filter(grain_kgha_harvestMaster < 7000, grain_kgha_byhand < 7000) %>%
+  select(treatment, grain_kgha_harvestMaster, grain_kgha_byhand, lodging_score_atharvest) %>%
+  drop_na() %>%
+  pivot_longer(
+    cols = c(grain_kgha_harvestMaster, grain_kgha_byhand),
+    names_to = "method",
+    values_to = "yield"
+  ) %>%
+  mutate(
+    method = recode(method,
+                    grain_kgha_harvestMaster = "Combine",
+                    grain_kgha_byhand = "By Hand"),
+    treatment = fct_reorder(treatment, yield, .fun = mean)
+  ) %>%
+  ggplot(aes(x = treatment, y = yield, color = lodging_score_atharvest, shape = method)) +
+  geom_point(size = 3, alpha = 0.7, position = position_jitter(width = 0.2)) +
+  scale_color_viridis_c(option = "plasma", direction = -1, name = "Lodging Score") +
+  scale_shape_manual(values = c("Combine" = 17, "By Hand" = 16)) +  # triangle for Combine, circle for By Hand
+  coord_flip() +
+  labs(
+    x = "",
+    y = "Yield (kg/ha)",
+    shape = "Method"
+  ) +
+  theme_minimal()
+
+
+```
+
+-   low yields driven by lodging
+
+\newpage
+
+## test weight
+
+```{r}
+#| label: fig-testweight
+#| fig-cap: "Grain test weight values were reasonable using  using the Perten 5200 (i.e. By Hand) and were mostly mirrored by on board test weight estimator on combine, but those values will require a correction"
+
+
+# Calculate mean test weight by treatment for By Hand
+byhand_order <- dat %>%
+  drop_na(grain_testweight_lbbu_byhand_grainsensor) %>%
+  group_by(treatment) %>%
+  summarize(mean_byhand = mean(grain_testweight_lbbu_byhand_grainsensor, na.rm = TRUE)) %>%
+  arrange(mean_byhand) %>%
+  pull(treatment)
+
+dat %>% 
+  filter(grain_kgha_byhand < 7000) %>% 
+  select(date, plots, block, treatment,
+         grain_testweight_lbbu_harvestMaster,
+         grain_testweight_lbbu_byhand_grainsensor) %>% 
+  drop_na(grain_testweight_lbbu_harvestMaster, grain_testweight_lbbu_byhand_grainsensor) %>% 
+  pivot_longer(
+    cols = c(grain_testweight_lbbu_harvestMaster, grain_testweight_lbbu_byhand_grainsensor),
+    names_to = "method",
+    values_to = "test weight"
+  ) %>% 
+  mutate(method = recode(method,
+                         grain_testweight_lbbu_harvestMaster = "Combine",
+                         grain_testweight_lbbu_byhand_grainsensor = "By Hand")) %>%
+  # Reorder factor using By Hand order
+  mutate(treatment = factor(treatment, levels = byhand_order)) %>% 
+  ggplot(aes(x = treatment, y = `test weight`, color = method, shape = method)) +
+  geom_point(position = position_dodge(width = 0.5), size = 3, alpha = 0.3) +
+  stat_summary(
+    aes(color = method, shape = method),
+    geom = "point",
+    fun = mean,
+    position = position_dodge(width = 0.5),
+    size = 5,
+    stroke = 1.5
+  ) +
+  coord_flip() +
+  facet_wrap(~method, scales = "free") +
+  labs(x = "",
+       y = "Test weight estimation (lb/bu)",
+       color = "Method",
+       shape = "Method")
+
+```
+
+-   lower N treatments tended to have higher test weights.
+
+\newpage
+
+## bu acre
+
+```{r}
+#| label: fig-buacre
+#| fig-cap: "Grain yield in bushels per acre using only the by hand method because the test weight data was unreliable from the combine."
+
+
+# Step 1: Compute treatment order based on By Hand yield (kg/ha)
+byhand_order <- dat %>%
+  filter(grain_kgha_byhand < 7000) %>%
+  drop_na(grain_kgha_byhand) %>%
+  group_by(treatment) %>%
+  summarize(mean_byhand = mean(grain_kgha_byhand, na.rm = TRUE)) %>%
+  arrange(mean_byhand) %>%
+  pull(treatment)
+
+# Step 2: Main plot with corrected bu/acre
+dat %>% 
+  # glimpse()
+  filter(grain_kgha_byhand < 7000) %>% 
+  select(date, plots, block, treatment,
+         grain_kgha_harvestMaster,
+         grain_kgha_byhand,
+         grain_testweight_lbbu_harvestMaster,
+         grain_testweight_lbbu_byhand_grainsensor) %>% 
+  drop_na(grain_kgha_harvestMaster, grain_kgha_byhand,
+          grain_testweight_lbbu_harvestMaster,
+          grain_testweight_lbbu_byhand_grainsensor) %>% 
+  # Convert kg/ha → lb/acre → bu/acre
+  mutate(
+    lb_acre_byhand = grain_kgha_byhand * 2.20462 / 2.47105,
+    lb_acre_harvestMaster = grain_kgha_harvestMaster * 2.20462 / 2.47105,
+    bu_acre_byhand = lb_acre_byhand / grain_testweight_lbbu_byhand_grainsensor,
+    bu_acre_harvestMaster = lb_acre_harvestMaster / grain_testweight_lbbu_harvestMaster
+  ) %>% 
+  # Pivot longer for plotting
+  pivot_longer(
+    cols = c(bu_acre_harvestMaster, bu_acre_byhand),
+    names_to = "method",
+    values_to = "bu_acre"
+  ) %>% 
+  mutate(method = recode(method,
+                         bu_acre_harvestMaster = "Combine",
+                         bu_acre_byhand = "By Hand"),
+         # Reorder treatments using By Hand order
+         treatment = factor(treatment, levels = byhand_order)) %>% 
+  filter(method=="By Hand") %>% 
+  ggplot(aes(x = treatment, y = bu_acre, color = method, shape = method)) +
+  geom_point(position = position_dodge(width = 0.5), size = 3, alpha = 0.3) +
+  stat_summary(
+    aes(color = method, shape = method),
+    geom = "point",
+    fun = mean,
+    position = position_dodge(width = 0.5),
+    size = 5,
+    stroke = 1.5
+  ) +
+  coord_flip() +
+  labs(x = "",
+       y = "Yield (bu/acre)",
+       color = "Method",
+       shape = "Method")
+
+
+```
+
+-   high N treatments tended to do worse
+
+\newpage
+
+## moisture content
+
+```{r}
+#| label: fig-moisturecontent
+#| fig-cap: "Moisture content at harvest (combine) and after dryer (By Hand)."
+
+# Step 1: Compute treatment order based on Combine moisture
+combine_order <- dat %>%
+  filter(grain_kgha_byhand < 7000) %>%
+  drop_na(grain_moisturepercent_harvestMaster) %>%
+  group_by(treatment) %>%
+  summarize(mean_combine_moisture = mean(grain_moisturepercent_harvestMaster, na.rm = TRUE)) %>%
+  arrange(mean_combine_moisture) %>%  # ascending order
+  pull(treatment)
+
+
+# Step 2: Main plot for grain moisture
+dat %>% 
+  filter(grain_kgha_byhand < 7000) %>% 
+  select(date, plots, block, treatment,
+         grain_moisturepercent_harvestMaster,
+         grain_moisturepercent_byhand_grainsensor) %>% 
+  drop_na(grain_moisturepercent_harvestMaster,
+          grain_moisturepercent_byhand_grainsensor) %>% 
+  pivot_longer(
+    cols = c(grain_moisturepercent_harvestMaster,
+             grain_moisturepercent_byhand_grainsensor),
+    names_to = "method",
+    values_to = "moisture_percent"
+  ) %>% 
+  mutate(method = recode(method,
+                         grain_moisturepercent_harvestMaster = "Combine",
+                         grain_moisturepercent_byhand_grainsensor = "By Hand"),
+         # Reorder treatments using Combine moisture order
+         treatment = factor(treatment, levels = combine_order)) %>% 
+  ggplot(aes(x = treatment, y = moisture_percent, color = method, shape = method)) +
+  geom_point(position = position_dodge(width = 0.5), size = 3, alpha = 0.3) +
+  stat_summary(
+    aes(color = method, shape = method),
+    geom = "point",
+    fun = mean,
+    position = position_dodge(width = 0.5),
+    size = 5,
+    stroke = 1.5
+  ) +
+  coord_flip() +
+  labs(x = "",
+       y = "Grain moisture (%)",
+       color = "Method",
+       shape = "Method")
+
+```
+
+-   Higher N treatments had higher moisture at harvest
+
+-   All were dried down from 12-15% moisture at harvest to around 10% before the "by hand" weighing, test weight and moisture determination on the Perten 5200
+
+\newpage
+
+# Grain quality
+
+## protein
+
+```{r}
+#| label: fig-protein
+#| fig-cap: "Protein content predicted by NIRS using wheat equation"
+
+dat %>% 
+  # glimpse()
+  select(date, plots, block, treatment, protein_estimated_NIRS) %>% 
+  drop_na(protein_estimated_NIRS) %>% 
+  mutate(treatment = fct_reorder(treatment,protein_estimated_NIRS,
+                                 .fun = mean)) %>% 
+  ggplot(aes(treatment,protein_estimated_NIRS)) +
+  geom_point() +
+  stat_summary(
+    geom = "point",
+    fun = mean,
+    col = 3,
+    size = 4,
+    shape = 4,
+    stroke = 2
+  ) +
+  coord_flip() +
+  labs(x="")
+```
+
+-   Higher N rates tended to have higher protein content
+
+# Soil
+
+Not yet processed
+
+\newpage
+
+# Photos
+
+![Wheat stage on 21 May, 2 days prior to biomass sampling at Feekes 3 (though target was Feekes 5)](NxS_photo_closeup_21May2025.JPEG){#photo-21May}
+
+![Drone photo from July 21 2025 prior to harvest. Note lodging.](NxS_photo_droneabove.JPEG)
+
+\newpage
+
+# Discussion
+
+## Can we trust the combine?
+
+### Moisture
+
+Probably. I think 13% moisture at harvest is reasonable, but didn't do a thorough comparison.
+
+### Test weight
+
+No. Setting was set incorreclty. Combine trended simlar to Perten 5200, but not exactly. That's why it was nice to have the backup of the benchtop Perten 5200
+
+### Plot yield
+
+Probably. Didn't compare with quadrat harvest, but compared with taking the entire sample and weighing in the lab vs just taking a subsample we should be relativley confident we'll capture treatment differences.
+
+## Lessons learned
+
+Fertility response trials with commodity crops are easy, especially with the combine, and are possible at st paul experiment station
+
+NDVI and biomass harvest data were too variable to be very useful in this trial.
+
+Low N treatments lodged less, were drier at harvest, had higher test weights, lower protein and yielded more than higher N treatments.
+
+Sulfur response isn't obvious.
