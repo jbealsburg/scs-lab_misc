@@ -22,7 +22,7 @@ editor_options:
 # Trial specs
 
 |  |  |
-|----|----|
+|------------------------------------|------------------------------------|
 | trial description | comparing forage yield of different wheatgrass lines |
 | contact | TLI, spencer [barriball\@landinstitute.org](mailto:barriball@landinstitute.org) |
 | measurements | forage DM yield by plot at each forage harvest, field characterization, plant counts at establishment |
@@ -49,24 +49,24 @@ editor_options:
 ## activities
 
 |  |  |
-|:-------:|---------------------------------------------------------------|
+|:------------:|----------------------------------------------------------|
 | **4/14** | spring wheat planted bulk in r37 |
 | **9/4** | Fertilized one week prior. Rototilled, rolled, and royotilled again. The additional rototilling was because the seed bed was uneven after rolling. Planted plot length of 10.5 feet on setting 35. Standard IWG seeding depth. Rolled after planting. |
 | **9/26** | Plant counts for new stands 2x 0.5meter lengths in different rows. Did not collect weed data |
 | **10/8** | Applied 2, 4 d at \~1 pt per acre (1.3oz. per gallon plus 2oz. Class Act per gallon) to the experiment area plus around borders to control for broadleaf weeds using the 5 foot boom sprayer. |
 | **10/28** | Fertilizer by hand by strips with urea to achieve 50 kg/ ha. (2 lbs per strip) |
-| **10/29** | Soil sampled by block (did not get urea prills) for a baseline.  0-15 cm, 4 pushes per block. |
+| **10/29** | Soil sampled by block (did not get urea prills) for a baseline. 0-15 cm, 4 pushes per block. |
 
 : 2024 field activities
 
 |  |  |
-|:-----:|-----------------------------------------------------------------|
+|:-----------:|----------------------------------------------------------|
 | **4/17** | Fertilized with urea to achieve 60 lbs N per acre |
 | **5/19** | Staging check |
 | **6/5** | swapped metal falgs for plastic and moved them close to trial so they could mow alleys |
-| **6/30** | Harvested all plots.  Definitely at anthesis for most plots.  2x 36 inch lengths taken from middle two rows of plot.  Katherine noted lodging of plots.  Pulled all but two flags from field to allow for station to clear. |
-| **7/4** | Chopped with new holland at some point.  Actual date unknown- check with Darby and or Gary |
-| **8/14** | Roughly marked the experiment boundary with tall flags and a whisker.  Very hard to tell while the IWG is short and the area is weedy. |
+| **6/30** | Harvested all plots. Definitely at anthesis for most plots. 2x 36 inch lengths taken from middle two rows of plot. Katherine noted lodging of plots. Pulled all but two flags from field to allow for station to clear. |
+| **7/4** | Chopped with new holland at some point. Actual date unknown- check with Darby and or Gary |
+| **8/14** | Roughly marked the experiment boundary with tall flags and a whisker. Very hard to tell while the IWG is short and the area is weedy. |
 
 : 2025 field activities
 
@@ -155,7 +155,7 @@ dat %>%
 
 ```{r}
 #| label: fig-lodging
-#| fig-cap: "Forage lodging scores at harvest. Yield presented for comparison. Notice some of the lower yielding plots had lower lodging as well."
+#| fig-cap: "Forage lodging scores at harvest (anthesis). Yield presented for comparison. Notice some of the lower yielding plots had lower lodging as well."
 
 dat %>%
   filter(activity == "harvest") %>%
@@ -223,3 +223,20 @@ dat %>%
   theme_minimal()
 
 ```
+
+```{r}
+dat %>%
+  filter(activity == "harvest") %>%
+  # glimpse()
+  select(plot, trtIWG, yield_drymatter_kgha, lodging_score, moisture_percent) %>%
+  mutate(Entry = trtIWG) %>% 
+  group_by(Entry) %>% 
+  summarise(`Moisture content %`= round(mean(moisture_percent),1)) %>% 
+  knitr::kable(
+    caption = "No differences among moisture content between varieties at harvest"
+  )
+```
+
+# Forage quality
+
+To be determined...
