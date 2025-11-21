@@ -1,257 +1,257 @@
-experiment,site,timing,date,sample_type,plots,block,treatment,area_m2,weight_wet_withbag_g,bagtare_wet_g,weight_wet_nobag_g,forage_weight_dry_withbag_g,bagtare_dry_g,forage_weight_dry_nobag_g,forage_drymatteryield_kgha,combine_weight_byhand_dry_nopenalty_kg,combine_weight_byhand_dry_withpenalty_kg,grain_kgha_byhand,grain_moisturepercent_byhand_grainsensor,grain_testweight_lbbu_byhand_grainsensor,grain_testweight_lbbu_harvestMaster,grain_kgha_harvestMaster,grain_moisturepercent_harvestMaster,grain_testweight_kghL_harvestMaster,lodging_score_atharvest,protein_estimated_NIRS,ndvi
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,101,1,0N-0S,0.2032,,30.7,,42.5,30.3,12.2,600.3937008,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,102,1,0N-10S,0.2032,,30.7,,47.98,30.3,17.68,870.0787402,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,103,1,0N-20S,0.2032,,30.7,,41.56,30.3,11.26,554.1338583,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,104,1,50N-0S,0.2032,,30.7,,46.9,30.3,16.6,816.9291339,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,105,1,50N-10S,0.2032,,30.7,,56.52,30.3,26.22,1290.354331,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,106,1,50N-20S,0.2032,,30.7,,50.17,30.3,19.87,977.8543307,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,107,1,75N-0S,0.2032,,30.7,,43.64,30.3,13.34,656.496063,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,108,1,75N-10S,0.2032,,30.7,,62.65,30.3,32.35,1592.027559,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,109,1,75N-20S,0.2032,,30.7,,51.04,30.3,20.74,1020.669291,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,110,1,100N-0S,0.2032,,30.7,,57.25,30.3,26.95,1326.279528,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,111,1,100N-10S,0.2032,,30.7,,54.16,30.3,23.86,1174.212598,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,112,1,100N-20S,0.2032,,30.7,,53.99,30.3,23.69,1165.846457,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,113,1,150N-0S,0.2032,,30.7,,46.27,30.3,15.97,785.9251969,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,114,1,150N-10S,0.2032,,30.7,,60.72,30.3,30.42,1497.047244,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,115,1,150N-20S,0.2032,,30.7,,68.3,30.3,38,1870.07874,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,116,1,100N-20S-PD,0.2032,,30.7,,57.24,30.3,26.94,1325.787402,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,201,2,75N-20S,0.2032,,30.7,,50.84,30.3,20.54,1010.826772,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,202,2,150N-0S,0.2032,,30.7,,58.36,30.3,28.06,1380.905512,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,203,2,100N-10S,0.2032,,30.7,,51.34,30.3,21.04,1035.433071,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,204,2,0N-20S,0.2032,,30.7,,50.17,30.3,19.87,977.8543307,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,205,2,150N-10S,0.2032,,30.7,,48.72,30.3,18.42,906.496063,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,206,2,75N-0S,0.2032,,30.7,,51.58,30.3,21.28,1047.244094,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,207,2,100N-20S-PD,0.2032,,30.7,,56.28,30.3,25.98,1278.543307,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,208,2,75N-10S,0.2032,,30.7,,51.08,30.3,20.78,1022.637795,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,209,2,100N-0S,0.2032,,30.7,,51.98,30.3,21.68,1066.929134,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,210,2,50N-20S,0.2032,,30.7,,53.88,30.3,23.58,1160.433071,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,211,2,150N-20S,0.2032,,30.7,,54.01,30.3,23.71,1166.830709,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,212,2,0N-10S,0.2032,,30.7,,60.46,30.3,30.16,1484.251969,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,213,2,50N-10S,0.2032,,30.7,,56.5,30.3,26.2,1289.370079,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,214,2,50N-0S,0.2032,,30.7,,57.33,30.3,27.03,1330.216535,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,215,2,0N-0S,0.2032,,30.7,,58.26,30.3,27.96,1375.984252,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,216,2,100N-20S,0.2032,,30.7,,58.47,30.3,28.17,1386.318898,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,301,3,75N-0S,0.2032,,30.7,,54.06,30.3,23.76,1169.291339,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,302,3,50N-20S,0.2032,,30.7,,57.49,30.3,27.19,1338.090551,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,303,3,100N-0S,0.2032,,30.7,,48.21,30.3,17.91,881.3976378,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,304,3,100N-20S,0.2032,,30.7,,51.31,30.3,21.01,1033.956693,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,305,3,0N-0S,0.2032,,30.7,,45.05,30.3,14.75,725.8858268,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,306,3,100N-10S,0.2032,,30.7,,51.92,30.3,21.62,1063.976378,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,307,3,50N-10S,0.2032,,30.7,,49.24,30.3,18.94,932.0866142,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,308,3,150N-20S,0.2032,,30.7,,51.22,30.3,20.92,1029.527559,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,309,3,150N-0S,0.2032,,30.7,,45.34,30.3,15.04,740.1574803,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,310,3,75N-10S,0.2032,,30.7,,70.31,30.3,40.01,1968.996063,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,311,3,50N-0S,0.2032,,30.7,,54.37,30.3,24.07,1184.547244,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,312,3,0N-20S,0.2032,,30.7,,53.81,30.3,23.51,1156.988189,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,313,3,150N-10S,0.2032,,30.7,,61.34,30.3,31.04,1527.559055,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,314,3,75N-20S,0.2032,,30.7,,62.25,30.3,31.95,1572.34252,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,315,3,100N-20S-PD,0.2032,,30.7,,59.59,30.3,29.29,1441.437008,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,316,3,0N-10S,0.2032,,30.7,,60.05,30.3,29.75,1464.074803,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,401,4,50N-10S,0.2032,,30.7,,53.3,30.3,23,1131.889764,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,402,4,100N-20S,0.2032,,30.7,,52.15,30.3,21.85,1075.295276,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,403,4,100N-0S,0.2032,,30.7,,55.71,30.3,25.41,1250.492126,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,404,4,100N-10S,0.2032,,30.7,,47.46,30.3,17.16,844.488189,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,405,4,75N-10S,0.2032,,30.7,,52.17,30.3,21.87,1076.279528,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,406,4,150N-0S,0.2032,,30.7,,38.06,30.3,7.76,381.8897638,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,407,4,100N-20S-PD,0.2032,,30.7,,39.42,30.3,9.12,448.8188976,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,408,4,150N-20S,0.2032,,30.7,,41.34,30.3,11.04,543.3070866,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,409,4,75N-20S,0.2032,,30.7,,44.66,30.3,14.36,706.6929134,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,410,4,50N-20S,0.2032,,30.7,,54.5,30.3,24.2,1190.944882,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,411,4,0N-10S,0.2032,,30.7,,62.31,30.3,32.01,1575.295276,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,412,4,150N-10S,0.2032,,30.7,,60.15,30.3,29.85,1468.996063,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,413,4,0N-0S,0.2032,,30.7,,55.36,30.3,25.06,1233.267717,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,414,4,75N-0S,0.2032,,30.7,,64.2,30.3,33.9,1668.307087,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,415,4,50N-0S,0.2032,,30.7,,55.67,30.3,25.37,1248.523622,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,416,4,0N-20S,0.2032,,30.7,,50.83,30.3,20.53,1010.334646,,,,,,,,,,,,
-NxS,MN,feekes 3,2025-05-23,ndvi,101,1,0N-0S,14,,,,,,,,,,,,,,,,,,,6877
-NxS,MN,feekes 3,2025-05-23,ndvi,102,1,0N-10S,14,,,,,,,,,,,,,,,,,,,7049
-NxS,MN,feekes 3,2025-05-23,ndvi,103,1,0N-20S,14,,,,,,,,,,,,,,,,,,,7063
-NxS,MN,feekes 3,2025-05-23,ndvi,104,1,50N-0S,14,,,,,,,,,,,,,,,,,,,7021
-NxS,MN,feekes 3,2025-05-23,ndvi,105,1,50N-10S,14,,,,,,,,,,,,,,,,,,,7015
-NxS,MN,feekes 3,2025-05-23,ndvi,106,1,50N-20S,14,,,,,,,,,,,,,,,,,,,6939
-NxS,MN,feekes 3,2025-05-23,ndvi,107,1,75N-0S,14,,,,,,,,,,,,,,,,,,,7101
-NxS,MN,feekes 3,2025-05-23,ndvi,108,1,75N-10S,14,,,,,,,,,,,,,,,,,,,7198
-NxS,MN,feekes 3,2025-05-23,ndvi,109,1,75N-20S,14,,,,,,,,,,,,,,,,,,,7726
-NxS,MN,feekes 3,2025-05-23,ndvi,110,1,100N-0S,14,,,,,,,,,,,,,,,,,,,7638
-NxS,MN,feekes 3,2025-05-23,ndvi,111,1,100N-10S,14,,,,,,,,,,,,,,,,,,,7842
-NxS,MN,feekes 3,2025-05-23,ndvi,112,1,100N-20S,14,,,,,,,,,,,,,,,,,,,7741
-NxS,MN,feekes 3,2025-05-23,ndvi,113,1,150N-0S,14,,,,,,,,,,,,,,,,,,,7994
-NxS,MN,feekes 3,2025-05-23,ndvi,114,1,150N-10S,14,,,,,,,,,,,,,,,,,,,7772
-NxS,MN,feekes 3,2025-05-23,ndvi,115,1,150N-20S,14,,,,,,,,,,,,,,,,,,,8052
-NxS,MN,feekes 3,2025-05-23,ndvi,116,1,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,7968
-NxS,MN,feekes 3,2025-05-23,ndvi,201,2,75N-20S,14,,,,,,,,,,,,,,,,,,,6955
-NxS,MN,feekes 3,2025-05-23,ndvi,202,2,150N-0S,14,,,,,,,,,,,,,,,,,,,6873
-NxS,MN,feekes 3,2025-05-23,ndvi,203,2,100N-10S,14,,,,,,,,,,,,,,,,,,,7001
-NxS,MN,feekes 3,2025-05-23,ndvi,204,2,0N-20S,14,,,,,,,,,,,,,,,,,,,7194
-NxS,MN,feekes 3,2025-05-23,ndvi,205,2,150N-10S,14,,,,,,,,,,,,,,,,,,,6696
-NxS,MN,feekes 3,2025-05-23,ndvi,206,2,75N-0S,14,,,,,,,,,,,,,,,,,,,7388
-NxS,MN,feekes 3,2025-05-23,ndvi,207,2,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,7324
-NxS,MN,feekes 3,2025-05-23,ndvi,208,2,75N-10S,14,,,,,,,,,,,,,,,,,,,7641
-NxS,MN,feekes 3,2025-05-23,ndvi,209,2,100N-0S,14,,,,,,,,,,,,,,,,,,,7703
-NxS,MN,feekes 3,2025-05-23,ndvi,210,2,50N-20S,14,,,,,,,,,,,,,,,,,,,7608
-NxS,MN,feekes 3,2025-05-23,ndvi,211,2,150N-20S,14,,,,,,,,,,,,,,,,,,,7819
-NxS,MN,feekes 3,2025-05-23,ndvi,212,2,0N-10S,14,,,,,,,,,,,,,,,,,,,7904
-NxS,MN,feekes 3,2025-05-23,ndvi,213,2,50N-10S,14,,,,,,,,,,,,,,,,,,,7774
-NxS,MN,feekes 3,2025-05-23,ndvi,214,2,50N-0S,14,,,,,,,,,,,,,,,,,,,7922
-NxS,MN,feekes 3,2025-05-23,ndvi,215,2,0N-0S,14,,,,,,,,,,,,,,,,,,,7851
-NxS,MN,feekes 3,2025-05-23,ndvi,216,2,100N-20S,14,,,,,,,,,,,,,,,,,,,8116
-NxS,MN,feekes 3,2025-05-23,ndvi,301,3,75N-0S,14,,,,,,,,,,,,,,,,,,,6871
-NxS,MN,feekes 3,2025-05-23,ndvi,302,3,50N-20S,14,,,,,,,,,,,,,,,,,,,7058
-NxS,MN,feekes 3,2025-05-23,ndvi,303,3,100N-0S,14,,,,,,,,,,,,,,,,,,,7303
-NxS,MN,feekes 3,2025-05-23,ndvi,304,3,100N-20S,14,,,,,,,,,,,,,,,,,,,6990
-NxS,MN,feekes 3,2025-05-23,ndvi,305,3,0N-0S,14,,,,,,,,,,,,,,,,,,,7083
-NxS,MN,feekes 3,2025-05-23,ndvi,306,3,100N-10S,14,,,,,,,,,,,,,,,,,,,7356
-NxS,MN,feekes 3,2025-05-23,ndvi,307,3,50N-10S,14,,,,,,,,,,,,,,,,,,,7499
-NxS,MN,feekes 3,2025-05-23,ndvi,308,3,150N-20S,14,,,,,,,,,,,,,,,,,,,7571
-NxS,MN,feekes 3,2025-05-23,ndvi,309,3,150N-0S,14,,,,,,,,,,,,,,,,,,,7704
-NxS,MN,feekes 3,2025-05-23,ndvi,310,3,75N-10S,14,,,,,,,,,,,,,,,,,,,7614
-NxS,MN,feekes 3,2025-05-23,ndvi,311,3,50N-0S,14,,,,,,,,,,,,,,,,,,,7794
-NxS,MN,feekes 3,2025-05-23,ndvi,312,3,0N-20S,14,,,,,,,,,,,,,,,,,,,7923
-NxS,MN,feekes 3,2025-05-23,ndvi,313,3,150N-10S,14,,,,,,,,,,,,,,,,,,,7929
-NxS,MN,feekes 3,2025-05-23,ndvi,314,3,75N-20S,14,,,,,,,,,,,,,,,,,,,7893
-NxS,MN,feekes 3,2025-05-23,ndvi,315,3,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8073
-NxS,MN,feekes 3,2025-05-23,ndvi,316,3,0N-10S,14,,,,,,,,,,,,,,,,,,,7800
-NxS,MN,feekes 3,2025-05-23,ndvi,401,4,50N-10S,14,,,,,,,,,,,,,,,,,,,6846
-NxS,MN,feekes 3,2025-05-23,ndvi,402,4,100N-20S,14,,,,,,,,,,,,,,,,,,,7037
-NxS,MN,feekes 3,2025-05-23,ndvi,403,4,100N-0S,14,,,,,,,,,,,,,,,,,,,6935
-NxS,MN,feekes 3,2025-05-23,ndvi,404,4,100N-10S,14,,,,,,,,,,,,,,,,,,,6893
-NxS,MN,feekes 3,2025-05-23,ndvi,405,4,75N-10S,14,,,,,,,,,,,,,,,,,,,7381
-NxS,MN,feekes 3,2025-05-23,ndvi,406,4,150N-0S,14,,,,,,,,,,,,,,,,,,,7480
-NxS,MN,feekes 3,2025-05-23,ndvi,407,4,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,7427
-NxS,MN,feekes 3,2025-05-23,ndvi,408,4,150N-20S,14,,,,,,,,,,,,,,,,,,,7521
-NxS,MN,feekes 3,2025-05-23,ndvi,409,4,75N-20S,14,,,,,,,,,,,,,,,,,,,7824
-NxS,MN,feekes 3,2025-05-23,ndvi,410,4,50N-20S,14,,,,,,,,,,,,,,,,,,,7931
-NxS,MN,feekes 3,2025-05-23,ndvi,411,4,0N-10S,14,,,,,,,,,,,,,,,,,,,7775
-NxS,MN,feekes 3,2025-05-23,ndvi,412,4,150N-10S,14,,,,,,,,,,,,,,,,,,,8125
-NxS,MN,feekes 3,2025-05-23,ndvi,413,4,0N-0S,14,,,,,,,,,,,,,,,,,,,7811
-NxS,MN,feekes 3,2025-05-23,ndvi,414,4,75N-0S,14,,,,,,,,,,,,,,,,,,,8025
-NxS,MN,feekes 3,2025-05-23,ndvi,415,4,50N-0S,14,,,,,,,,,,,,,,,,,,,7886
-NxS,MN,feekes 3,2025-05-23,ndvi,416,4,0N-20S,14,,,,,,,,,,,,,,,,,,,7527
-NxS,MN,feekes 6,2025-06-06,ndvi,101,1,0N-0S,14,,,,,,,,,,,,,,,,,,,8651
-NxS,MN,feekes 6,2025-06-06,ndvi,102,1,0N-10S,14,,,,,,,,,,,,,,,,,,,8739
-NxS,MN,feekes 6,2025-06-06,ndvi,103,1,0N-20S,14,,,,,,,,,,,,,,,,,,,8622
-NxS,MN,feekes 6,2025-06-06,ndvi,104,1,50N-0S,14,,,,,,,,,,,,,,,,,,,8009
-NxS,MN,feekes 6,2025-06-06,ndvi,105,1,50N-10S,14,,,,,,,,,,,,,,,,,,,8704
-NxS,MN,feekes 6,2025-06-06,ndvi,106,1,50N-20S,14,,,,,,,,,,,,,,,,,,,8639
-NxS,MN,feekes 6,2025-06-06,ndvi,107,1,75N-0S,14,,,,,,,,,,,,,,,,,,,8688
-NxS,MN,feekes 6,2025-06-06,ndvi,108,1,75N-10S,14,,,,,,,,,,,,,,,,,,,8749
-NxS,MN,feekes 6,2025-06-06,ndvi,109,1,75N-20S,14,,,,,,,,,,,,,,,,,,,8822
-NxS,MN,feekes 6,2025-06-06,ndvi,110,1,100N-0S,14,,,,,,,,,,,,,,,,,,,8821
-NxS,MN,feekes 6,2025-06-06,ndvi,111,1,100N-10S,14,,,,,,,,,,,,,,,,,,,8892
-NxS,MN,feekes 6,2025-06-06,ndvi,112,1,100N-20S,14,,,,,,,,,,,,,,,,,,,8753
-NxS,MN,feekes 6,2025-06-06,ndvi,113,1,150N-0S,14,,,,,,,,,,,,,,,,,,,8920
-NxS,MN,feekes 6,2025-06-06,ndvi,114,1,150N-10S,14,,,,,,,,,,,,,,,,,,,8490
-NxS,MN,feekes 6,2025-06-06,ndvi,115,1,150N-20S,14,,,,,,,,,,,,,,,,,,,8916
-NxS,MN,feekes 6,2025-06-06,ndvi,116,1,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8722
-NxS,MN,feekes 6,2025-06-06,ndvi,201,2,75N-20S,14,,,,,,,,,,,,,,,,,,,8659
-NxS,MN,feekes 6,2025-06-06,ndvi,202,2,150N-0S,14,,,,,,,,,,,,,,,,,,,8664
-NxS,MN,feekes 6,2025-06-06,ndvi,203,2,100N-10S,14,,,,,,,,,,,,,,,,,,,8753
-NxS,MN,feekes 6,2025-06-06,ndvi,204,2,0N-20S,14,,,,,,,,,,,,,,,,,,,8590
-NxS,MN,feekes 6,2025-06-06,ndvi,205,2,150N-10S,14,,,,,,,,,,,,,,,,,,,8689
-NxS,MN,feekes 6,2025-06-06,ndvi,206,2,75N-0S,14,,,,,,,,,,,,,,,,,,,8709
-NxS,MN,feekes 6,2025-06-06,ndvi,207,2,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8725
-NxS,MN,feekes 6,2025-06-06,ndvi,208,2,75N-10S,14,,,,,,,,,,,,,,,,,,,8758
-NxS,MN,feekes 6,2025-06-06,ndvi,209,2,100N-0S,14,,,,,,,,,,,,,,,,,,,8838
-NxS,MN,feekes 6,2025-06-06,ndvi,210,2,50N-20S,14,,,,,,,,,,,,,,,,,,,8766
-NxS,MN,feekes 6,2025-06-06,ndvi,211,2,150N-20S,14,,,,,,,,,,,,,,,,,,,8825
-NxS,MN,feekes 6,2025-06-06,ndvi,212,2,0N-10S,14,,,,,,,,,,,,,,,,,,,8679
-NxS,MN,feekes 6,2025-06-06,ndvi,213,2,50N-10S,14,,,,,,,,,,,,,,,,,,,8855
-NxS,MN,feekes 6,2025-06-06,ndvi,214,2,50N-0S,14,,,,,,,,,,,,,,,,,,,8790
-NxS,MN,feekes 6,2025-06-06,ndvi,215,2,0N-0S,14,,,,,,,,,,,,,,,,,,,8641
-NxS,MN,feekes 6,2025-06-06,ndvi,216,2,100N-20S,14,,,,,,,,,,,,,,,,,,,8764
-NxS,MN,feekes 6,2025-06-06,ndvi,301,3,75N-0S,14,,,,,,,,,,,,,,,,,,,8538
-NxS,MN,feekes 6,2025-06-06,ndvi,302,3,50N-20S,14,,,,,,,,,,,,,,,,,,,8757
-NxS,MN,feekes 6,2025-06-06,ndvi,303,3,100N-0S,14,,,,,,,,,,,,,,,,,,,8702
-NxS,MN,feekes 6,2025-06-06,ndvi,304,3,100N-20S,14,,,,,,,,,,,,,,,,,,,8729
-NxS,MN,feekes 6,2025-06-06,ndvi,305,3,0N-0S,14,,,,,,,,,,,,,,,,,,,8662
-NxS,MN,feekes 6,2025-06-06,ndvi,306,3,100N-10S,14,,,,,,,,,,,,,,,,,,,8835
-NxS,MN,feekes 6,2025-06-06,ndvi,307,3,50N-10S,14,,,,,,,,,,,,,,,,,,,8444
-NxS,MN,feekes 6,2025-06-06,ndvi,308,3,150N-20S,14,,,,,,,,,,,,,,,,,,,8835
-NxS,MN,feekes 6,2025-06-06,ndvi,309,3,150N-0S,14,,,,,,,,,,,,,,,,,,,8952
-NxS,MN,feekes 6,2025-06-06,ndvi,310,3,75N-10S,14,,,,,,,,,,,,,,,,,,,8842
-NxS,MN,feekes 6,2025-06-06,ndvi,311,3,50N-0S,14,,,,,,,,,,,,,,,,,,,8827
-NxS,MN,feekes 6,2025-06-06,ndvi,312,3,0N-20S,14,,,,,,,,,,,,,,,,,,,8814
-NxS,MN,feekes 6,2025-06-06,ndvi,313,3,150N-10S,14,,,,,,,,,,,,,,,,,,,8912
-NxS,MN,feekes 6,2025-06-06,ndvi,314,3,75N-20S,14,,,,,,,,,,,,,,,,,,,8838
-NxS,MN,feekes 6,2025-06-06,ndvi,315,3,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8711
-NxS,MN,feekes 6,2025-06-06,ndvi,316,3,0N-10S,14,,,,,,,,,,,,,,,,,,,8549
-NxS,MN,feekes 6,2025-06-06,ndvi,401,4,50N-10S,14,,,,,,,,,,,,,,,,,,,8574
-NxS,MN,feekes 6,2025-06-06,ndvi,402,4,100N-20S,14,,,,,,,,,,,,,,,,,,,8722
-NxS,MN,feekes 6,2025-06-06,ndvi,403,4,100N-0S,14,,,,,,,,,,,,,,,,,,,8752
-NxS,MN,feekes 6,2025-06-06,ndvi,404,4,100N-10S,14,,,,,,,,,,,,,,,,,,,8736
-NxS,MN,feekes 6,2025-06-06,ndvi,405,4,75N-10S,14,,,,,,,,,,,,,,,,,,,8353
-NxS,MN,feekes 6,2025-06-06,ndvi,406,4,150N-0S,14,,,,,,,,,,,,,,,,,,,8869
-NxS,MN,feekes 6,2025-06-06,ndvi,407,4,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8735
-NxS,MN,feekes 6,2025-06-06,ndvi,408,4,150N-20S,14,,,,,,,,,,,,,,,,,,,8892
-NxS,MN,feekes 6,2025-06-06,ndvi,409,4,75N-20S,14,,,,,,,,,,,,,,,,,,,8808
-NxS,MN,feekes 6,2025-06-06,ndvi,410,4,50N-20S,14,,,,,,,,,,,,,,,,,,,8817
-NxS,MN,feekes 6,2025-06-06,ndvi,411,4,0N-10S,14,,,,,,,,,,,,,,,,,,,8640
-NxS,MN,feekes 6,2025-06-06,ndvi,412,4,150N-10S,14,,,,,,,,,,,,,,,,,,,8904
-NxS,MN,feekes 6,2025-06-06,ndvi,413,4,0N-0S,14,,,,,,,,,,,,,,,,,,,8484
-NxS,MN,feekes 6,2025-06-06,ndvi,414,4,75N-0S,14,,,,,,,,,,,,,,,,,,,8775
-NxS,MN,feekes 6,2025-06-06,ndvi,415,4,50N-0S,14,,,,,,,,,,,,,,,,,,,8596
-NxS,MN,feekes 6,2025-06-06,ndvi,416,4,0N-20S,14,,,,,,,,,,,,,,,,,,,8315
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,101,1,0N-0S,9.2903,,,,,,,,4.732,3.932,4232.371398,11.8,56.7,94.5226,4574.663897,15.4,75.8,2,15.39,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,102,1,0N-10S,9.2903,,,,,,,,4.854,4.054,4363.691162,11.1,57.5,95.3955,4703.830877,15.9,76.5,1,15.4,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,103,1,0N-20S,9.2903,,,,,,,,5.996,5.196,5592.930261,11,59,98.8871,5392.721441,15.1,79.3,1,14.81,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,104,1,50N-0S,9.2903,,,,,,,,4.42,3.62,3896.537249,9.6,57,97.8895,4359.385596,13.9,78.5,2,15.34,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,105,1,50N-10S,9.2903,,,,,,,,4.566,3.766,4053.690408,9.9,57.8,98.8871,4354.003638,14,79.3,1,15.35,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,106,1,50N-20S,9.2903,,,,,,,,4.552,3.752,4038.620927,10.7,57.6,99.1365,4300.184063,13.6,79.5,1,15.09,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,107,1,75N-0S,9.2903,,,,,,,,4.438,3.638,3915.912296,10.3,55.6,99.3859,4197.92687,13.7,79.7,2,15.4,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,108,1,75N-10S,9.2903,,,,,,,,4.262,3.462,3726.467391,9.6,57.8,98.0142,3966.502696,13.6,78.6,4,15.39,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,109,1,75N-20S,9.2903,,,,,,,,4.868,4.068,4378.760643,9.1,58,96.1437,4644.629345,13,77.1,3,15.32,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,110,1,100N-0S,9.2903,,,,,,,,4.158,3.358,3614.522674,,,96.019,3891.155291,13,77,5,,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,111,1,100N-10S,9.2903,,,,,,,,3.9,3.1,3336.813666,,,98.0142,3562.855882,14.2,78.6,3,,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,112,1,100N-20S,9.2903,,,,,,,,4.376,3.576,3849.176022,9,58.2,99.76,4101.051635,12.7,80,2,14.79,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,113,1,150N-0S,9.2903,,,,,,,,3.602,2.802,3016.048997,8.5,56.9,95.0214,3266.848218,13.7,76.2,5,15.43,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,114,1,150N-10S,9.2903,,,,,,,,4.52,3.72,4004.176399,9.2,56.5,98.2636,4321.711893,13.2,78.8,2,15.29,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,115,1,150N-20S,9.2903,,,,,,,,4.556,3.756,4042.926493,8.8,54.8,91.7792,4337.857766,14.9,73.6,4,15.39,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,116,1,100N-20S-PD,9.2903,,,,,,,,4.846,4.046,4355.08003,9.4,59.2,101.7552,4628.483472,12.9,81.6,2,14.51,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,201,2,75N-20S,11.612875,,,,,,,,4.586,3.786,3260.174591,11.4,56.5,93.6497,3539.175269,15.6,75.1,5,16.28,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,202,2,150N-0S,11.612875,,,,,,,,4.218,3.418,2943.284932,,,90.9063,3267.92461,17.5,72.9,3,16.34,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,203,2,100N-10S,11.612875,,,,,,,,4.998,4.198,3614.953231,10.1,56.3,96.3931,4060.148757,15.4,77.3,3,16.58,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,204,2,0N-20S,11.612875,,,,,,,,5.324,4.524,3895.676135,9.3,58.2,99.2612,4150.565644,13.1,79.6,1,14.75,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,205,2,150N-10S,11.612875,,,,,,,,4.006,3.206,2760.728932,9.3,56.6,96.1437,2962.229422,14.7,77.1,3,16.03,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,206,2,75N-0S,11.612875,,,,,,,,5.566,4.766,4104.065531,9,56.6,98.7624,4391.677341,13.5,79.2,2,15.26,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,207,2,100N-20S-PD,11.612875,,,,,,,,5.482,4.682,4031.732022,9.6,56.9,98.7624,4314.177153,14,79.2,1,14.81,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,208,2,75N-10S,11.612875,,,,,,,,4.376,3.576,3079.340818,9.2,55.3,94.6473,4232.371398,13.7,75.9,4,15.82,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,209,2,100N-0S,11.612875,,,,,,,,5.342,4.542,3911.176173,9.8,57,96.6425,4120.426682,13.3,77.5,2,15.83,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,210,2,50N-20S,11.612875,,,,,,,,5.324,4.524,3895.676135,9.4,56.2,96.7672,4098.898851,12.4,77.6,2,15.11,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,211,2,150N-20S,11.612875,,,,,,,,,,,9.2,55.7,96.5178,3422.924986,14.4,77.4,3,16,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,212,2,0N-10S,11.612875,,,,,,,,5.772,4.972,4281.454851,9,58.1,102.1293,4538.066586,12,81.9,3,13.87,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,213,2,50N-10S,11.612875,,,,,,,,5.432,4.632,3988.676361,9.8,58.6,102.8775,4185.010172,12.1,82.5,3,14.37,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,214,2,50N-0S,11.612875,,,,,,,,5.918,5.118,4407.177379,9.7,57.8,102.7528,4637.094604,11.9,82.4,2,14.38,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,215,2,0N-0S,11.612875,,,,,,,,5.384,4.584,3947.342928,9.2,59.6,102.5034,4154.87121,11.8,82.2,1,13.38,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,216,2,100N-20S,11.612875,,,,,,,,5.572,4.772,4109.23221,9.8,57.8,102.1293,4322.788285,12.4,81.9,3,14.51,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,301,3,75N-0S,11.612875,,,,,,,,5.919,5.119,4408.038492,10.3,56.8,96.019,4314.177153,15.4,77,2,15.53,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,302,3,50N-20S,11.612875,,,,,,,,5.216,4.416,3802.675909,8.8,56.3,94.0238,4654.316868,16.5,75.4,5,15.46,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,303,3,100N-0S,11.612875,,,,,,,,4.616,3.816,3286.007987,9.3,54.6,96.7672,3935.287343,15.9,77.6,2,15.89,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,304,3,100N-20S,11.612875,,,,,,,,5.494,4.694,4042.06538,10,57.6,97.3907,4309.871586,14.2,78.1,1,15.28,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,305,3,0N-0S,11.612875,,,,,,,,5.796,4.996,4302.121568,9.2,57.7,100.6329,4559.594416,12.9,80.7,1,15.06,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,306,3,100N-10S,11.612875,,,,,,,,5.19,4.39,3780.286966,9.7,54.7,95.3955,4073.065455,14.8,76.5,2,15.36,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,307,3,50N-10S,11.612875,,,,,,,,5.54,4.74,4081.676587,9.2,56.2,99.0118,4365.843945,12.9,79.4,4,15.28,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,308,3,150N-20S,11.612875,,,,,,,,5.052,4.252,3661.453344,9.7,54,91.031,4025.704229,19.4,73,6,16.34,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,309,3,150N-0S,11.612875,,,,,,,,5.118,4.318,3718.286815,9.3,55.7,92.5274,3986.954135,14.4,74.2,7,15.87,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,310,3,75N-10S,11.612875,,,,,,,,5.646,4.846,4172.954587,9.7,55.2,95.5202,4408.899605,12.8,76.6,6,15.11,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,311,3,50N-0S,11.612875,,,,,,,,7.078,6.278,5406.068695,9.8,58.7,98.7624,4934.178659,13.2,79.2,2,14.43,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,312,3,0N-20S,11.612875,,,,,,,,,,,,,101.8799,4697.372528,11.8,81.7,1,,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,313,3,150N-10S,11.612875,,,,,,,,5.744,4.944,4257.343681,9.4,56.4,99.3859,4529.455454,13.3,79.7,3,15.14,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,314,3,75N-20S,11.612875,,,,,,,,5.886,5.086,4379.621756,9.3,57.8,100.1341,4606.955642,12.9,80.3,4,14.37,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,315,3,100N-20S-PD,11.612875,,,,,,,,5.738,4.938,4252.177002,9,58.8,102.3787,4503.622057,11.6,82.1,1,14.12,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,316,3,0N-10S,11.612875,,,,,,,,5.666,4.866,4190.176851,9.7,59,102.1293,4408.899605,11.8,81.9,1,13.28,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,401,4,50N-10S,9.2903,,,,,,,,4.654,3.854,4148.412861,11,57.7,95.1461,4547.754109,15.4,76.3,1,14.82,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,402,4,100N-20S,9.2903,,,,,,,,5.226,4.426,4764.108802,9.5,55.8,92.9015,4095.669677,16.6,74.5,2,15.85,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,403,4,100N-0S,9.2903,,,,,,,,4.044,3.244,3491.814043,11.4,55.2,93.0262,4429.351044,16.7,74.6,2,15.81,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,404,4,100N-10S,9.2903,,,,,,,,4.35,3.55,3821.189843,10,57.2,95.8943,4122.579465,14.6,76.9,1,15.36,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,405,4,75N-10S,9.2903,,,,,,,,,,,8.5,57.6,95.5202,4563.899982,15.9,76.6,1,15.06,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,406,4,150N-0S,9.2903,,,,,,,,4.074,3.274,3524.105788,9.3,55.5,97.8895,3842.717673,13.4,78.5,2,15.73,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,407,4,100N-20S-PD,9.2903,,,,,,,,4.312,3.512,3780.286966,9.4,57.3,98.513,3998.794442,13,79,2,15.16,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,408,4,150N-20S,9.2903,,,,,,,,4.224,3.424,3685.564514,9.9,55.7,93.2756,3907.301164,16,74.8,3,15.51,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,409,4,75N-20S,9.2903,,,,,,,,4.774,3.974,4277.579841,9.5,57.9,99.2612,4531.608237,12.7,79.6,1,14.4,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,410,4,50N-20S,9.2903,,,,,,,,4.596,3.796,4085.982153,8.9,58.8,100.6329,4343.239723,12,80.7,1,13.83,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,411,4,0N-10S,9.2903,,,,,,,,4.326,3.526,3795.356447,9.4,59.6,103.7504,4052.614017,11.6,83.2,1,12.96,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,412,4,150N-10S,9.2903,,,,,,,,4.298,3.498,3765.217485,9.4,57.7,100.6329,3998.794442,12.5,80.7,2,14.99,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,413,4,0N-0S,9.2903,,,,,,,,4.344,3.544,3814.731494,9.3,59.3,102.3787,4031.086187,12.1,82.1,2,12.67,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,414,4,75N-0S,9.2903,,,,,,,,4.766,3.966,4268.968709,9.8,58.6,100.7576,4510.080406,12.9,80.8,2,14.35,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,415,4,50N-0S,9.2903,,,,,,,,7.898,7.098,7640.226903,9.7,59.3,102.6281,4650.011302,11.6,82.3,1,13.78,
-NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,416,4,0N-20S,9.2903,,,,,,,,4.072,3.272,3521.953005,9.4,59.6,103.6257,3756.606353,11.9,83.1,1,12.85,
+experiment,site,timing,date,sample_type,plots,block,treatment,area_m2,weight_wet_withbag_g,bagtare_wet_g,weight_wet_nobag_g,forage_weight_dry_withbag_g,bagtare_dry_g,forage_weight_dry_nobag_g,forage_drymatteryield_kgha,combine_weight_byhand_dry_nopenalty_kg,combine_weight_byhand_dry_withpenalty_kg,grain_kgha_byhand,grain_moisturepercent_byhand_grainsensor,grain_testweight_lbbu_byhand_grainsensor,grain_testweight_lbbu_harvestMaster,grain_kgha_harvestMaster,grain_moisturepercent_harvestMaster,grain_testweight_kghL_harvestMaster,lodging_score_atharvest,protein_estimated_NIRS,ndvi,lodging_score_drone
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,101,1,0N-0S,0.2032,,30.7,,42.5,30.3,12.2,600.3937008,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,102,1,0N-10S,0.2032,,30.7,,47.98,30.3,17.68,870.0787402,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,103,1,0N-20S,0.2032,,30.7,,41.56,30.3,11.26,554.1338583,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,104,1,50N-0S,0.2032,,30.7,,46.9,30.3,16.6,816.9291339,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,105,1,50N-10S,0.2032,,30.7,,56.52,30.3,26.22,1290.354331,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,106,1,50N-20S,0.2032,,30.7,,50.17,30.3,19.87,977.8543307,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,107,1,75N-0S,0.2032,,30.7,,43.64,30.3,13.34,656.496063,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,108,1,75N-10S,0.2032,,30.7,,62.65,30.3,32.35,1592.027559,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,109,1,75N-20S,0.2032,,30.7,,51.04,30.3,20.74,1020.669291,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,110,1,100N-0S,0.2032,,30.7,,57.25,30.3,26.95,1326.279528,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,111,1,100N-10S,0.2032,,30.7,,54.16,30.3,23.86,1174.212598,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,112,1,100N-20S,0.2032,,30.7,,53.99,30.3,23.69,1165.846457,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,113,1,150N-0S,0.2032,,30.7,,46.27,30.3,15.97,785.9251969,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,114,1,150N-10S,0.2032,,30.7,,60.72,30.3,30.42,1497.047244,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,115,1,150N-20S,0.2032,,30.7,,68.3,30.3,38,1870.07874,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,116,1,100N-20S-PD,0.2032,,30.7,,57.24,30.3,26.94,1325.787402,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,201,2,75N-20S,0.2032,,30.7,,50.84,30.3,20.54,1010.826772,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,202,2,150N-0S,0.2032,,30.7,,58.36,30.3,28.06,1380.905512,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,203,2,100N-10S,0.2032,,30.7,,51.34,30.3,21.04,1035.433071,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,204,2,0N-20S,0.2032,,30.7,,50.17,30.3,19.87,977.8543307,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,205,2,150N-10S,0.2032,,30.7,,48.72,30.3,18.42,906.496063,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,206,2,75N-0S,0.2032,,30.7,,51.58,30.3,21.28,1047.244094,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,207,2,100N-20S-PD,0.2032,,30.7,,56.28,30.3,25.98,1278.543307,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,208,2,75N-10S,0.2032,,30.7,,51.08,30.3,20.78,1022.637795,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,209,2,100N-0S,0.2032,,30.7,,51.98,30.3,21.68,1066.929134,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,210,2,50N-20S,0.2032,,30.7,,53.88,30.3,23.58,1160.433071,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,211,2,150N-20S,0.2032,,30.7,,54.01,30.3,23.71,1166.830709,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,212,2,0N-10S,0.2032,,30.7,,60.46,30.3,30.16,1484.251969,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,213,2,50N-10S,0.2032,,30.7,,56.5,30.3,26.2,1289.370079,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,214,2,50N-0S,0.2032,,30.7,,57.33,30.3,27.03,1330.216535,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,215,2,0N-0S,0.2032,,30.7,,58.26,30.3,27.96,1375.984252,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,216,2,100N-20S,0.2032,,30.7,,58.47,30.3,28.17,1386.318898,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,301,3,75N-0S,0.2032,,30.7,,54.06,30.3,23.76,1169.291339,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,302,3,50N-20S,0.2032,,30.7,,57.49,30.3,27.19,1338.090551,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,303,3,100N-0S,0.2032,,30.7,,48.21,30.3,17.91,881.3976378,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,304,3,100N-20S,0.2032,,30.7,,51.31,30.3,21.01,1033.956693,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,305,3,0N-0S,0.2032,,30.7,,45.05,30.3,14.75,725.8858268,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,306,3,100N-10S,0.2032,,30.7,,51.92,30.3,21.62,1063.976378,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,307,3,50N-10S,0.2032,,30.7,,49.24,30.3,18.94,932.0866142,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,308,3,150N-20S,0.2032,,30.7,,51.22,30.3,20.92,1029.527559,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,309,3,150N-0S,0.2032,,30.7,,45.34,30.3,15.04,740.1574803,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,310,3,75N-10S,0.2032,,30.7,,70.31,30.3,40.01,1968.996063,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,311,3,50N-0S,0.2032,,30.7,,54.37,30.3,24.07,1184.547244,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,312,3,0N-20S,0.2032,,30.7,,53.81,30.3,23.51,1156.988189,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,313,3,150N-10S,0.2032,,30.7,,61.34,30.3,31.04,1527.559055,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,314,3,75N-20S,0.2032,,30.7,,62.25,30.3,31.95,1572.34252,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,315,3,100N-20S-PD,0.2032,,30.7,,59.59,30.3,29.29,1441.437008,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,316,3,0N-10S,0.2032,,30.7,,60.05,30.3,29.75,1464.074803,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,401,4,50N-10S,0.2032,,30.7,,53.3,30.3,23,1131.889764,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,402,4,100N-20S,0.2032,,30.7,,52.15,30.3,21.85,1075.295276,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,403,4,100N-0S,0.2032,,30.7,,55.71,30.3,25.41,1250.492126,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,404,4,100N-10S,0.2032,,30.7,,47.46,30.3,17.16,844.488189,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,405,4,75N-10S,0.2032,,30.7,,52.17,30.3,21.87,1076.279528,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,406,4,150N-0S,0.2032,,30.7,,38.06,30.3,7.76,381.8897638,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,407,4,100N-20S-PD,0.2032,,30.7,,39.42,30.3,9.12,448.8188976,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,408,4,150N-20S,0.2032,,30.7,,41.34,30.3,11.04,543.3070866,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,409,4,75N-20S,0.2032,,30.7,,44.66,30.3,14.36,706.6929134,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,410,4,50N-20S,0.2032,,30.7,,54.5,30.3,24.2,1190.944882,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,411,4,0N-10S,0.2032,,30.7,,62.31,30.3,32.01,1575.295276,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,412,4,150N-10S,0.2032,,30.7,,60.15,30.3,29.85,1468.996063,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,413,4,0N-0S,0.2032,,30.7,,55.36,30.3,25.06,1233.267717,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,414,4,75N-0S,0.2032,,30.7,,64.2,30.3,33.9,1668.307087,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,415,4,50N-0S,0.2032,,30.7,,55.67,30.3,25.37,1248.523622,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,1 meter row length cut at soil surface with rice knife,416,4,0N-20S,0.2032,,30.7,,50.83,30.3,20.53,1010.334646,,,,,,,,,,,,,
+NxS,MN,feekes 3,2025-05-23,ndvi,101,1,0N-0S,14,,,,,,,,,,,,,,,,,,,6877,
+NxS,MN,feekes 3,2025-05-23,ndvi,102,1,0N-10S,14,,,,,,,,,,,,,,,,,,,7049,
+NxS,MN,feekes 3,2025-05-23,ndvi,103,1,0N-20S,14,,,,,,,,,,,,,,,,,,,7063,
+NxS,MN,feekes 3,2025-05-23,ndvi,104,1,50N-0S,14,,,,,,,,,,,,,,,,,,,7021,
+NxS,MN,feekes 3,2025-05-23,ndvi,105,1,50N-10S,14,,,,,,,,,,,,,,,,,,,7015,
+NxS,MN,feekes 3,2025-05-23,ndvi,106,1,50N-20S,14,,,,,,,,,,,,,,,,,,,6939,
+NxS,MN,feekes 3,2025-05-23,ndvi,107,1,75N-0S,14,,,,,,,,,,,,,,,,,,,7101,
+NxS,MN,feekes 3,2025-05-23,ndvi,108,1,75N-10S,14,,,,,,,,,,,,,,,,,,,7198,
+NxS,MN,feekes 3,2025-05-23,ndvi,109,1,75N-20S,14,,,,,,,,,,,,,,,,,,,7726,
+NxS,MN,feekes 3,2025-05-23,ndvi,110,1,100N-0S,14,,,,,,,,,,,,,,,,,,,7638,
+NxS,MN,feekes 3,2025-05-23,ndvi,111,1,100N-10S,14,,,,,,,,,,,,,,,,,,,7842,
+NxS,MN,feekes 3,2025-05-23,ndvi,112,1,100N-20S,14,,,,,,,,,,,,,,,,,,,7741,
+NxS,MN,feekes 3,2025-05-23,ndvi,113,1,150N-0S,14,,,,,,,,,,,,,,,,,,,7994,
+NxS,MN,feekes 3,2025-05-23,ndvi,114,1,150N-10S,14,,,,,,,,,,,,,,,,,,,7772,
+NxS,MN,feekes 3,2025-05-23,ndvi,115,1,150N-20S,14,,,,,,,,,,,,,,,,,,,8052,
+NxS,MN,feekes 3,2025-05-23,ndvi,116,1,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,7968,
+NxS,MN,feekes 3,2025-05-23,ndvi,201,2,75N-20S,14,,,,,,,,,,,,,,,,,,,6955,
+NxS,MN,feekes 3,2025-05-23,ndvi,202,2,150N-0S,14,,,,,,,,,,,,,,,,,,,6873,
+NxS,MN,feekes 3,2025-05-23,ndvi,203,2,100N-10S,14,,,,,,,,,,,,,,,,,,,7001,
+NxS,MN,feekes 3,2025-05-23,ndvi,204,2,0N-20S,14,,,,,,,,,,,,,,,,,,,7194,
+NxS,MN,feekes 3,2025-05-23,ndvi,205,2,150N-10S,14,,,,,,,,,,,,,,,,,,,6696,
+NxS,MN,feekes 3,2025-05-23,ndvi,206,2,75N-0S,14,,,,,,,,,,,,,,,,,,,7388,
+NxS,MN,feekes 3,2025-05-23,ndvi,207,2,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,7324,
+NxS,MN,feekes 3,2025-05-23,ndvi,208,2,75N-10S,14,,,,,,,,,,,,,,,,,,,7641,
+NxS,MN,feekes 3,2025-05-23,ndvi,209,2,100N-0S,14,,,,,,,,,,,,,,,,,,,7703,
+NxS,MN,feekes 3,2025-05-23,ndvi,210,2,50N-20S,14,,,,,,,,,,,,,,,,,,,7608,
+NxS,MN,feekes 3,2025-05-23,ndvi,211,2,150N-20S,14,,,,,,,,,,,,,,,,,,,7819,
+NxS,MN,feekes 3,2025-05-23,ndvi,212,2,0N-10S,14,,,,,,,,,,,,,,,,,,,7904,
+NxS,MN,feekes 3,2025-05-23,ndvi,213,2,50N-10S,14,,,,,,,,,,,,,,,,,,,7774,
+NxS,MN,feekes 3,2025-05-23,ndvi,214,2,50N-0S,14,,,,,,,,,,,,,,,,,,,7922,
+NxS,MN,feekes 3,2025-05-23,ndvi,215,2,0N-0S,14,,,,,,,,,,,,,,,,,,,7851,
+NxS,MN,feekes 3,2025-05-23,ndvi,216,2,100N-20S,14,,,,,,,,,,,,,,,,,,,8116,
+NxS,MN,feekes 3,2025-05-23,ndvi,301,3,75N-0S,14,,,,,,,,,,,,,,,,,,,6871,
+NxS,MN,feekes 3,2025-05-23,ndvi,302,3,50N-20S,14,,,,,,,,,,,,,,,,,,,7058,
+NxS,MN,feekes 3,2025-05-23,ndvi,303,3,100N-0S,14,,,,,,,,,,,,,,,,,,,7303,
+NxS,MN,feekes 3,2025-05-23,ndvi,304,3,100N-20S,14,,,,,,,,,,,,,,,,,,,6990,
+NxS,MN,feekes 3,2025-05-23,ndvi,305,3,0N-0S,14,,,,,,,,,,,,,,,,,,,7083,
+NxS,MN,feekes 3,2025-05-23,ndvi,306,3,100N-10S,14,,,,,,,,,,,,,,,,,,,7356,
+NxS,MN,feekes 3,2025-05-23,ndvi,307,3,50N-10S,14,,,,,,,,,,,,,,,,,,,7499,
+NxS,MN,feekes 3,2025-05-23,ndvi,308,3,150N-20S,14,,,,,,,,,,,,,,,,,,,7571,
+NxS,MN,feekes 3,2025-05-23,ndvi,309,3,150N-0S,14,,,,,,,,,,,,,,,,,,,7704,
+NxS,MN,feekes 3,2025-05-23,ndvi,310,3,75N-10S,14,,,,,,,,,,,,,,,,,,,7614,
+NxS,MN,feekes 3,2025-05-23,ndvi,311,3,50N-0S,14,,,,,,,,,,,,,,,,,,,7794,
+NxS,MN,feekes 3,2025-05-23,ndvi,312,3,0N-20S,14,,,,,,,,,,,,,,,,,,,7923,
+NxS,MN,feekes 3,2025-05-23,ndvi,313,3,150N-10S,14,,,,,,,,,,,,,,,,,,,7929,
+NxS,MN,feekes 3,2025-05-23,ndvi,314,3,75N-20S,14,,,,,,,,,,,,,,,,,,,7893,
+NxS,MN,feekes 3,2025-05-23,ndvi,315,3,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8073,
+NxS,MN,feekes 3,2025-05-23,ndvi,316,3,0N-10S,14,,,,,,,,,,,,,,,,,,,7800,
+NxS,MN,feekes 3,2025-05-23,ndvi,401,4,50N-10S,14,,,,,,,,,,,,,,,,,,,6846,
+NxS,MN,feekes 3,2025-05-23,ndvi,402,4,100N-20S,14,,,,,,,,,,,,,,,,,,,7037,
+NxS,MN,feekes 3,2025-05-23,ndvi,403,4,100N-0S,14,,,,,,,,,,,,,,,,,,,6935,
+NxS,MN,feekes 3,2025-05-23,ndvi,404,4,100N-10S,14,,,,,,,,,,,,,,,,,,,6893,
+NxS,MN,feekes 3,2025-05-23,ndvi,405,4,75N-10S,14,,,,,,,,,,,,,,,,,,,7381,
+NxS,MN,feekes 3,2025-05-23,ndvi,406,4,150N-0S,14,,,,,,,,,,,,,,,,,,,7480,
+NxS,MN,feekes 3,2025-05-23,ndvi,407,4,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,7427,
+NxS,MN,feekes 3,2025-05-23,ndvi,408,4,150N-20S,14,,,,,,,,,,,,,,,,,,,7521,
+NxS,MN,feekes 3,2025-05-23,ndvi,409,4,75N-20S,14,,,,,,,,,,,,,,,,,,,7824,
+NxS,MN,feekes 3,2025-05-23,ndvi,410,4,50N-20S,14,,,,,,,,,,,,,,,,,,,7931,
+NxS,MN,feekes 3,2025-05-23,ndvi,411,4,0N-10S,14,,,,,,,,,,,,,,,,,,,7775,
+NxS,MN,feekes 3,2025-05-23,ndvi,412,4,150N-10S,14,,,,,,,,,,,,,,,,,,,8125,
+NxS,MN,feekes 3,2025-05-23,ndvi,413,4,0N-0S,14,,,,,,,,,,,,,,,,,,,7811,
+NxS,MN,feekes 3,2025-05-23,ndvi,414,4,75N-0S,14,,,,,,,,,,,,,,,,,,,8025,
+NxS,MN,feekes 3,2025-05-23,ndvi,415,4,50N-0S,14,,,,,,,,,,,,,,,,,,,7886,
+NxS,MN,feekes 3,2025-05-23,ndvi,416,4,0N-20S,14,,,,,,,,,,,,,,,,,,,7527,
+NxS,MN,feekes 6,2025-06-06,ndvi,101,1,0N-0S,14,,,,,,,,,,,,,,,,,,,8651,
+NxS,MN,feekes 6,2025-06-06,ndvi,102,1,0N-10S,14,,,,,,,,,,,,,,,,,,,8739,
+NxS,MN,feekes 6,2025-06-06,ndvi,103,1,0N-20S,14,,,,,,,,,,,,,,,,,,,8622,
+NxS,MN,feekes 6,2025-06-06,ndvi,104,1,50N-0S,14,,,,,,,,,,,,,,,,,,,8009,
+NxS,MN,feekes 6,2025-06-06,ndvi,105,1,50N-10S,14,,,,,,,,,,,,,,,,,,,8704,
+NxS,MN,feekes 6,2025-06-06,ndvi,106,1,50N-20S,14,,,,,,,,,,,,,,,,,,,8639,
+NxS,MN,feekes 6,2025-06-06,ndvi,107,1,75N-0S,14,,,,,,,,,,,,,,,,,,,8688,
+NxS,MN,feekes 6,2025-06-06,ndvi,108,1,75N-10S,14,,,,,,,,,,,,,,,,,,,8749,
+NxS,MN,feekes 6,2025-06-06,ndvi,109,1,75N-20S,14,,,,,,,,,,,,,,,,,,,8822,
+NxS,MN,feekes 6,2025-06-06,ndvi,110,1,100N-0S,14,,,,,,,,,,,,,,,,,,,8821,
+NxS,MN,feekes 6,2025-06-06,ndvi,111,1,100N-10S,14,,,,,,,,,,,,,,,,,,,8892,
+NxS,MN,feekes 6,2025-06-06,ndvi,112,1,100N-20S,14,,,,,,,,,,,,,,,,,,,8753,
+NxS,MN,feekes 6,2025-06-06,ndvi,113,1,150N-0S,14,,,,,,,,,,,,,,,,,,,8920,
+NxS,MN,feekes 6,2025-06-06,ndvi,114,1,150N-10S,14,,,,,,,,,,,,,,,,,,,8490,
+NxS,MN,feekes 6,2025-06-06,ndvi,115,1,150N-20S,14,,,,,,,,,,,,,,,,,,,8916,
+NxS,MN,feekes 6,2025-06-06,ndvi,116,1,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8722,
+NxS,MN,feekes 6,2025-06-06,ndvi,201,2,75N-20S,14,,,,,,,,,,,,,,,,,,,8659,
+NxS,MN,feekes 6,2025-06-06,ndvi,202,2,150N-0S,14,,,,,,,,,,,,,,,,,,,8664,
+NxS,MN,feekes 6,2025-06-06,ndvi,203,2,100N-10S,14,,,,,,,,,,,,,,,,,,,8753,
+NxS,MN,feekes 6,2025-06-06,ndvi,204,2,0N-20S,14,,,,,,,,,,,,,,,,,,,8590,
+NxS,MN,feekes 6,2025-06-06,ndvi,205,2,150N-10S,14,,,,,,,,,,,,,,,,,,,8689,
+NxS,MN,feekes 6,2025-06-06,ndvi,206,2,75N-0S,14,,,,,,,,,,,,,,,,,,,8709,
+NxS,MN,feekes 6,2025-06-06,ndvi,207,2,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8725,
+NxS,MN,feekes 6,2025-06-06,ndvi,208,2,75N-10S,14,,,,,,,,,,,,,,,,,,,8758,
+NxS,MN,feekes 6,2025-06-06,ndvi,209,2,100N-0S,14,,,,,,,,,,,,,,,,,,,8838,
+NxS,MN,feekes 6,2025-06-06,ndvi,210,2,50N-20S,14,,,,,,,,,,,,,,,,,,,8766,
+NxS,MN,feekes 6,2025-06-06,ndvi,211,2,150N-20S,14,,,,,,,,,,,,,,,,,,,8825,
+NxS,MN,feekes 6,2025-06-06,ndvi,212,2,0N-10S,14,,,,,,,,,,,,,,,,,,,8679,
+NxS,MN,feekes 6,2025-06-06,ndvi,213,2,50N-10S,14,,,,,,,,,,,,,,,,,,,8855,
+NxS,MN,feekes 6,2025-06-06,ndvi,214,2,50N-0S,14,,,,,,,,,,,,,,,,,,,8790,
+NxS,MN,feekes 6,2025-06-06,ndvi,215,2,0N-0S,14,,,,,,,,,,,,,,,,,,,8641,
+NxS,MN,feekes 6,2025-06-06,ndvi,216,2,100N-20S,14,,,,,,,,,,,,,,,,,,,8764,
+NxS,MN,feekes 6,2025-06-06,ndvi,301,3,75N-0S,14,,,,,,,,,,,,,,,,,,,8538,
+NxS,MN,feekes 6,2025-06-06,ndvi,302,3,50N-20S,14,,,,,,,,,,,,,,,,,,,8757,
+NxS,MN,feekes 6,2025-06-06,ndvi,303,3,100N-0S,14,,,,,,,,,,,,,,,,,,,8702,
+NxS,MN,feekes 6,2025-06-06,ndvi,304,3,100N-20S,14,,,,,,,,,,,,,,,,,,,8729,
+NxS,MN,feekes 6,2025-06-06,ndvi,305,3,0N-0S,14,,,,,,,,,,,,,,,,,,,8662,
+NxS,MN,feekes 6,2025-06-06,ndvi,306,3,100N-10S,14,,,,,,,,,,,,,,,,,,,8835,
+NxS,MN,feekes 6,2025-06-06,ndvi,307,3,50N-10S,14,,,,,,,,,,,,,,,,,,,8444,
+NxS,MN,feekes 6,2025-06-06,ndvi,308,3,150N-20S,14,,,,,,,,,,,,,,,,,,,8835,
+NxS,MN,feekes 6,2025-06-06,ndvi,309,3,150N-0S,14,,,,,,,,,,,,,,,,,,,8952,
+NxS,MN,feekes 6,2025-06-06,ndvi,310,3,75N-10S,14,,,,,,,,,,,,,,,,,,,8842,
+NxS,MN,feekes 6,2025-06-06,ndvi,311,3,50N-0S,14,,,,,,,,,,,,,,,,,,,8827,
+NxS,MN,feekes 6,2025-06-06,ndvi,312,3,0N-20S,14,,,,,,,,,,,,,,,,,,,8814,
+NxS,MN,feekes 6,2025-06-06,ndvi,313,3,150N-10S,14,,,,,,,,,,,,,,,,,,,8912,
+NxS,MN,feekes 6,2025-06-06,ndvi,314,3,75N-20S,14,,,,,,,,,,,,,,,,,,,8838,
+NxS,MN,feekes 6,2025-06-06,ndvi,315,3,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8711,
+NxS,MN,feekes 6,2025-06-06,ndvi,316,3,0N-10S,14,,,,,,,,,,,,,,,,,,,8549,
+NxS,MN,feekes 6,2025-06-06,ndvi,401,4,50N-10S,14,,,,,,,,,,,,,,,,,,,8574,
+NxS,MN,feekes 6,2025-06-06,ndvi,402,4,100N-20S,14,,,,,,,,,,,,,,,,,,,8722,
+NxS,MN,feekes 6,2025-06-06,ndvi,403,4,100N-0S,14,,,,,,,,,,,,,,,,,,,8752,
+NxS,MN,feekes 6,2025-06-06,ndvi,404,4,100N-10S,14,,,,,,,,,,,,,,,,,,,8736,
+NxS,MN,feekes 6,2025-06-06,ndvi,405,4,75N-10S,14,,,,,,,,,,,,,,,,,,,8353,
+NxS,MN,feekes 6,2025-06-06,ndvi,406,4,150N-0S,14,,,,,,,,,,,,,,,,,,,8869,
+NxS,MN,feekes 6,2025-06-06,ndvi,407,4,100N-20S-PD,14,,,,,,,,,,,,,,,,,,,8735,
+NxS,MN,feekes 6,2025-06-06,ndvi,408,4,150N-20S,14,,,,,,,,,,,,,,,,,,,8892,
+NxS,MN,feekes 6,2025-06-06,ndvi,409,4,75N-20S,14,,,,,,,,,,,,,,,,,,,8808,
+NxS,MN,feekes 6,2025-06-06,ndvi,410,4,50N-20S,14,,,,,,,,,,,,,,,,,,,8817,
+NxS,MN,feekes 6,2025-06-06,ndvi,411,4,0N-10S,14,,,,,,,,,,,,,,,,,,,8640,
+NxS,MN,feekes 6,2025-06-06,ndvi,412,4,150N-10S,14,,,,,,,,,,,,,,,,,,,8904,
+NxS,MN,feekes 6,2025-06-06,ndvi,413,4,0N-0S,14,,,,,,,,,,,,,,,,,,,8484,
+NxS,MN,feekes 6,2025-06-06,ndvi,414,4,75N-0S,14,,,,,,,,,,,,,,,,,,,8775,
+NxS,MN,feekes 6,2025-06-06,ndvi,415,4,50N-0S,14,,,,,,,,,,,,,,,,,,,8596,
+NxS,MN,feekes 6,2025-06-06,ndvi,416,4,0N-20S,14,,,,,,,,,,,,,,,,,,,8315,
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,101,1,0N-0S,9.2903,,,,,,,,4.732,3.932,4232.371398,11.8,56.7,94.5226,4574.663897,15.4,75.8,2,15.39,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,102,1,0N-10S,9.2903,,,,,,,,4.854,4.054,4363.691162,11.1,57.5,95.3955,4703.830877,15.9,76.5,1,15.4,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,103,1,0N-20S,9.2903,,,,,,,,5.996,5.196,5592.930261,11,59,98.8871,5392.721441,15.1,79.3,1,14.81,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,104,1,50N-0S,9.2903,,,,,,,,4.42,3.62,3896.537249,9.6,57,97.8895,4359.385596,13.9,78.5,2,15.34,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,105,1,50N-10S,9.2903,,,,,,,,4.566,3.766,4053.690408,9.9,57.8,98.8871,4354.003638,14,79.3,1,15.35,,2
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,106,1,50N-20S,9.2903,,,,,,,,4.552,3.752,4038.620927,10.7,57.6,99.1365,4300.184063,13.6,79.5,1,15.09,,2
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,107,1,75N-0S,9.2903,,,,,,,,4.438,3.638,3915.912296,10.3,55.6,99.3859,4197.92687,13.7,79.7,2,15.4,,3
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,108,1,75N-10S,9.2903,,,,,,,,4.262,3.462,3726.467391,9.6,57.8,98.0142,3966.502696,13.6,78.6,4,15.39,,8
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,109,1,75N-20S,9.2903,,,,,,,,4.868,4.068,4378.760643,9.1,58,96.1437,4644.629345,13,77.1,3,15.32,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,110,1,100N-0S,9.2903,,,,,,,,4.158,3.358,3614.522674,,,96.019,3891.155291,13,77,5,,,8
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,111,1,100N-10S,9.2903,,,,,,,,3.9,3.1,3336.813666,,,98.0142,3562.855882,14.2,78.6,3,,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,112,1,100N-20S,9.2903,,,,,,,,4.376,3.576,3849.176022,9,58.2,99.76,4101.051635,12.7,80,2,14.79,,7
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,113,1,150N-0S,9.2903,,,,,,,,3.602,2.802,3016.048997,8.5,56.9,95.0214,3266.848218,13.7,76.2,5,15.43,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,114,1,150N-10S,9.2903,,,,,,,,4.52,3.72,4004.176399,9.2,56.5,98.2636,4321.711893,13.2,78.8,2,15.29,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,115,1,150N-20S,9.2903,,,,,,,,4.556,3.756,4042.926493,8.8,54.8,91.7792,4337.857766,14.9,73.6,4,15.39,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,116,1,100N-20S-PD,9.2903,,,,,,,,4.846,4.046,4355.08003,9.4,59.2,101.7552,4628.483472,12.9,81.6,2,14.51,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,201,2,75N-20S,11.612875,,,,,,,,4.586,3.786,3260.174591,11.4,56.5,93.6497,3539.175269,15.6,75.1,5,16.28,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,202,2,150N-0S,11.612875,,,,,,,,4.218,3.418,2943.284932,,,90.9063,3267.92461,17.5,72.9,3,16.34,,4
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,203,2,100N-10S,11.612875,,,,,,,,4.998,4.198,3614.953231,10.1,56.3,96.3931,4060.148757,15.4,77.3,3,16.58,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,204,2,0N-20S,11.612875,,,,,,,,5.324,4.524,3895.676135,9.3,58.2,99.2612,4150.565644,13.1,79.6,1,14.75,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,205,2,150N-10S,11.612875,,,,,,,,4.006,3.206,2760.728932,9.3,56.6,96.1437,2962.229422,14.7,77.1,3,16.03,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,206,2,75N-0S,11.612875,,,,,,,,5.566,4.766,4104.065531,9,56.6,98.7624,4391.677341,13.5,79.2,2,15.26,,7
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,207,2,100N-20S-PD,11.612875,,,,,,,,5.482,4.682,4031.732022,9.6,56.9,98.7624,4314.177153,14,79.2,1,14.81,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,208,2,75N-10S,11.612875,,,,,,,,4.376,3.576,3079.340818,9.2,55.3,94.6473,4232.371398,13.7,75.9,4,15.82,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,209,2,100N-0S,11.612875,,,,,,,,5.342,4.542,3911.176173,9.8,57,96.6425,4120.426682,13.3,77.5,2,15.83,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,210,2,50N-20S,11.612875,,,,,,,,5.324,4.524,3895.676135,9.4,56.2,96.7672,4098.898851,12.4,77.6,2,15.11,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,211,2,150N-20S,11.612875,,,,,,,,,,,9.2,55.7,96.5178,3422.924986,14.4,77.4,3,16,,7
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,212,2,0N-10S,11.612875,,,,,,,,5.772,4.972,4281.454851,9,58.1,102.1293,4538.066586,12,81.9,3,13.87,,2
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,213,2,50N-10S,11.612875,,,,,,,,5.432,4.632,3988.676361,9.8,58.6,102.8775,4185.010172,12.1,82.5,3,14.37,,7
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,214,2,50N-0S,11.612875,,,,,,,,5.918,5.118,4407.177379,9.7,57.8,102.7528,4637.094604,11.9,82.4,2,14.38,,3
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,215,2,0N-0S,11.612875,,,,,,,,5.384,4.584,3947.342928,9.2,59.6,102.5034,4154.87121,11.8,82.2,1,13.38,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,216,2,100N-20S,11.612875,,,,,,,,5.572,4.772,4109.23221,9.8,57.8,102.1293,4322.788285,12.4,81.9,3,14.51,,7
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,301,3,75N-0S,11.612875,,,,,,,,5.919,5.119,4408.038492,10.3,56.8,96.019,4314.177153,15.4,77,2,15.53,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,302,3,50N-20S,11.612875,,,,,,,,5.216,4.416,3802.675909,8.8,56.3,94.0238,4654.316868,16.5,75.4,5,15.46,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,303,3,100N-0S,11.612875,,,,,,,,4.616,3.816,3286.007987,9.3,54.6,96.7672,3935.287343,15.9,77.6,2,15.89,,2
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,304,3,100N-20S,11.612875,,,,,,,,5.494,4.694,4042.06538,10,57.6,97.3907,4309.871586,14.2,78.1,1,15.28,,4
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,305,3,0N-0S,11.612875,,,,,,,,5.796,4.996,4302.121568,9.2,57.7,100.6329,4559.594416,12.9,80.7,1,15.06,,2
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,306,3,100N-10S,11.612875,,,,,,,,5.19,4.39,3780.286966,9.7,54.7,95.3955,4073.065455,14.8,76.5,2,15.36,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,307,3,50N-10S,11.612875,,,,,,,,5.54,4.74,4081.676587,9.2,56.2,99.0118,4365.843945,12.9,79.4,4,15.28,,5
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,308,3,150N-20S,11.612875,,,,,,,,5.052,4.252,3661.453344,9.7,54,91.031,4025.704229,19.4,73,6,16.34,,8
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,309,3,150N-0S,11.612875,,,,,,,,5.118,4.318,3718.286815,9.3,55.7,92.5274,3986.954135,14.4,74.2,7,15.87,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,310,3,75N-10S,11.612875,,,,,,,,5.646,4.846,4172.954587,9.7,55.2,95.5202,4408.899605,12.8,76.6,6,15.11,,8
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,311,3,50N-0S,11.612875,,,,,,,,7.078,6.278,5406.068695,9.8,58.7,98.7624,4934.178659,13.2,79.2,2,14.43,,3
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,312,3,0N-20S,11.612875,,,,,,,,,,,,,101.8799,4697.372528,11.8,81.7,1,,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,313,3,150N-10S,11.612875,,,,,,,,5.744,4.944,4257.343681,9.4,56.4,99.3859,4529.455454,13.3,79.7,3,15.14,,7
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,314,3,75N-20S,11.612875,,,,,,,,5.886,5.086,4379.621756,9.3,57.8,100.1341,4606.955642,12.9,80.3,4,14.37,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,315,3,100N-20S-PD,11.612875,,,,,,,,5.738,4.938,4252.177002,9,58.8,102.3787,4503.622057,11.6,82.1,1,14.12,,8
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 25 ft,316,3,0N-10S,11.612875,,,,,,,,5.666,4.866,4190.176851,9.7,59,102.1293,4408.899605,11.8,81.9,1,13.28,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,401,4,50N-10S,9.2903,,,,,,,,4.654,3.854,4148.412861,11,57.7,95.1461,4547.754109,15.4,76.3,1,14.82,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,402,4,100N-20S,9.2903,,,,,,,,5.226,4.426,4764.108802,9.5,55.8,92.9015,4095.669677,16.6,74.5,2,15.85,,3
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,403,4,100N-0S,9.2903,,,,,,,,4.044,3.244,3491.814043,11.4,55.2,93.0262,4429.351044,16.7,74.6,2,15.81,,3
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,404,4,100N-10S,9.2903,,,,,,,,4.35,3.55,3821.189843,10,57.2,95.8943,4122.579465,14.6,76.9,1,15.36,,3
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,405,4,75N-10S,9.2903,,,,,,,,,,,8.5,57.6,95.5202,4563.899982,15.9,76.6,1,15.06,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,406,4,150N-0S,9.2903,,,,,,,,4.074,3.274,3524.105788,9.3,55.5,97.8895,3842.717673,13.4,78.5,2,15.73,,6
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,407,4,100N-20S-PD,9.2903,,,,,,,,4.312,3.512,3780.286966,9.4,57.3,98.513,3998.794442,13,79,2,15.16,,5
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,408,4,150N-20S,9.2903,,,,,,,,4.224,3.424,3685.564514,9.9,55.7,93.2756,3907.301164,16,74.8,3,15.51,,5
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,409,4,75N-20S,9.2903,,,,,,,,4.774,3.974,4277.579841,9.5,57.9,99.2612,4531.608237,12.7,79.6,1,14.4,,4
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,410,4,50N-20S,9.2903,,,,,,,,4.596,3.796,4085.982153,8.9,58.8,100.6329,4343.239723,12,80.7,1,13.83,,2
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,411,4,0N-10S,9.2903,,,,,,,,4.326,3.526,3795.356447,9.4,59.6,103.7504,4052.614017,11.6,83.2,1,12.96,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,412,4,150N-10S,9.2903,,,,,,,,4.298,3.498,3765.217485,9.4,57.7,100.6329,3998.794442,12.5,80.7,2,14.99,,9
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,413,4,0N-0S,9.2903,,,,,,,,4.344,3.544,3814.731494,9.3,59.3,102.3787,4031.086187,12.1,82.1,2,12.67,,1
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,414,4,75N-0S,9.2903,,,,,,,,4.766,3.966,4268.968709,9.8,58.6,100.7576,4510.080406,12.9,80.8,2,14.35,,4
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,415,4,50N-0S,9.2903,,,,,,,,7.898,7.098,7640.226903,9.7,59.3,102.6281,4650.011302,11.6,82.3,1,13.78,,3
+NxS,MN,grain,2025-07-30,combine harvest 5 ft x 20 ft,416,4,0N-20S,9.2903,,,,,,,,4.072,3.272,3521.953005,9.4,59.6,103.6257,3756.606353,11.9,83.1,1,12.85,,1
