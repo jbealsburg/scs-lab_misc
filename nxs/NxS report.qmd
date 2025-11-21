@@ -22,17 +22,17 @@ editor_options:
 ## fieldwork activities
 
 |  |  |
-|:------:|----------------------------------------------------------------|
-| **4/14** | Planted swath of experiment to MN Rothsay Spring Wheat.  Truax planter and 5725? wheat tractor with gps.  Seeded \~1.5 inches deep. |
+|:------------:|----------------------------------------------------------|
+| **4/14** | Planted swath of experiment to MN Rothsay Spring Wheat. Truax planter and 5725? wheat tractor with gps. Seeded \~1.5 inches deep. |
 | **4/15** | baseline soil samples collected by block. Starting plots on southernmost tire track. 4 pushes 0-6" for 0-6inch , 2 pushes for 6-24", by block. |
 | **4/15** | Fertilized appropriate plots with pre weighed baggies of anvil treated urea and ammonium sulfate. |
 | **4/30** | cultivated the northern and southern edge, potentially shrinking the harvest length of the northern and southern ranges/blocks |
 | **5/19** | applied fertilizer at prescribed rates. Also flagged out field |
 | **5/23** | ndvi measurements: 0.02 variance of ndvi in same plot. So plot 101 at 6877 could be remeasured at 7077 or 6677. Walked middle of the 8 ft plot, 15 ft length. Biomass sampling: 1 meter of row collected in middle of the plot at the base, placed in bag. Some plots done by kahlid were 3 rows at 1 meter instead of 1 row at 1 meter, we will figure out which plots by using weight of bags, then we will need to account for this at grain harvest as well. |
 | **5/23** | sprayed 27 fl oz of wolverine on wheat (second application due to first one not being successful. Hoping for control of some grasses |
-| **6/24** | Soil sampled every plot.  4 pokes 0-6 inches.  2 pokes 6-24. |
+| **6/24** | Soil sampled every plot. 4 pokes 0-6 inches. 2 pokes 6-24. |
 | **7/24** | staging check |
-| **7/28** | started combining alleys.  1/4 completed, but settings mostly dialed in |
+| **7/28** | started combining alleys. 1/4 completed, but settings mostly dialed in |
 | **7/30** | combine harvest- |
 | **8/6** | soil samples. 3 push 0-6", 1 push 6-24". |
 
@@ -48,6 +48,7 @@ plant tissue analysis data still being processed
 
 ```{r}
 library(tidyverse)
+setwd("C:/Users/jpuka/OneDrive/Documents/scs-lab_misc/nxs")
 read.csv("NxS plot map and master - data_biomassyieldprotein.csv") -> dat
 
 dat %>% 
@@ -183,7 +184,7 @@ dat %>%
   ) %>%
   ggplot(aes(x = treatment, y = yield, color = lodging_score_atharvest, shape = method)) +
   geom_point(size = 3, alpha = 0.7, position = position_jitter(width = 0.2)) +
-  scale_color_viridis_c(option = "plasma", direction = -1, name = "Lodging Score") +
+  scale_color_viridis_c(option = "plasma", direction = -1, name = "Lodging Score\nFrom Combine") +
   scale_shape_manual(values = c("Combine" = 17, "By Hand" = 16)) +  # triangle for Combine, circle for By Hand
   coord_flip() +
   labs(
@@ -197,6 +198,42 @@ dat %>%
 ```
 
 -   low yields driven by lodging
+
+```{r}
+#| label: fig-yieldkghalodgingdrone
+#| fig-cap: "Grain yield estimation from drone photos with lodging scores where 1 = no lodging and 9 = flat on the ground."
+
+dat %>%
+  filter(grain_kgha_harvestMaster < 7000, grain_kgha_byhand < 7000) %>%
+  # glimpse()
+  select(treatment, grain_kgha_harvestMaster, grain_kgha_byhand, lodging_score_drone) %>%
+  drop_na() %>%
+  pivot_longer(
+    cols = c(grain_kgha_harvestMaster, grain_kgha_byhand),
+    names_to = "method",
+    values_to = "yield"
+  ) %>%
+  mutate(
+    method = recode(method,
+                    grain_kgha_harvestMaster = "Combine",
+                    grain_kgha_byhand = "By Hand"),
+    treatment = fct_reorder(treatment, yield, .fun = mean)
+  ) %>%
+  ggplot(aes(x = treatment, y = yield, color = lodging_score_drone, shape = method)) +
+  geom_point(size = 3, alpha = 0.7, position = position_jitter(width = 0.2)) +
+  scale_color_viridis_c(option = "plasma", direction = -1, name = "Lodging Score\nFrom Drone") +
+  scale_shape_manual(values = c("Combine" = 17, "By Hand" = 16)) +  # triangle for Combine, circle for By Hand
+  coord_flip() +
+  labs(
+    x = "",
+    y = "Yield (kg/ha)",
+    shape = "Method"
+  ) +
+  theme_minimal()
+
+```
+
+-   I think drone scores were more accurate. See @fig-heatmap.
 
 \newpage
 
@@ -421,9 +458,13 @@ Not yet processed
 
 # Photos
 
-![Wheat stage on 21 May, 2 days prior to biomass sampling at Feekes 3 (though target was Feekes 5)](NxS_photo_closeup_21May2025.JPEG){#photo-21May}
+![Wheat stage on 21 May, 2 days prior to biomass sampling at Feekes 3 (though target was Feekes 5).](NxS_photo_closeup_21May2025.JPEG){#photo-21May}
 
 ![Drone photo from July 21 2025 prior to harvest. Note lodging.](NxS_photo_droneabove.JPEG)
+
+![Drone photo form July 21 2025 prior to harvest. plot borders and row+range ID's added.](NxS_dronePhoto_rowRange.png)
+
+![Heatmap of lodging scores taken either from the combine at harvest or using a drone image on 21July compared with the N rates of the treatments.](NxS_heatmap_lodgingScores and Nrates.png){#fig-heatmap}
 
 \newpage
 
@@ -445,10 +486,8 @@ Probably. Didn't compare with quadrat harvest, but compared with taking the enti
 
 ## Lessons learned
 
-Fertility response trials with commodity crops are easy, especially with the combine, and are possible at st paul experiment station
+Our lab is well suited to do trials like this. Plant all 1 variety. Multiple soil samples by plot. Tissue sampling. Combine harvest. We could easily become a site in other researchers trials and generate pretty good data and take good notes and photos and perform good QAQC on the data.
 
 NDVI and biomass harvest data were too variable to be very useful in this trial.
 
-Low N treatments lodged less, were drier at harvest, had higher test weights, lower protein and yielded more than higher N treatments.
-
-Sulfur response isn't obvious.
+Drone photos are incredibly valuable for verifying information like lodging and crop condition.
