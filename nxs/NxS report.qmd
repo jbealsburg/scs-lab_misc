@@ -22,7 +22,7 @@ editor_options:
 ## fieldwork activities
 
 |  |  |
-|:------------:|----------------------------------------------------------|
+|:---------------:|-------------------------------------------------------|
 | **4/14** | Planted swath of experiment to MN Rothsay Spring Wheat. Truax planter and 5725? wheat tractor with gps. Seeded \~1.5 inches deep. |
 | **4/15** | baseline soil samples collected by block. Starting plots on southernmost tire track. 4 pushes 0-6" for 0-6inch , 2 pushes for 6-24", by block. |
 | **4/15** | Fertilized appropriate plots with pre weighed baggies of anvil treated urea and ammonium sulfate. |
@@ -61,7 +61,7 @@ dat %>%
 
 ```{r}
 #| label: fig-ndvi
-#| fig-cap: "NDVI across two sampling dates. X indicates mean within sampling date. Treatments are ordered where 150N-20S is highest mean NDVI across both dates and 50N-10S is lowest mean NDVI when averaged across both dates."
+#| fig-cap: "NDVI across two sampling dates. Green box indicates mean within sampling date. Treatments are ordered where 150N-20S is highest mean NDVI across both dates and 50N-10S is lowest mean NDVI when averaged across both dates."
 
 dat %>% 
   select(date, plots, block, treatment, ndvi) %>% 
@@ -74,8 +74,8 @@ dat %>%
     geom = "point",
     fun = mean,
     col = 3,
-    size = 4,
-    shape = 4,
+    size = 2,
+    shape = 15,
     stroke = 2
   ) +
   coord_flip() +
@@ -90,7 +90,7 @@ dat %>%
 
 ```{r}
 #| label: fig-biomass
-#| fig-cap: "Forage dry matter yield on May 23"
+#| fig-cap: "Forage dry matter yield on May 23. Green box indicates sample mean."
 
 dat %>% 
   # glimpse()
@@ -104,8 +104,8 @@ dat %>%
     geom = "point",
     fun = mean,
     col = 3,
-    size = 4,
-    shape = 4,
+    size = 2,
+    shape = 15,
     stroke = 2
   ) +
   coord_flip() +
@@ -147,7 +147,7 @@ dat %>%
     geom = "point",
     fun = mean,
     position = position_dodge(width = 0.5),
-    size = 5,
+    size = 4,
     stroke = 1.5
   ) +
   coord_flip() +
@@ -275,7 +275,7 @@ dat %>%
     geom = "point",
     fun = mean,
     position = position_dodge(width = 0.5),
-    size = 5,
+    size = 4,
     stroke = 1.5
   ) +
   coord_flip() +
@@ -345,7 +345,7 @@ dat %>%
     geom = "point",
     fun = mean,
     position = position_dodge(width = 0.5),
-    size = 5,
+    size = 4,
     stroke = 1.5
   ) +
   coord_flip() +
@@ -403,7 +403,7 @@ dat %>%
     geom = "point",
     fun = mean,
     position = position_dodge(width = 0.5),
-    size = 5,
+    size = 4,
     stroke = 1.5
   ) +
   coord_flip() +
@@ -426,7 +426,7 @@ dat %>%
 
 ```{r}
 #| label: fig-protein
-#| fig-cap: "Protein content predicted by NIRS using wheat equation"
+#| fig-cap: "Protein content predicted by NIRS using wheat equation. Green box indicates mean. "
 
 dat %>% 
   # glimpse()
@@ -440,8 +440,8 @@ dat %>%
     geom = "point",
     fun = mean,
     col = 3,
-    size = 4,
-    shape = 4,
+    size = 2,
+    shape = 15,
     stroke = 2
   ) +
   coord_flip() +
@@ -464,7 +464,7 @@ Not yet processed
 
 ![Drone photo form July 21 2025 prior to harvest. plot borders and row+range ID's added.](NxS_dronePhoto_rowRange.png)
 
-![Heatmap of lodging scores taken either from the combine at harvest or using a drone image on 21July compared with the N rates of the treatments.](NxS_heatmap_lodgingScores and Nrates.png){#fig-heatmap}
+![Heatmap of lodging scores taken either from the combine at harvest or using a drone image on 21July compared with the N rates of the treatments.](NxS_heatmap_lodgingScores%20and%20Nrates.png){#fig-heatmap}
 
 \newpage
 
