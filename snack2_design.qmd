@@ -1,0 +1,73 @@
+---
+title: "Snack 2 design"
+subtitle: "rolling report"
+author: "Jesse Bealsburg"
+date: today
+format: 
+  pdf:
+    toc: true
+    number-sections: true
+    lof: true
+editor: visual
+execute:
+  echo: false
+  message: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Design
+
+```{r}
+library(tidyverse)
+library(agricolae)
+
+read.csv("Snack 2 plot plan - treatment list export.csv") -> trt_list
+
+
+```
+
+```{r}
+design.rcbd(
+  trt = trt_list$treatment,
+  r=4,
+  serie = 2,
+  seed = 55068, # Rosemount zip code
+  kinds = "Super-Duper",
+  first = FALSE) %>% 
+  .$book %>% 
+  mutate(site = "ros",
+         .before = plots) %>% 
+  print(row.names=F) -> rando_ros
+
+
+design.rcbd(
+  trt = trt_list$treatment,
+  r=4,
+  serie = 2,
+  seed = 55117, # stp zip code
+  kinds = "Super-Duper",
+  first = FALSE
+) %>% 
+  .$book %>% 
+  mutate(site = "stp",
+         .before = plots) %>% 
+  print(row.names=F) -> rando_stp
+
+design.rcbd(
+  trt = trt_list$treatment,
+  r=4,
+  serie = 2,
+  seed = 56093, # waseca zip code
+  kinds = "Super-Duper",
+  first = FALSE
+) %>% 
+  .$book %>% 
+  mutate(site = "was",
+         .before = plots) %>% 
+  print(row.names=F) -> rando_was
+
+bind_rows(rando_was,rando_ros,rando_stp) %>% 
+write.table("clipboard", sep = "\t")
+```

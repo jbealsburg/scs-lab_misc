@@ -1,0 +1,12 @@
+treatment,timing,crop_spring26,crop_fall26
+iwg,na,iwg,iwg
+fall iwg,na,winter wheat,iwg
+iwg+wheat_grain,grain,iwg+wheat,iwg
+iwg+wheat_forage,forage,iwg+wheat,iwg
+iwg+oat_grain,grain,iwg+oat,iwg
+iwg+oat_forage,forage,iwg+oat,iwg
+iwg+ryegrass_boot,boot,iwg+ryegrass,iwg
+iwg+ryegrass_flower,flower,iwg+ryegrass,iwg
+wheat,grain,wheat,oats
+ryegrass,forage,ryegrass,oats
+oat,grain,oat,oats
